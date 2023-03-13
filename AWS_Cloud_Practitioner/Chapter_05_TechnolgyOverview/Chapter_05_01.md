@@ -72,8 +72,43 @@ Authorize  permission with a Organizational Unit through assign Policy (通过 a
 
 
 # 2 AWS Networking
+
+![](image/Pasted%20image%2020230312212008.png)
+
+Public Subnet ist gernerally accessible to the internet. Private Subnet ist not accessible to the internet 
+Availability Zone ist just a data center for your where your are going to launch your aws resources. A Availability Zone ist a specific region 
+
 # 3 Database Services
+
+![](image/Pasted%20image%2020230312213745.png)
+
+Redshift: columnar Db,  It reads via columns, not row. It readlly good to read huge data, like  , where you need to generate repots, analytics, like a bussiness intelligence tool 
+ElastiCache: storing Cahce, Caching databases 
+
 # 4 Provisioning Services
+
+Provisioning: The Allocation or creation of resources and services to a customer . A easy way to set up a bunch of aws resources for you or your servers in a automaed way 
+![](image/Pasted%20image%2020230312215236.png)
+
+- Elastic Beanstalk: 
+    - Deploying Web applications , where you don't have to think about the underlying infrastructure. 
+    - Only upload you code, upload it to Elastic Beanstalk , choose the container you want to use wiht the language of choice 
+    - Like Heroku 技术 is a services not for aws 
+- OpsWork
+    - help you with the configuration of your instances, using Chef or Puppet
+    - using Ruby to define the recipes. In Recipes , it finds the setup thins on you actual server 
+    - Through OpsWorks, It has concepts layers. you can define serval tier layers , like appluication layer, database layer , networking layer 
+- CloudFormation: 
+    - Powerfull provisioning tool. 
+    -  compared to  Ops work, OpsWork has some limiatation. But Cloudformation can do anything pretty much in aws. It's most flexible option 
+    - in a yaml or json file, you definde hallo aws resources that you want to provision and how you want to configure them . Then upload this yaml file into CloudFormationa then , it set everything up for you in one go 
+-  AWS QucikStart
+    - A Provisioing tool
+    - These are just pre mad packlage (其实就是 cloudformation templates ). They are created by AWS or with AWS third party providers through the apn Network 
+    - Example: 你想设置 ml, you got to ml Category. There are bunch of premad configured cloudformation templated. Then you lauch one . 
+- AWS Marketplace
+    - You can using markepalce to buy managed EC2 instance. 这个是被别人已经调制好的.  你可以按月 subscription 
+
 # 5 Computing Services
 # 6 Storage Services
 # 7 Business Centric Services

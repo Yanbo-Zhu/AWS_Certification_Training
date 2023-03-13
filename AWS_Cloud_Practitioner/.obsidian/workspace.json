@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "f37bffc34f5071ed",
+        "id": "60b006269f69b126",
         "type": "tabs",
         "children": [
           {
-            "id": "94194a4e7cc122c2",
+            "id": "bf1d885280256cc8",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -148,24 +148,25 @@
       "workspaces:管理工作区布局": false
     }
   },
-  "active": "94194a4e7cc122c2",
+  "active": "bf1d885280256cc8",
   "lastOpenFiles": [
+    "Chapter_05_TechnolgyOverview/image/Pasted image 20230312215236.png",
+    "Chapter_05_TechnolgyOverview/image/Pasted image 20230312215232.png",
+    "Chapter_05_TechnolgyOverview/Chapter_05_01.md",
+    "官方Exam-Guide.md",
+    "Chapter_05_TechnolgyOverview/image/Pasted image 20230312213745.png",
+    "AWS Certified Cloud Practitioner Training 2020 - Full Course (3h).md",
+    "Chapter_05_TechnolgyOverview/image/Pasted image 20230312212008.png",
+    "Chapter_05_TechnolgyOverview/image/Pasted image 20230312211728.png",
+    "image/Pasted image 20230211182450.png",
     "Chapter_05_TechnolgyOverview/image/Pasted image 20230308235536.png",
     "Chapter_05_TechnolgyOverview/image/Pasted image 20230308235529.png",
     "Chapter_05_TechnolgyOverview/image/Pasted image 20230308235146.png",
     "Chapter_05_TechnolgyOverview/image/Pasted image 20230308234845.png",
     "Chapter_05_TechnolgyOverview/image/Pasted image 20230308234836.png",
-    "Chapter_05_TechnolgyOverview/image/Pasted image 20230308234734.png",
-    "Chapter_05_TechnolgyOverview/image/Pasted image 20230308234722.png",
-    "Chapter_05_TechnolgyOverview/image/Pasted image 20230308234657.png",
-    "Chapter_05_TechnolgyOverview/image/Pasted image 20230308234646.png",
-    "Chapter_05_TechnolgyOverview/image/Pasted image 20230308234641.png",
-    "Chapter_05_TechnolgyOverview/image/Pasted image 20230308232510.png",
     "Chapter_04_PricingModel_BillingAndPricing/Chapter_04_02_BillingAndPricing.md",
-    "Chapter_05_TechnolgyOverview/Chapter_05_01.md",
     "Chapter_05_TechnolgyOverview/image",
     "Chapter_05_TechnolgyOverview",
-    "官方Exam-Guide.md",
     "Chapter_02_AWS_Global_Infrastructure/Chapter_02_AWS_Global_Infrastructure.md",
     "Chapter_03_AWS_Main_Services/Chapter_03_AWS_Main_Services.md",
     "Chapter_04_PricingModel_BillingAndPricing/Chapter_04_01_PricingModel.md",
