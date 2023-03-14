@@ -14,12 +14,37 @@
               "type": "markdown",
               "state": {
                 "file": "Chapter_05_TechnolgyOverview/Chapter_05_01.md",
+                "mode": "preview",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "22ab60e89cae031a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "视频内容.md",
+                "mode": "source",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "c7f1e3ff31e792d5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "视频内容.md",
                 "mode": "source",
                 "source": true
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -85,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Chapter_05_TechnolgyOverview/Chapter_05_01.md",
+                "file": "视频内容.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Chapter_05_TechnolgyOverview/Chapter_05_01.md",
+                "file": "视频内容.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Chapter_05_TechnolgyOverview/Chapter_05_01.md"
+                "file": "视频内容.md"
               }
             }
           }
@@ -148,22 +173,25 @@
       "workspaces:管理工作区布局": false
     }
   },
-  "active": "bf1d885280256cc8",
+  "active": "c7f1e3ff31e792d5",
   "lastOpenFiles": [
-    "Chapter_05_TechnolgyOverview/image/Pasted image 20230312215236.png",
-    "Chapter_05_TechnolgyOverview/image/Pasted image 20230312215232.png",
+    "Chapter_06_Security/Chapter_06_01.md",
+    "Chapter_06_Security/image/Pasted image 20230313185117.png",
+    "Chapter_06_Security/image/Pasted image 20230313184826.png",
+    "Chapter_06_Security/image/Pasted image 20230313184541.png",
+    "Chapter_06_Security/image/Pasted image 20230313182845.png",
+    "Chapter_06_Security/image/Pasted image 20230313182802.png",
     "Chapter_05_TechnolgyOverview/Chapter_05_01.md",
+    "Chapter_06_Security/image/Pasted image 20230313180552.png",
+    "Chapter_06_Security/image/Pasted image 20230313180031.png",
+    "Chapter_06_Security/image",
+    "视频内容.md",
+    "Chapter_06_Security",
+    "AWS服务名的缩写 initialism.md",
     "官方Exam-Guide.md",
-    "Chapter_05_TechnolgyOverview/image/Pasted image 20230312213745.png",
-    "AWS Certified Cloud Practitioner Training 2020 - Full Course (3h).md",
-    "Chapter_05_TechnolgyOverview/image/Pasted image 20230312212008.png",
-    "Chapter_05_TechnolgyOverview/image/Pasted image 20230312211728.png",
     "image/Pasted image 20230211182450.png",
-    "Chapter_05_TechnolgyOverview/image/Pasted image 20230308235536.png",
-    "Chapter_05_TechnolgyOverview/image/Pasted image 20230308235529.png",
-    "Chapter_05_TechnolgyOverview/image/Pasted image 20230308235146.png",
-    "Chapter_05_TechnolgyOverview/image/Pasted image 20230308234845.png",
-    "Chapter_05_TechnolgyOverview/image/Pasted image 20230308234836.png",
+    "image/Pasted image 20230313174305.png",
+    "Chapter_05_TechnolgyOverview/image/Pasted image 20230313172125.png",
     "Chapter_04_PricingModel_BillingAndPricing/Chapter_04_02_BillingAndPricing.md",
     "Chapter_05_TechnolgyOverview/image",
     "Chapter_05_TechnolgyOverview",
