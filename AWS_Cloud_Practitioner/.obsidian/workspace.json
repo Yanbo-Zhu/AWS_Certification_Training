@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "视频内容.md",
+                "file": "Chapter_06_Security/Chapter_06_01.md",
                 "mode": "source",
                 "source": true
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "视频内容.md",
+                "file": "Chapter_06_Security/Chapter_06_01.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "视频内容.md",
+                "file": "Chapter_06_Security/Chapter_06_01.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "视频内容.md"
+                "file": "Chapter_06_Security/Chapter_06_01.md"
               }
             }
           }
@@ -175,23 +175,24 @@
   },
   "active": "c7f1e3ff31e792d5",
   "lastOpenFiles": [
-    "Chapter_06_Security/Chapter_06_01.md",
-    "Chapter_06_Security/image/Pasted image 20230313185117.png",
-    "Chapter_06_Security/image/Pasted image 20230313184826.png",
-    "Chapter_06_Security/image/Pasted image 20230313184541.png",
-    "Chapter_06_Security/image/Pasted image 20230313182845.png",
-    "Chapter_06_Security/image/Pasted image 20230313182802.png",
-    "Chapter_05_TechnolgyOverview/Chapter_05_01.md",
-    "Chapter_06_Security/image/Pasted image 20230313180552.png",
-    "Chapter_06_Security/image/Pasted image 20230313180031.png",
-    "Chapter_06_Security/image",
+    "Chapter_06_Security/image/Pasted image 20230314225252.png",
+    "Chapter_06_Security/image/Pasted image 20230314200318.png",
+    "Chapter_06_Security/image/Pasted image 20230314200156.png",
+    "Chapter_06_Security/image/Pasted image 20230314195518.png",
+    "Chapter_06_Security/image/Pasted image 20230314195417.png",
+    "Chapter_06_Security/image/Pasted image 20230314195103.png",
+    "Chapter_06_Security/image/Pasted image 20230314193721.png",
+    "Chapter_06_Security/image/Pasted image 20230314193634.png",
+    "Chapter_06_Security/image/Pasted image 20230314193507.png",
+    "Chapter_06_Security/image/Pasted image 20230314193259.png",
+    "Chapter_06_Security/image/Pasted image 20230314193003.png",
     "视频内容.md",
+    "Chapter_06_Security/Chapter_06_01.md",
+    "Chapter_05_TechnolgyOverview/Chapter_05_01.md",
+    "Chapter_06_Security/image",
     "Chapter_06_Security",
     "AWS服务名的缩写 initialism.md",
     "官方Exam-Guide.md",
-    "image/Pasted image 20230211182450.png",
-    "image/Pasted image 20230313174305.png",
-    "Chapter_05_TechnolgyOverview/image/Pasted image 20230313172125.png",
     "Chapter_04_PricingModel_BillingAndPricing/Chapter_04_02_BillingAndPricing.md",
     "Chapter_05_TechnolgyOverview/image",
     "Chapter_05_TechnolgyOverview",
