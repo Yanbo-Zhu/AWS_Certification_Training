@@ -130,6 +130,38 @@ macie will identify   your most at-risk users, which could lead to  a compromise
 
 # 11 Security Groups vs NACLs
 
+Security Groups and NACLs are all within the VPC. But the utility of these are slightly different.
+So in that diagram, you can see that all those instances are contained within a security group,   and they can span multiple subnets. Whereas the  NACLs sit in front of the subnets. 
+And NACLs gonna control access in and out from subnets.  
+
+![](image/Pasted%20image%2020230316093259.png)
+
+## 11.1 NACLs
+- NACLs act as a firewall at the subnet level.  
+- <mark> 通过 Security Groups  只能定义 deny rules </mark>. Via NACLs, you can allow the deny rules.
+    - Example (block a specific IP address to access your a specific Subnet ): The real utility of NACLs is that you can block a specific IP address known for abuse. Because you can have deny rules. And you can say exactly, I want to  deny exactly this IP address. 
+
+## 11.2 Security Groups
+- They act as a firewall at the instance level 
+- <mark> 通过 Security Groups  只能定义 allow rules </mark>
+- 默认情况下关闭所有的交通, 通过 Security Groups  定义 rules. 这些 rules 指定打开那些交通. Security Groups implicitly deny all traffic, and so you have to create allow rules  to get access to things. And so that's  both for inbound and outbound. . 
+    - Example if you wanted to open up Port 22. So you could SSH into an instance, that's an allow  rule you'd create on that security group
+
+## 11.3 Security Groups vs NACLs 比较 
+- they act as a firewall at the instance level, whereas  knackles act as a firewall at the sub net level.  
+- Example (block a specific IP address to access your a specific Subnet  and the )
+    - The real utility of NACLs is that you can block a specific IP address known for abuse. Because you can have deny rules. And you can say exactly, I want to  deny exactly this IP address. 
+    - So the reason you can't do this with security groups is that, because the rules, which are defined in security group,  implicitly denies everything in order for you to deny a single IP and allow everything else,  imagine all the IP addresses in the world, you'd have to create allow rules (via Security Groups) for everything  for those IP addresses, and just exclude that  one IP address, which is like almost impossible.  
+    - So for NACLs, the best use case here is again,  block a specific IP address known for abuse. 
 
 
 # 12 AWS VPN
+
+AWS VPN lets you establish a secure  and private tunnel from your network or device to the AWS global network. 
+
+- Aws Site to Site VPN
+    - securely connect on premises networks, or a branch office to your  AWS VPC.
+    - E.g. connect on-premises network or branch office site to VPC
+- AWs Client VPN
+    - Securely connect users to AWS, or on  premise networks.
+    - some employees, and  they have laptops, and they're, or they're working  from home, and you want them to connect them to  the ADA

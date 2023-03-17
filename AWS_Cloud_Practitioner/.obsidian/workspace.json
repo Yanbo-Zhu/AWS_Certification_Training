@@ -8,43 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "bf1d885280256cc8",
+            "id": "d5457d5eb89de950",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Chapter_05_TechnolgyOverview/Chapter_05_01.md",
-                "mode": "preview",
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "22ab60e89cae031a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "视频内容.md",
-                "mode": "source",
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "c7f1e3ff31e792d5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Chapter_06_Security/Chapter_06_01.md",
+                "file": "Chapter_07_VariationStudy/Chapter_07_01.md",
                 "mode": "source",
                 "source": true
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -110,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Chapter_06_Security/Chapter_06_01.md",
+                "file": "Chapter_07_VariationStudy/Chapter_07_01.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Chapter_06_Security/Chapter_06_01.md",
+                "file": "Chapter_07_VariationStudy/Chapter_07_01.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Chapter_06_Security/Chapter_06_01.md"
+                "file": "Chapter_07_VariationStudy/Chapter_07_01.md"
               }
             }
           }
@@ -173,8 +148,17 @@
       "workspaces:管理工作区布局": false
     }
   },
-  "active": "c7f1e3ff31e792d5",
+  "active": "d5457d5eb89de950",
   "lastOpenFiles": [
+    "Chapter_05_TechnolgyOverview/Chapter_05_01.md",
+    "视频内容.md",
+    "Chapter_07_VariationStudy/Chapter_07_01.md",
+    "Chapter_07_VariationStudy/image/Pasted image 20230316190231.png",
+    "Chapter_07_VariationStudy/image/Pasted image 20230316185240.png",
+    "Chapter_07_VariationStudy/image",
+    "Chapter_07_VariationStudy",
+    "Chapter_06_Security/Chapter_06_01.md",
+    "Chapter_06_Security/image/Pasted image 20230316093259.png",
     "Chapter_06_Security/image/Pasted image 20230314225252.png",
     "Chapter_06_Security/image/Pasted image 20230314200318.png",
     "Chapter_06_Security/image/Pasted image 20230314200156.png",
@@ -182,13 +166,6 @@
     "Chapter_06_Security/image/Pasted image 20230314195417.png",
     "Chapter_06_Security/image/Pasted image 20230314195103.png",
     "Chapter_06_Security/image/Pasted image 20230314193721.png",
-    "Chapter_06_Security/image/Pasted image 20230314193634.png",
-    "Chapter_06_Security/image/Pasted image 20230314193507.png",
-    "Chapter_06_Security/image/Pasted image 20230314193259.png",
-    "Chapter_06_Security/image/Pasted image 20230314193003.png",
-    "视频内容.md",
-    "Chapter_06_Security/Chapter_06_01.md",
-    "Chapter_05_TechnolgyOverview/Chapter_05_01.md",
     "Chapter_06_Security/image",
     "Chapter_06_Security",
     "AWS服务名的缩写 initialism.md",
