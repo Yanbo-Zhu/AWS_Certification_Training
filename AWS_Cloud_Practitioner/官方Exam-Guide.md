@@ -2,13 +2,18 @@ https://d1.awsstatic.com/training-and-certification/docs-cloud-practitioner/AWS-
 
 ![](image/Pasted%20image%2020230211182450.png)
 
-
 # 1 Exam Concept
 
-Domain 1: Cloud Concepts 26%
-Domain 2: Security and Compliance 25%
-Domain 3: Technology 33%
-Domain 4: Billing and Pricing 16%
+1. Allocate 120 minutes (seat time, time to review instructions, show online Proctor your workspace, read and accept NDA, complete the exam, provide feedback at the end )
+2. Actual exam is 90 minutes.
+3. 50 scored questions and 15 unscored (too hard / too easy / unseen)
+4. passing Grade: 700/1000
+5. 证书 36 monthos 有效 
+
+Domain 1: Cloud Concepts 26%   13 question 
+Domain 2: Security and Compliance 25%   16-17 qiestopms
+Domain 3: Technology 33%     21-22 questions
+Domain 4: Billing and Pricing 16%  10-11 questions
 
 ## 1.1 Domain 1: Cloud Concepts
 1. Define the AWS Cloud and its value proposition

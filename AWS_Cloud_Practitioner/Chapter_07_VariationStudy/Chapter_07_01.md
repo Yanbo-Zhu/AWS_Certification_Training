@@ -49,8 +49,11 @@ SQS: Simple Queue Services
     - sending plain text emails ( best example: billing alarms)
 - SES: Simple Email Services
     - 更专业的 email services
-    - can send html emails and plain text email 
-    -  
+    - can send html emails and also plain text email 
+    -  can create Email Teplates
+    - Custom domain name email 
+    - monitor your email reputation
+- 
 
 # 6 Inspector vs Trusted Advisor
 both of these services  have a security component involved
@@ -76,7 +79,21 @@ trusted advisor is all  about multiple services and security practices
     - it has a whole section on just security, 
     - Example: it would tell you  something like, Hey, you should really enable   MFA on your root account.
 
-# 7 ALB vs NLB vs CLB
+
+# 7 Artifact vs Inspector
+
+Both Artifact ans Inspector compile out PDFs
+
+![](image/Pasted%20image%2020230318144044.png)
+
+- Artifact
+    - Why enterprise trust aws. Does AWS meet specific compliance frameworks (SOC or PCI)
+- AWS Inspector
+    - How do we know this EC2 Instance is Secure? Prove it
+    - It runs a  script that analyzes your EC two instance, and  then generates out a PDF report telling you which  security checks have passed.
+
+
+# 8 ALB vs NLB vs CLB
 
 all are loadbalancer
 
@@ -105,6 +122,4 @@ All thos Loadbalancer you can attch the amazon certification manager so you can 
 
 
 
-
-# 8 Artifact vs Inspector
 

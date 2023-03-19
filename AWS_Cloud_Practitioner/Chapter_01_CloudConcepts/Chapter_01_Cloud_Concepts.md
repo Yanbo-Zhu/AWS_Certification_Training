@@ -1,9 +1,96 @@
+
+17:35 What is Cloud Computing?
+18:19 Evolution of Cloud Hosting
+21:13 What is Amazon?
+22:46 What is AWS?
+25:28 What is a Cloud Service Provider (CSP)?
+27:24 Landscape of CSPs
+30:05 Gartner Magic Quadrant for Cloud
+33:28 AWS Services Preview
+34:52 Evolution of Computing
+40:00 Types of Cloud Computing
+44:53 Cloud Computing Deployment Models
+
 # 1 What is Cloud Computing?
-# 2 Six Advantages and Benefits of Cloud Computing
+
+cloud computing is the practice of using a network of remote servers hosted on the internet to store manage and process data rather than a local server or personal computer
+
+On-premises 和 Cloud Providers的区别
+![](image/Pasted%20image%2020230318164103.png)
+
+# 2 Evolution of Cloud Hosting
+
+![](image/Pasted%20image%2020230318164501.png)
+
+# 3 What is AWS
+
+![](image/Pasted%20image%2020230318165207.png)
+
+
+# 4 Cloud Service Provider (CSP) and Landscape of CSPs
+Cloud Service Provider (CSP) ist a company 
+![](image/Pasted%20image%2020230318165611.png)
+
+Cloud Service Provider (CSP)  和 cloud platform 的区别: 
+if a company offers multiple cloud services under a single ui but do not meet most or all of these requirements, it would just be referred to as a cloud platform so when you hear about twilio or hashicorp or databricks
+
+
+Landscape of CSPs 的介绍 
+![](image/Pasted%20image%2020230318231352.png)
+
+
+# 5 Gartner Magic Quadrant for Cloud
+
+魔力象限（Magic Quadrant）是Gartner公司开发的一种图形化的市场分析工具，它是将一个特定技术市场的参与者（供应商）按照不同的市场表现放入到坐标轴的四个象限，以此来评估一个特定技术市场中的供应商和产品
+
+![](image/Pasted%20image%2020230318231508.png)
+
+![](image/Pasted%20image%2020230318231651.png)
+
+
+# 6 Common Cloud Services  and  Technology Overview 
+
+4 core Cloud services
+- Cloud Compute
+- Cloud Networking
+- Cloud Storage 
+- Cloud Databases 
+
+Cloud Computing can be used to refer to all categories, even though it has Compute in the name
+
+![](image/Pasted%20image%2020230318231850.png)
+
+
+Cloud Service Provider  对应提供的 4 core cloud services: 
+Cloud Service Provider (CSPs) that are Infrastructure as a Service (laaS) will always have 4 core cloud service offerings
+
+![](image/Pasted%20image%2020230318232430.png)
+
+
+# 7 Evolution of Computing
+Dedicated Server -> Virtual Machine -> Containers -> Functions 
+
+1 Dedicated Server 
+![](image/Pasted%20image%2020230318232903.png)
+
+2 Virtual Machine
+![](image/Pasted%20image%2020230318233053.png)
+ 
+3 Containers
+确定是 a lots of work for maintan
+![](image/Pasted%20image%2020230318233627.png)
+
+4 Functions
+
+Cold Starts:  where the virtual machine has to spin up and so sometimes requests can be a bit slow so there's a bit of trade-off
+
+![](image/Pasted%20image%2020230318234429.png)
+
+# 8 Six Advantages and Benefits of Cloud Computing
 
 ![](image/Domain1_01_Cloud_Concepts_Six%20Advantages%20and%20Benefits%20of%20Cloud%20Computing.png)
 
-# 3 Types of Cloud Computing
+# 9 Types of Cloud Computing
 如果你是一个网站站长，想要建立一个网站。不采用云服务，你所需要的投入大概是：买服务器，安装服务器软件，编写网站程序。
 现在你追随潮流，采用流行的云计算，
 - 如果你采用IaaS服务，那么意味着你就不用自己买服务器了，随便在哪家购买虚拟机，但是还是需要自己装服务器软件
@@ -25,6 +112,6 @@ SaaS（Software as a Service – [软件即服务](https://www.zhihu.com/search?
 ![](image/Domain1_01_Cloud_Concepts_TypesOfCloudComputing_03.png)
 
 
-# 4 Cloud Computing Deployment Models
+# 10 Cloud Computing Deployment Models
 
 ![](image/Domain1_01_Cloud_Concepts_Cloud%20Computing%20Deployment%20Models.png)f

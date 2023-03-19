@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Chapter_07_VariationStudy/Chapter_07_01.md",
+                "file": "Chapter_01_CloudConcepts/Chapter_01_Cloud_Concepts.md",
                 "mode": "source",
                 "source": true
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Chapter_07_VariationStudy/Chapter_07_01.md",
+                "file": "Chapter_01_CloudConcepts/Chapter_01_Cloud_Concepts.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Chapter_07_VariationStudy/Chapter_07_01.md",
+                "file": "Chapter_01_CloudConcepts/Chapter_01_Cloud_Concepts.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Chapter_07_VariationStudy/Chapter_07_01.md"
+                "file": "Chapter_01_CloudConcepts/Chapter_01_Cloud_Concepts.md"
               }
             }
           }
@@ -150,27 +150,29 @@
   },
   "active": "d5457d5eb89de950",
   "lastOpenFiles": [
-    "Chapter_07_VariationStudy/image/Pasted image 20230317175053.png",
-    "Chapter_07_VariationStudy/image/Pasted image 20230317173623.png",
-    "Chapter_07_VariationStudy/image/Pasted image 20230317172708.png",
-    "Chapter_07_VariationStudy/image/Pasted image 20230317093220.png",
-    "Chapter_07_VariationStudy/image/Pasted image 20230317092955.png",
-    "Chapter_05_TechnolgyOverview/Chapter_05_01.md",
+    "Chapter_01_CloudConcepts/image/Pasted image 20230318234429.png",
+    "Chapter_01_CloudConcepts/image/Pasted image 20230318233627.png",
+    "Chapter_01_CloudConcepts/image/Pasted image 20230318233053.png",
+    "Chapter_01_CloudConcepts/image/Pasted image 20230318232903.png",
+    "Chapter_01_CloudConcepts/image/Pasted image 20230318232430.png",
+    "Chapter_01_CloudConcepts/image/Pasted image 20230318231850.png",
+    "Chapter_01_CloudConcepts/image/Pasted image 20230318231651.png",
+    "Chapter_01_CloudConcepts/image/Pasted image 20230318231508.png",
+    "Chapter_01_CloudConcepts/image/Pasted image 20230318231352.png",
+    "Chapter_01_CloudConcepts/image/Pasted image 20230318165611.png",
+    "Chapter_01_CloudConcepts/image/Pasted image 20230318165207.png",
     "视频内容.md",
+    "官方Exam-Guide.md",
+    "AWS服务名的缩写 initialism.md",
+    "Chapter_01_CloudConcepts/Chapter_01_Cloud_Concepts.md",
+    "考试组织形式.md",
+    "Chapter_05_TechnolgyOverview/Chapter_05_01.md",
+    "Chapter_06_Security/Chapter_06_01.md",
     "Chapter_07_VariationStudy/Chapter_07_01.md",
-    "Chapter_07_VariationStudy/image/Pasted image 20230316190231.png",
-    "Chapter_07_VariationStudy/image/Pasted image 20230316185240.png",
     "Chapter_07_VariationStudy/image",
     "Chapter_07_VariationStudy",
-    "Chapter_06_Security/Chapter_06_01.md",
-    "Chapter_06_Security/image/Pasted image 20230316093259.png",
-    "Chapter_06_Security/image/Pasted image 20230314225252.png",
-    "Chapter_06_Security/image/Pasted image 20230314200318.png",
-    "Chapter_06_Security/image/Pasted image 20230314200156.png",
     "Chapter_06_Security/image",
     "Chapter_06_Security",
-    "AWS服务名的缩写 initialism.md",
-    "官方Exam-Guide.md",
     "Chapter_04_PricingModel_BillingAndPricing/Chapter_04_02_BillingAndPricing.md",
     "Chapter_05_TechnolgyOverview/image",
     "Chapter_05_TechnolgyOverview",
@@ -178,7 +180,6 @@
     "Chapter_03_AWS_Main_Services/Chapter_03_AWS_Main_Services.md",
     "Chapter_04_PricingModel_BillingAndPricing/Chapter_04_01_PricingModel.md",
     "Chapter_03_AWS_Main_Services/未命名.md",
-    "Chapter_01_CloudConcepts/Chapter_01_Cloud_Concepts.md",
     "Chapter03_复杂数据类型_内置对象_字符串_数组/Chapter03_04_数组array.md",
     "Chapter03_复杂数据类型_内置对象_字符串_数组/Chapter03_04_数组Array的扩展.md"
   ]
