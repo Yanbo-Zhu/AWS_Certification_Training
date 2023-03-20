@@ -1,16 +1,4 @@
 
-17:35 What is Cloud Computing?
-18:19 Evolution of Cloud Hosting
-21:13 What is Amazon?
-22:46 What is AWS?
-25:28 What is a Cloud Service Provider (CSP)?
-27:24 Landscape of CSPs
-30:05 Gartner Magic Quadrant for Cloud
-33:28 AWS Services Preview
-34:52 Evolution of Computing
-40:00 Types of Cloud Computing
-44:53 Cloud Computing Deployment Models
-
 # 1 What is Cloud Computing?
 
 cloud computing is the practice of using a network of remote servers hosted on the internet to store manage and process data rather than a local server or personal computer
@@ -86,11 +74,8 @@ Cold Starts:  where the virtual machine has to spin up and so sometimes requests
 
 ![](image/Pasted%20image%2020230318234429.png)
 
-# 8 Six Advantages and Benefits of Cloud Computing
 
-![](image/Domain1_01_Cloud_Concepts_Six%20Advantages%20and%20Benefits%20of%20Cloud%20Computing.png)
-
-# 9 Types of Cloud Computing
+# 8 Types of Cloud Computing
 如果你是一个网站站长，想要建立一个网站。不采用云服务，你所需要的投入大概是：买服务器，安装服务器软件，编写网站程序。
 现在你追随潮流，采用流行的云计算，
 - 如果你采用IaaS服务，那么意味着你就不用自己买服务器了，随便在哪家购买虚拟机，但是还是需要自己装服务器软件
@@ -112,6 +97,53 @@ SaaS（Software as a Service – [软件即服务](https://www.zhihu.com/search?
 ![](image/Domain1_01_Cloud_Concepts_TypesOfCloudComputing_03.png)
 
 
-# 10 Cloud Computing Deployment Models
+# 9 Cloud Computing Deployment Models
 
-![](image/Domain1_01_Cloud_Concepts_Cloud%20Computing%20Deployment%20Models.png)f
+Public Cloud 
+Private Cloud 
+Hybrid
+Cross Cloud : Using Multiple Cloud Providers at same time  , aka multi-cloud, but not hybrid-cloud 
+
+
+![](image/Pasted%20image%2020230319121708.png)
+
+
+## 9.1 Cross-cloud
+
+桥梁的产品: offering for a control plane for cimpute across multiple CSPs and On-premise Environments
+
+- Anthos: google cloud platform 的产品 
+- azure arc : 微软的产品
+- aws:  aws has not been um cross-cloud friendly, 没有类似上面的 桥梁的产品 
+- 
+![](image/Pasted%20image%2020230319121536.png)
+
+## 9.2 Deployment Model Use Cases
+
+
+![](image/Domain1_01_Cloud_Concepts_Cloud%20Computing%20Deployment%20Models.png)
+
+
+ ![](image/Pasted%20image%2020230319121934.png)
+
+# 10 The Benefits of the cloud 
+
+Benefits of the cloud  is a summary of reasons why an orgranization would consider adopting or migrating to utilizing pulic cloud 
+Benefits of the cloud  is a reworking and expansion of the six advantages of cloud
+The six advantage of cloud was aws original description of Cloud Benefits 
+![](image/Pasted%20image%2020230319211215.png)
+
+
+## 10.1 Six Advantages and Benefits of Cloud Computing over on-Premise
+
+![](image/Domain1_01_Cloud_Concepts_Six%20Advantages%20and%20Benefits%20of%20Cloud%20Computing.png)
+
+![](image/Pasted%20image%2020230319211605.png)
+
+相关的 doc
+https://docs.aws.amazon.com/whitepapers/latest/aws-overview/six-advantages-of-cloud-computing.html
+
+
+## 10.2 Seven Advantages to Cloud
+
+![](image/Pasted%20image%2020230319212112.png)

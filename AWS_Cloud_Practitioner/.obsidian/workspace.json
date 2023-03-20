@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "60b006269f69b126",
+        "id": "9b803d9e4c261532",
         "type": "tabs",
         "children": [
           {
-            "id": "d5457d5eb89de950",
+            "id": "8dd52e22ebcd6267",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Chapter_01_CloudConcepts/Chapter_01_Cloud_Concepts.md",
+                "file": "Chapter_01_02_DigitalTransformation_GlobalInfrastructur/Chapter_01_03_DigitalTransformation_GlobalInftastructure.md",
                 "mode": "source",
                 "source": true
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Chapter_01_CloudConcepts/Chapter_01_Cloud_Concepts.md",
+                "file": "Chapter_01_02_DigitalTransformation_GlobalInfrastructur/Chapter_01_03_DigitalTransformation_GlobalInftastructure.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Chapter_01_CloudConcepts/Chapter_01_Cloud_Concepts.md",
+                "file": "Chapter_01_02_DigitalTransformation_GlobalInfrastructur/Chapter_01_03_DigitalTransformation_GlobalInftastructure.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Chapter_01_CloudConcepts/Chapter_01_Cloud_Concepts.md"
+                "file": "Chapter_01_02_DigitalTransformation_GlobalInfrastructur/Chapter_01_03_DigitalTransformation_GlobalInftastructure.md"
               }
             }
           }
@@ -148,25 +148,29 @@
       "workspaces:管理工作区布局": false
     }
   },
-  "active": "d5457d5eb89de950",
+  "active": "8dd52e22ebcd6267",
   "lastOpenFiles": [
-    "Chapter_01_CloudConcepts/image/Pasted image 20230318234429.png",
-    "Chapter_01_CloudConcepts/image/Pasted image 20230318233627.png",
-    "Chapter_01_CloudConcepts/image/Pasted image 20230318233053.png",
-    "Chapter_01_CloudConcepts/image/Pasted image 20230318232903.png",
-    "Chapter_01_CloudConcepts/image/Pasted image 20230318232430.png",
-    "Chapter_01_CloudConcepts/image/Pasted image 20230318231850.png",
-    "Chapter_01_CloudConcepts/image/Pasted image 20230318231651.png",
-    "Chapter_01_CloudConcepts/image/Pasted image 20230318231508.png",
-    "Chapter_01_CloudConcepts/image/Pasted image 20230318231352.png",
-    "Chapter_01_CloudConcepts/image/Pasted image 20230318165611.png",
-    "Chapter_01_CloudConcepts/image/Pasted image 20230318165207.png",
+    "Chapter_01_02_DigitalTransformation_GlobalInfrastructur/image/Pasted image 20230319224144.png",
+    "Chapter_03_AWS_Main_Services/Chapter_03_AWS_Main_Services.md",
+    "Chapter_01_02_DigitalTransformation_GlobalInfrastructur/Chapter_01_03_DigitalTransformation_GlobalInftastructure.md",
     "视频内容.md",
-    "官方Exam-Guide.md",
+    "Chapter_01_02_DigitalTransformation_GlobalInfrastructur/image/Pasted image 20230319215924.png",
+    "Chapter_01_02_DigitalTransformation_GlobalInfrastructur/image/Pasted image 20230319215841.png",
+    "Chapter_01_02_DigitalTransformation_GlobalInfrastructur/image/Pasted image 20230319215529.png",
+    "Chapter_01_02_DigitalTransformation_GlobalInfrastructur/image/Pasted image 20230319215312.png",
+    "Chapter_01_02_DigitalTransformation_GlobalInfrastructur/Chapter_01_04_AWS_Global_Infrastructure.md",
+    "Chapter_01_01_CloudConcepts/Chapter_01_01_Cloud_Concepts.md",
+    "Chapter_01_01_CloudConcepts/image/Pasted image 20230319212112.png",
+    "Chapter_01_01_CloudConcepts/image/Pasted image 20230319211605.png",
+    "Chapter_01_01_CloudConcepts/image/Pasted image 20230319211215.png",
+    "Chapter_01_01_CloudConcepts/Chapter_01_02_GetStartet.md",
+    "Chapter_01_02_DigitalTransformation_GlobalInfrastructur/image/Pasted image 20230319210530.png",
+    "Chapter_01_02_DigitalTransformation_GlobalInfrastructur/image/Pasted image 20230319210057.png",
+    "Chapter_01_02_DigitalTransformation_GlobalInfrastructur/image/Pasted image 20230319205930.png",
     "AWS服务名的缩写 initialism.md",
-    "Chapter_01_CloudConcepts/Chapter_01_Cloud_Concepts.md",
-    "考试组织形式.md",
     "Chapter_05_TechnolgyOverview/Chapter_05_01.md",
+    "官方Exam-Guide.md",
+    "考试组织形式.md",
     "Chapter_06_Security/Chapter_06_01.md",
     "Chapter_07_VariationStudy/Chapter_07_01.md",
     "Chapter_07_VariationStudy/image",
@@ -176,8 +180,6 @@
     "Chapter_04_PricingModel_BillingAndPricing/Chapter_04_02_BillingAndPricing.md",
     "Chapter_05_TechnolgyOverview/image",
     "Chapter_05_TechnolgyOverview",
-    "Chapter_02_AWS_Global_Infrastructure/Chapter_02_AWS_Global_Infrastructure.md",
-    "Chapter_03_AWS_Main_Services/Chapter_03_AWS_Main_Services.md",
     "Chapter_04_PricingModel_BillingAndPricing/Chapter_04_01_PricingModel.md",
     "Chapter_03_AWS_Main_Services/未命名.md",
     "Chapter03_复杂数据类型_内置对象_字符串_数组/Chapter03_04_数组array.md",
