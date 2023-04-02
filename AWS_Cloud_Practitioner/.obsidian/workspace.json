@@ -8,25 +8,25 @@
         "type": "tabs",
         "children": [
           {
-            "id": "b6d270cb1cab676c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Chapter_03_AWS_Main_Services/Chapter_03_AWS_Main_Services.md",
-                "mode": "source",
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "13b3f4451de091e7",
+            "id": "a0184616971b106a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "视频内容.md",
-                "mode": "preview",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "fcf04749abf964a3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Chapter_03_01_AWS_Common_Services/Chapter_03_01_Compute.md",
+                "mode": "source",
                 "source": true
               }
             }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "视频内容.md",
+                "file": "Chapter_03_01_AWS_Common_Services/Chapter_03_01_Compute.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "视频内容.md",
+                "file": "Chapter_03_01_AWS_Common_Services/Chapter_03_01_Compute.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "视频内容.md"
+                "file": "Chapter_03_01_AWS_Common_Services/Chapter_03_01_Compute.md"
               }
             }
           }
@@ -161,27 +161,35 @@
       "workspaces:管理工作区布局": false
     }
   },
-  "active": "13b3f4451de091e7",
+  "active": "fcf04749abf964a3",
   "lastOpenFiles": [
-    "Chapter_05_TechnolgyOverview/Chapter_05_01.md",
     "视频内容.md",
-    "Chapter_03_AWS_Main_Services/Chapter_03_AWS_Main_Services.md",
-    "Chapter_01_02_DigitalTransformation_GlobalInfrastructur/Chapter_01_03_DigitalTransformation_GlobalInftastructure.md",
-    "Chapter_01_02_DigitalTransformation_GlobalInfrastructur/image/Pasted image 20230321005512.png",
-    "Chapter_01_02_DigitalTransformation_GlobalInfrastructur/image/Pasted image 20230321005122.png",
-    "Chapter_01_02_DigitalTransformation_GlobalInfrastructur/image/Pasted image 20230321004716.png",
-    "Chapter_01_02_DigitalTransformation_GlobalInfrastructur/image/Pasted image 20230321004426.png",
-    "Chapter_01_02_DigitalTransformation_GlobalInfrastructur/image/Pasted image 20230321003219.png",
-    "Chapter_01_02_DigitalTransformation_GlobalInfrastructur/image/Pasted image 20230321002741.png",
-    "Chapter_01_02_DigitalTransformation_GlobalInfrastructur/image/Pasted image 20230321002457.png",
-    "Chapter_01_02_DigitalTransformation_GlobalInfrastructur/image/Pasted image 20230321002131.png",
-    "Chapter_01_02_DigitalTransformation_GlobalInfrastructur/image/Pasted image 20230321001041.png",
-    "Chapter_01_02_DigitalTransformation_GlobalInfrastructur/image/Pasted image 20230321000600.png",
-    "Chapter_01_02_DigitalTransformation_GlobalInfrastructur/Chapter_01_04_AWS_Global_Infrastructure.md",
+    "Chapter_03_01_AWS_Common_Services/Chapter_03_01_Compute.md",
+    "Chapter_02_01_CloudArchitecture_ManagementAndDevelopersTools/Chapter_02_03_Shared Responsibility Model.md",
+    "Chapter_02_01_CloudArchitecture_ManagementAndDevelopersTools/image/Pasted image 20230401234927.png",
+    "Chapter_02_01_CloudArchitecture_ManagementAndDevelopersTools/image/Pasted image 20230401234143.png",
+    "Chapter_02_01_CloudArchitecture_ManagementAndDevelopersTools/image/Pasted image 20230401234058.png",
+    "Chapter_02_01_CloudArchitecture_ManagementAndDevelopersTools/image/Pasted image 20230401232333.png",
+    "Chapter_02_01_CloudArchitecture_ManagementAndDevelopersTools/image/Pasted image 20230401232119.png",
+    "Chapter_02_01_CloudArchitecture_ManagementAndDevelopersTools/image/Pasted image 20230401231541.png",
+    "Chapter_02_01_CloudArchitecture_ManagementAndDevelopersTools/image/Pasted image 20230401231259.png",
+    "Chapter_02_01_CloudArchitecture_ManagementAndDevelopersTools/image/Pasted image 20230401231226.png",
+    "Chapter_02_01_CloudArchitecture_ManagementAndDevelopersTools/image/Pasted image 20230401230740.png",
     "Chapter_01_01_CloudConcepts/Chapter_01_01_Cloud_Concepts.md",
-    "Chapter_01_01_CloudConcepts/Chapter_01_02_GetStartet.md",
-    "AWS服务名的缩写 initialism.md",
+    "Chapter_03_01_AWS_Common_Services/image",
+    "Chapter_03_01_AWS_Common_Services",
+    "Chapter_03_AWS_Main_Services/Chapter_03_AWS_Main_Services.md",
+    "Chapter_05_TechnolgyOverview/Chapter_05_01.md",
     "官方Exam-Guide.md",
+    "Chapter_02_01_CloudArchitecture_ManagementAndDevelopersTools/Chapter_02_02_Management and Developers Tools.md",
+    "Chapter_02_01_CloudArchitecture_ManagementAndDevelopersTools/image/Pasted image 20230401223658.png",
+    "Chapter_02_01_CloudArchitecture_ManagementAndDevelopersTools/Chapter_02_01_Cloud Architecture.md",
+    "Chapter_01_02_DigitalTransformation_GlobalInfrastructur/Chapter_01_03_DigitalTransformation_GlobalInftastructure.md",
+    "Chapter_02_01_CloudArchitecture_ManagementAndDevelopersTools/image",
+    "Chapter_02_01_CloudArchitecture_ManagementAndDevelopersTools",
+    "AWS服务名的缩写 initialism.md",
+    "Chapter_01_02_DigitalTransformation_GlobalInfrastructur/Chapter_01_04_AWS_Global_Infrastructure.md",
+    "Chapter_01_01_CloudConcepts/Chapter_01_02_GetStartet.md",
     "考试组织形式.md",
     "Chapter_06_Security/Chapter_06_01.md",
     "Chapter_07_VariationStudy/Chapter_07_01.md",

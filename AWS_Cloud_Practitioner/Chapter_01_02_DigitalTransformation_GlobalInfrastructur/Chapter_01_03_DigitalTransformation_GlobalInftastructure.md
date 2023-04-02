@@ -81,6 +81,11 @@ s3: 只用选 aws region, 不需要选 az
 
 
 ### 2.2.2 Regions
+
+Europa (Frankefurt) eu-central-1  是单独的一个 aws region . 里面 含有 几个 av Zone 
+Europa (London )  eu-werst-1 是一个单独的 aws region. 面 含有 几个 av Zone 
+Europa (Paris)  eu-werst-2 是一个单独的 aws region.  (和 eu-werst-2 不同 )
+
 ![](image/Domain1_02_AWS_Global_Infrastructure_Regions.png)
 
 ![](image/Pasted%20image%2020230319215529.png)
