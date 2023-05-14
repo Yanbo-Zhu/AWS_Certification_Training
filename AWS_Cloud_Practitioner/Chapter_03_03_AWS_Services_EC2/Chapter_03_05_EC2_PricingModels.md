@@ -1,4 +1,20 @@
 
+
+7:49:09 EC2 Pricing Models
+7:51:18 On Demand
+7:52:51 Reserved
+7:56:07 RI Attributes
+7:57:02 Regional and Zonal RI
+7:58:18 RI Limits
+7:59:24 Capacity Reservations
+8:00:38 Standard vs Convertible RI
+8:01:45 RI Marketplace
+8:03:00 Spot
+8:04:20 Dedicated
+8:06:14 Savings Plan
+
+
+
 # 1 Introduction
 
 ![](image/Chapter_04_01_PricingModel_01_Introduction.png)
@@ -26,3 +42,6 @@ Can be untilized / offerd  (Multi-Tenant vs Single Tenant)  in On-Demand Instanc
 ![](image/Chapter_04_01_PricingModel_06_PricingCheatSheet.png)
 
 ![](image/Chapter_04_01_PricingModel_07_PricingCheatSheet.png)
+
+
+
