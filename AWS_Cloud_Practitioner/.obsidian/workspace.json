@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Chapter_03_03_AWS_Services_EC2/Chapter_03_05_EC2.md",
+                "file": "Chapter_04_01_/Chapter_04_02_ApplicationIntegration.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Chapter_03_03_AWS_Services_EC2/Chapter_03_05_EC2.md",
+                "file": "Chapter_04_01_/Chapter_04_02_ApplicationIntegration.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Chapter_03_03_AWS_Services_EC2/Chapter_03_05_EC2.md",
+                "file": "Chapter_04_01_/Chapter_04_02_ApplicationIntegration.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Chapter_03_03_AWS_Services_EC2/Chapter_03_05_EC2.md"
+                "file": "Chapter_04_01_/Chapter_04_02_ApplicationIntegration.md"
               }
             }
           }
@@ -142,7 +142,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 305.5
+    "width": 339.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -158,28 +158,37 @@
   },
   "active": "813e6288459043ea",
   "lastOpenFiles": [
-    "Chapter_03_03_AWS_Services_EC2/image/Pasted image 20230513220345.png",
-    "Chapter_03_03_AWS_Services_EC2/image/Pasted image 20230513220305.png",
-    "Chapter_03_03_AWS_Services_EC2/image/Pasted image 20230513214905.png",
-    "Chapter_03_03_AWS_Services_EC2/image/Pasted image 20230513214545.png",
-    "Chapter_03_03_AWS_Services_EC2/image/Pasted image 20230513214250.png",
-    "Chapter_03_03_AWS_Services_EC2/image/Pasted image 20230513213653.png",
-    "Chapter_03_03_AWS_Services_EC2/image/Pasted image 20230513213113.png",
-    "Chapter_03_03_AWS_Services_EC2/image/Pasted image 20230513212941.png",
-    "Chapter_03_03_AWS_Services_EC2/image/Pasted image 20230513212927.png",
-    "Chapter_03_03_AWS_Services_EC2/Chapter_03_05_EC2_PricingModels.md",
-    "Chapter_03_03_AWS_Services_EC2/Chapter_04_01_PricingModel.md",
+    "Chapter_04_01_/image/Pasted image 20230514213841.png",
+    "Chapter_04_01_/image/Pasted image 20230514213606.png",
+    "Chapter_04_01_/image/Pasted image 20230514213519.png",
+    "Chapter_04_01_/image/Pasted image 20230514212955.png",
     "Chapter_03_AWS_Main_Services/Chapter_03_AWS_Main_Services.md",
-    "Chapter_04_PricingModel_BillingAndPricing/Chapter_04_02_BillingAndPricing.md",
-    "Chapter_03_03_AWS_Services_EC2/Chapter_03_05_EC2.md",
-    "Chapter_03_03_AWS_Services_EC2/image/Pasted image 20230513212044.png",
-    "Chapter_03_03_AWS_Services_EC2/image/Pasted image 20230513212001.png",
+    "Chapter_03_TechnolgyOverview/Chapter_03_TechnologiesOverview.md",
+    "Chapter_04_01_/Chapter_04_02_ApplicationIntegration.md",
     "视频内容.md",
-    "Chapter_07_VariationStudy/Chapter_07_01.md",
+    "Chapter_04_01_/Chapter_04_01_Identity.md",
+    "Chapter_04_01_/未命名",
+    "Chapter_04_01_/image/Pasted image 20230514202241.png",
+    "Chapter_04_01_/image/Pasted image 20230514201311.png",
+    "Chapter_04_01_/image/Pasted image 20230514200745.png",
+    "Chapter_04_01_/image/Pasted image 20230514193031.png",
+    "Chapter_04_01_/image/Pasted image 20230514191826.png",
+    "Chapter_04_01_/image/Pasted image 20230514191807.png",
+    "Chapter_04_01_/image/Pasted image 20230514191421.png",
+    "Chapter_04_01_/image",
+    "Chapter_06_03_VariationStudy/Chapter_06_03_VariationStudy.md",
+    "Chapter_04_01_",
+    "Chapter_06_02_Security/Chapter_06_02_Security.md",
+    "Chapter_06_01_BillingAndPricing/Chapter_06_01_BillingAndPricing.md",
+    "Chapter_06_01_BillingAndPricing/image",
+    "Chapter_06_01_BillingAndPricing",
+    "ander",
+    "Chapter_03_03_AWS_Services_EC2/Chapter_03_05_EC2_PricingModels.md",
+    "Chapter_03_03_AWS_Services_EC2/Chapter_03_05_EC2.md",
+    "Chapter_03_03_AWS_Services_EC2/Chapter_04_01_PricingModel.md",
+    "Chapter_04_PricingModel_BillingAndPricing/Chapter_04_02_BillingAndPricing.md",
     "Chapter_03_03_AWS_Services_EC2/image",
-    "Chapter_05_TechnolgyOverview/Chapter_05_01.md",
     "Chapter_03_03_AWS_Services_EC2",
-    "Chapter_06_Security/Chapter_06_01.md",
     "Chapter_03_02_AWS_Services_Database_Network/Chapter_03_04_Network.md",
     "Chapter_03_02_AWS_Services_Database_Network/Chapter_03_03_Database.md",
     "官方Exam-Guide.md",
@@ -189,20 +198,11 @@
     "Chapter_03_02_AWS_Services_Database_Network",
     "Chapter_02_01_CloudArchitecture_ManagementAndDevelopersTools/Chapter_02_03_Shared Responsibility Model.md",
     "Chapter_01_01_CloudConcepts/Chapter_01_01_Cloud_Concepts.md",
-    "Chapter_03_01_AWS_Services_Compute_Storage/image",
-    "Chapter_03_01_AWS_Services_Compute_Storage",
     "Chapter_02_01_CloudArchitecture_ManagementAndDevelopersTools/Chapter_02_02_Management and Developers Tools.md",
     "Chapter_02_01_CloudArchitecture_ManagementAndDevelopersTools/Chapter_02_01_Cloud Architecture.md",
     "Chapter_01_02_DigitalTransformation_GlobalInfrastructur/Chapter_01_03_DigitalTransformation_GlobalInftastructure.md",
-    "Chapter_02_01_CloudArchitecture_ManagementAndDevelopersTools/image",
-    "Chapter_02_01_CloudArchitecture_ManagementAndDevelopersTools",
     "AWS服务名的缩写 initialism.md",
     "Chapter_01_02_DigitalTransformation_GlobalInfrastructur/Chapter_01_04_AWS_Global_Infrastructure.md",
-    "Chapter_01_01_CloudConcepts/Chapter_01_02_GetStartet.md",
-    "考试组织形式.md",
-    "Chapter_07_VariationStudy/image",
-    "Chapter_07_VariationStudy",
-    "Chapter_03_AWS_Main_Services/未命名.md",
-    "Chapter03_复杂数据类型_内置对象_字符串_数组/Chapter03_04_数组array.md"
+    "Chapter_01_01_CloudConcepts/Chapter_01_02_GetStartet.md"
   ]
 }

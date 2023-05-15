@@ -177,8 +177,44 @@ ec2 instance 每次 reboot 后, public ipv4 addresse 地址都会改变 .
 
 
 再用 这个  Launch Template 去 创造一个新的 ec2 instance 
+![](image/Pasted%20image%2020230514112334.png)
+
+
 ![](image/Pasted%20image%2020230513220345.png)
 
+# 9 实际操作 Launch an ASG auto scaling group for ec2 instance 
 7:35:45 Launch an ASG
+
+当需求量大时候, 就 启动多个 ec2 instance . run multiple capacity to meet the capacity 
+当需求量少的时候, 就启动 少一些 instance
+
+![](image/Pasted%20image%2020230514114019.png)
+
+
+# 10 实际操作Launch an ALB
 7:40:08 Launch an ALB
+how to distribute the traffic to all instances 
+
+![](image/Pasted%20image%2020230514121837.png)
+
+创造号一个 ALB
+![](image/Pasted%20image%2020230514122225.png)
+
+将这个 ALB 的 dns name 放入一个 Target groups
+
+![](image/Pasted%20image%2020230514122248.png)
+
+![](image/Pasted%20image%2020230514122601.png)
+
+
+ASG 中设置 ALB 和 target group 
+![](image/Pasted%20image%2020230514122420.png)
+
+![](image/Pasted%20image%2020230514122429.png)
+
+
+# 11 实际操作 Cleanup
 7:46:41 Cleanup
+
+
+
