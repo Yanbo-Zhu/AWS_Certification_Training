@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "813e6288459043ea",
+            "id": "aee4f67729b8aac3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Chapter_04_01_/Chapter_04_02_ApplicationIntegration.md",
+                "file": "Chapter_04_02_Goverance_Provisioning/Chapter_04_04_Goverance_管理方法.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Chapter_04_01_/Chapter_04_02_ApplicationIntegration.md",
+                "file": "Chapter_04_02_Goverance_Provisioning/Chapter_04_04_Goverance_管理方法.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Chapter_04_01_/Chapter_04_02_ApplicationIntegration.md",
+                "file": "Chapter_04_02_Goverance_Provisioning/Chapter_04_04_Goverance_管理方法.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Chapter_04_01_/Chapter_04_02_ApplicationIntegration.md"
+                "file": "Chapter_04_02_Goverance_Provisioning/Chapter_04_04_Goverance_管理方法.md"
               }
             }
           }
@@ -156,28 +156,31 @@
       "workspaces:管理工作区布局": false
     }
   },
-  "active": "813e6288459043ea",
+  "active": "aee4f67729b8aac3",
   "lastOpenFiles": [
-    "Chapter_04_01_/image/Pasted image 20230514213841.png",
-    "Chapter_04_01_/image/Pasted image 20230514213606.png",
-    "Chapter_04_01_/image/Pasted image 20230514213519.png",
-    "Chapter_04_01_/image/Pasted image 20230514212955.png",
+    "视频内容.md",
+    "Chapter_04_02_Goverance_Provisioning/Chapter_04_04_Goverance_管理方法.md",
+    "Chapter_04_02_Goverance_Provisioning/image/Pasted image 20230515191008.png",
+    "Chapter_04_02_Goverance_Provisioning/image/Pasted image 20230515190929.png",
+    "Chapter_04_02_Goverance_Provisioning/image/Pasted image 20230515190656.png",
+    "Chapter_04_02_Goverance_Provisioning/image/Pasted image 20230515185453.png",
+    "Chapter_04_02_Goverance_Provisioning/image/Pasted image 20230515184322.png",
+    "Chapter_04_02_Goverance_Provisioning/image/Pasted image 20230515182704.png",
+    "Chapter_04_01_Identity_ApplicationIntegration_Container/Chapter_04_03_Containers.md",
+    "Chapter_04_02_Goverance_Provisioning/image",
+    "Chapter_04_02_Goverance_Provisioning",
+    "Chapter_04_01_Identity_ApplicationIntegration_Container/image/Pasted image 20230515180929.png",
+    "Chapter_04_01_Identity_ApplicationIntegration_Container/Chapter_04_02_ApplicationIntegration.md",
+    "Chapter_04_01_Identity_ApplicationIntegration_Container/image/Pasted image 20230515180252.png",
+    "Chapter_04_01_Identity_ApplicationIntegration_Container/image/Pasted image 20230515175730.png",
+    "Chapter_04_01_Identity_ApplicationIntegration_Container/image/Pasted image 20230515175327.png",
     "Chapter_03_AWS_Main_Services/Chapter_03_AWS_Main_Services.md",
     "Chapter_03_TechnolgyOverview/Chapter_03_TechnologiesOverview.md",
-    "Chapter_04_01_/Chapter_04_02_ApplicationIntegration.md",
-    "视频内容.md",
-    "Chapter_04_01_/Chapter_04_01_Identity.md",
+    "Chapter_04_01_Identity_ApplicationIntegration_Container/Chapter_04_01_Identity.md",
     "Chapter_04_01_/未命名",
-    "Chapter_04_01_/image/Pasted image 20230514202241.png",
-    "Chapter_04_01_/image/Pasted image 20230514201311.png",
-    "Chapter_04_01_/image/Pasted image 20230514200745.png",
-    "Chapter_04_01_/image/Pasted image 20230514193031.png",
-    "Chapter_04_01_/image/Pasted image 20230514191826.png",
-    "Chapter_04_01_/image/Pasted image 20230514191807.png",
-    "Chapter_04_01_/image/Pasted image 20230514191421.png",
-    "Chapter_04_01_/image",
+    "Chapter_04_01_Identity_ApplicationIntegration_Container/image",
     "Chapter_06_03_VariationStudy/Chapter_06_03_VariationStudy.md",
-    "Chapter_04_01_",
+    "Chapter_04_01_Identity_ApplicationIntegration_Container",
     "Chapter_06_02_Security/Chapter_06_02_Security.md",
     "Chapter_06_01_BillingAndPricing/Chapter_06_01_BillingAndPricing.md",
     "Chapter_06_01_BillingAndPricing/image",
@@ -194,15 +197,11 @@
     "官方Exam-Guide.md",
     "Chapter_03_01_AWS_Services_Compute_Storage/Chapter_03_02_Storage.md",
     "Chapter_03_01_AWS_Services_Compute_Storage/Chapter_03_01_Compute.md",
-    "Chapter_03_02_AWS_Services_Database_Network/image",
-    "Chapter_03_02_AWS_Services_Database_Network",
     "Chapter_02_01_CloudArchitecture_ManagementAndDevelopersTools/Chapter_02_03_Shared Responsibility Model.md",
     "Chapter_01_01_CloudConcepts/Chapter_01_01_Cloud_Concepts.md",
     "Chapter_02_01_CloudArchitecture_ManagementAndDevelopersTools/Chapter_02_02_Management and Developers Tools.md",
     "Chapter_02_01_CloudArchitecture_ManagementAndDevelopersTools/Chapter_02_01_Cloud Architecture.md",
     "Chapter_01_02_DigitalTransformation_GlobalInfrastructur/Chapter_01_03_DigitalTransformation_GlobalInftastructure.md",
-    "AWS服务名的缩写 initialism.md",
-    "Chapter_01_02_DigitalTransformation_GlobalInfrastructur/Chapter_01_04_AWS_Global_Infrastructure.md",
-    "Chapter_01_01_CloudConcepts/Chapter_01_02_GetStartet.md"
+    "AWS服务名的缩写 initialism.md"
   ]
 }

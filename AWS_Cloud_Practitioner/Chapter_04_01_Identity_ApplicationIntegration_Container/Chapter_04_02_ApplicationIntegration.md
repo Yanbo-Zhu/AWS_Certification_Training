@@ -79,8 +79,8 @@ Create APIs that act as a front door for applications to access data, business l
 # 6 State Machines and AWS Step Functions
 9:00:27 State Machines and AWS Step Functions
 
-
-A state machine is an abstract model which decides how one state moves to another based on a series of conditions. **Think of a state machine like a flow chart**.
+A state machine is an abstract model which decides how one state moves to another based on a series of conditions. 
+**Think of a state machine like a flow chart**.
 
 AWS Step Functions (一种服务)
 -   Coordinate multiple AWS Services into a serverless workflow
@@ -88,8 +88,59 @@ AWS Step Functions (一种服务)
 -   Automatically triggers and tracks each step, and retries when there are errors, so your application executes in order and as expected, every time
 -   logs the state of each step, so when things go wrong, you can diagnose and debug problems quickly
 
+![](image/Pasted%20image%2020230515172458.png)
+
 # 7 Event Bus and Amazon Event Bridge
 9:01:23 Event Bus and Amazon Event Bridge
 
-# 8 Application Integration Services
+EventBus and EventBridge
+- An event bus **receives events** from a **source** and **routes events** to a **target** based on **rules**
+
+![](image/Pasted%20image%2020230515173122.png)
+
+
+## 7.1 Amazon Event Bridge (一种服务)
+
+- **EventBridge** is a **serverless** event bus service that is used for application integration by **streaming real-time** data to your applications
+- **EventBridge** was formerly called **Amazon CloudWatch** Events.
+
+![](image/Pasted%20image%2020230515173508.png)
+ 
+- **Event Bus**
+    - Holds event data, defines rules on an event bus to react to events.
+    - **Default Event Bus** — An AWS account has a default event bus  
+    - **Custom Event Bus** — Scoped to multiple accounts or other AWS accounts  
+    - **SaaS Event Bus** — Scoped to with Third-party SaaS Providers
+- **Producers**
+    - AWS Services that emit events
+- **Partner Sources**
+    - Are third-party apps that can emit events to an event bus
+- **Rules**
+    - Determines what events to capture and pass to targets. (100 Rules per bus)
+- **Targets**
+    - AWS Services that consume events (5 targets per rule)
+- **Events**
+    - Data emitted by services. JSON objects that travel (stream) within the event bus.
+
+# 8 AWS 的 Application Integration Services
 9:03:17 Application Integration Services
+
+**Simple Notification Service (SNS)** - a **pub-sub messaging system**. Sends notifications via various formats such as Plain-text **Email**, HTTP/s (**webhooks**) SMS (**text messages**), **SQS** and **Lambda**. Push messages which then are sent to subscribers
+
+**Simple Queue Service (SQS)** is a queueing messaging service. Send events to a queue. Other applications pull the queue for messages. Commonly used for background jobs.
+
+**Step Functions** is a **state machine service**. It coordinates multiple AWS services into serverless workflows. Easily share data among Lambdas. Have a group of lambdas wait for each other. Create logical steps. Also works with Fargate Tasks.
+
+**EventBridge (CloudWatch Events)** is a **serverless event bus** that makes it easy to connect applications together from your own application, third-party services, and AWS services.
+
+**Kinesis** is a **real-time streaming data service**. Create **Producers** which send data to a stream. **Multiple Consumers** can consume data within a stream. Use for real-time analytics, click streams, ingesting data from a fleet of IoT Devices
+
+**Amazon MQ** is a **managed message broker service** that uses **Apache ActiveMQ**
+
+**Managed Kafka Service (MSK)** a **fully managed Apache Kafka service**. Kafka is an open-source platform for building real-time streaming data pipelines and applications. Similar to Kinesis but more robust
+
+**API Gateway** is a fully-managed service for developers to create, publish, maintain, monitor, and secure APIs. You can create API endpoints and route them to AWS services.
+
+**AppSync** is a **fully managed GraphQL service**. GraphQL is an open-source agnostic query adaptor that allows you to query data from many different data sources.
+
+![](image/Pasted%20image%2020230515174407.png)
