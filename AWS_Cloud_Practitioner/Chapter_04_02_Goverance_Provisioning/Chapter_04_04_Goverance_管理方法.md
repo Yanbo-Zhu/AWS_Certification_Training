@@ -84,29 +84,154 @@ manage remediation of a rule:
 就是 这个 rule 没有被 complied, 那这时候 可以怎么 修改 这个 rule 
 ![](image/Pasted%20image%2020230515191008.png)
 
-
 Conformance packs  一致性 
+Conformance packs is a Collection of aws Config rules and remediation actions that can be deployed and monitored as a single entity in your aws account 
 
+![](image/Pasted%20image%2020230520193903.png)
 
+Resource -> Resource Inventory -> Resource timeline
+看 某个 rule, 他的改变轨迹.  比如, 什么时候complied, 先是是否 compliant
+
+![](image/Pasted%20image%2020230520194455.png)
+
+![](image/Pasted%20image%2020230520194508.png)
 
 # 4 AWS Quick Starts
 9:30:15 AWS Quick Starts
 
+[Amazon EC2 Reserved Instances](https://aws.amazon.com/ec2/pricing/reserved-instances/)
+[Amazon EC2 Reserved Instances Pricing](https://aws.amazon.com/ec2/pricing/reserved-instances/pricing/)
+[Amazon EC2 Reserved Instance Marketplace](https://aws.amazon.com/ec2/purchasing-options/reserved-instances/marketplace/)
+[AWS Quick Starts FAQ](https://aws.amazon.com/quickstart/faq/)
+
+**AWS Quick Starts** are **Prebuilt templates** by AWS and AWS Partners to **help deploy a wide range of stacks**
+Reduce hundreds of manual procedures into just a few steps
+
+A Quick Start is composed of **3** parts
+1.  A reference architecture for the deployment
+2.  AWS CloudFormation templates that automate and configure the deployment
+3.  A deployment guide explaining the architecture and implementation in detail
+
+Most Quick Start reference deployments enable you to spin up a fully functional architecture in less than an hour!
+
+
 ## 4.1 AWS QuickStarts Follow Along
 9:31:04 AWS QuickStarts Follow Along
+
+Serverless Bot Framework
+![](image/Pasted%20image%2020230520194958.png)
+
+![](image/Pasted%20image%2020230520195007.png)
+
+![](image/Pasted%20image%2020230520195021.png)
+
+template
+
+![](image/Pasted%20image%2020230520195107.png)
 
 # 5 Tagging
 9:33:37 Tagging
 
+[What is the AWS Management Console?](https://docs.aws.amazon.com/awsconsolehelpdocs/latest/gsg/what-are-resource-groups.html)
+
+**A tag** is a **key and value pair** that you can assign to AWS resources.
+
+![](image/Pasted%20image%2020230520200405.png)
+
+Tags allow you to organize your resources in the following ways:
+-   **Resource management**
+    -   specific workloads, environments eg. Developer Environments
+-   **Cost management and optimization**
+    -   Cost tracking, Budgets, Alerts
+-   **Operations management**
+    -   Business commitments and SLA operations eg. Mission-Critical Services
+-   **Security**
+    -   Classification of data and security impact 
+-   **Governance and regulatory compliance**
+-   **Automation**
+-   **Workload optimization**
+
+**Tag Examples**
+Dept = Finance  
+Status = Approved  
+Team = Compliance  
+Environment = Production  
+Project = Enterprise  
+Location = Canada
+
 ## 5.1 Tag Name Follow Along
 9:34:43 Tag Name Follow Along
+
+![](image/Pasted%20image%2020230520200520.png)
+
+
 
 # 6 Resource Groups
 9:35:48 Resource Groups
 
-## 6.1 Resource Groups Follow Along
+[What is the AWS Management Console?](https://docs.aws.amazon.com/awsconsolehelpdocs/latest/gsg/what-are-resource-groups.html)
+
+**Resource Groups** are a collection of resources that share one or more **tags**
+Helps you organize and consolidate information based on your project and the resources that you use.
+
+Resource Groups can display details about a group of resource based on
+-   Metrics
+-   Alarms
+-   Configuration Settings
+
+At any time you can modify the settings of your resource groups to change what resources appear.
+tag can be used in IAM policy 
+
+Resource Groups appears in the **Global Console Header** and Under **Systems Manager**
+![](image/Pasted%20image%2020230520200754.png)
+
+## 6.1 Tag polices 
+
+Tag polices  helps you to standarise the tag on resource groups or on you account 
+attch the tag in to the entrie organization 
+
+## 6.2 Resource Groups Follow Along
 9:36:38 Resource Groups Follow Along
+
+现在 s3 中创造一些 resource with specifice tag
+![](image/Pasted%20image%2020230520201233.png)
+
+在 aws resource groups 中 创造一个 新的 resource group 
+![](image/Pasted%20image%2020230520201316.png)
+
+![](image/Pasted%20image%2020230520201422.png)
+
+![](image/Pasted%20image%2020230520201439.png)
+
+resource group works with IAM policy 
+![](image/Pasted%20image%2020230520201507.png)
+
 
 # 7 Business Centric Services
 9:42:25 Business Centric Services
 
+一些办公软件 在 aws 中的对应的 services 
+
+[**Amazon Connect**](https://aws.amazon.com/connect/) - `Call center` as a self-service 
+- cloud-based contact center service that makes it easy for any business to deliver better customer service at lower cost.
+
+[**WorkSpaces**](https://aws.amazon.com/workspaces/) - `Virtual Remote Desktops` 
+- a fully managed, secure cloud desktop service. You can use Amazon WorkSpaces to provision either Windows or Linux desktops in just a few minutes and quickly scale to provide thousands of desktops to workers across the globe.
+
+[**WorkDocs**](https://aws.amazon.com/workdocs/?amazon-workdocs-whats-new.sort-by=item.additionalFields.postDateTime&amazon-workdocs-whats-new.sort-order=desc) 
+- a content creation and collaboration service. Easily create, edit, and share content saved centrally in AWS
+
+[**Chime**](https://aws.amazon.com/chime/?chime-blog-posts.sort-by=item.additionalFields.createdDate&chime-blog-posts.sort-order=desc) 
+- AWS platform for `online meetings, video conferencing`, and business calling which elastically scales to meet your capacity needs.
+
+[**WorkMail**](https://aws.amazon.com/workmail/) 
+- Managed `business email`, contacts, and calendar service with support for existing desktop and mobile email client applications
+
+[**Pinpoint**](https://aws.amazon.com/pinpoint/) 
+- Marketing campaign management system you can `use for sending targeted email`, SMS, push notifications, and voice messages.
+
+[**SES**](https://aws.amazon.com/ses/) 
+- Simple Email Service- A cloud based email sending service designed fro marketers and application developers to `send marketing, notifications, and emails.`
+
+[**QuickSight**](https://aws.amazon.com/quicksight/) 
+- A Business Intelligence (BI) service. Connect multiple datasource and quickly visualize data in the form of graphs with little to no programming knowledge.
