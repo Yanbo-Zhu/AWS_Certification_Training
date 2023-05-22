@@ -1,20 +1,40 @@
 # 1 Cloud Architecture Terminologies
 
 Solutions Architect 
+A role in a technical organization that architects a technical solution using multiple systems via researching, documentation, experimentation.
+
+
 Cloud Architect
-    -Avaiablity
-    -Scalability
-    -Elasticity
-    -Fault Tolerance
-    - Disaster Recovery 
+A solutions architect that is focused solely on architecting technical solutions using cloud services.
+A cloud architect needs to understand the following terms and factor them into their design architecture based on the business requirements.
+-   **Availability** - Your ability to ensure service remains available e.g. **Highly Available (HA)**
+-   **Scalability** - Your ability to grow rapidly or unimpeded
+-   **Elasticity** - Your ability to shrink and grow to meet the demand
+-   **Fault Tolerance** - Your ability to prevent a failure
+-   **Disaster Recovery** - Your ability to recover from a failure e.g. **High Durable (DR)**
+
+A Solutions Architect needs to always consider the following business factors:
+-   (Security) How secure is this solution?
+-   (Cost) How much is this going to cost?
+
 
 ![](image/Pasted%20image%2020230331154517.png)
 
 
 ## 1.1 High Availability
 
-High Availability: to remain available by ensuring there ist no single point of failure and/or ensure a certain level of performance 
+High Availability: 
+Your ability for your service to remain available by ensuring there is no single point of failure and/or ensure a certain level of performance
 使用不同的 instance which located in 不同的 availbility zone 
+
+How can you achieve High Availability: 
+Running your workload across multiple **Availability Zones** ensures that if 1 or 2 AZs become unavailable your service/applications remain available.
+
+How can High Availability be implemented on AWS:
+Using Elastic Load Balancer would assist in implementing High Availability
+
+Elastic Load Balancer ​
+A load balancer allows you to evenly distribute traffic to multiple servers in one or more data center. If a data center or server becomes unavailable (unhealthy) the load balancer will route the traffic to only available data centers with servers.​
 
 ![](image/Pasted%20image%2020230331155950.png)
 
@@ -40,6 +60,14 @@ EC2 中
 
 ## 1.2 High Scalability
 
+What is High Scalability?
+Your ability to increase your capacity based on the increasing demand of traffic, memory and computing power
+
+How is High Scalability defined?
+    Vertical Scaling is known as Scaling Up (When Upgrade to a bigger server)
+    Horizontal Scaling is known as Scaling Out (When Add more servers of the same size)
+
+
 Vertical Scaling (Scaling up): Upgrade to a bigger server 
 Horizonal Scaling (Scaling Out): Add more servers of the same size
 
@@ -54,20 +82,49 @@ Vertical Scaling 难以实现 of traditional architecture
 
 ![](image/Pasted%20image%2020230331173117.png)
 
+What is High Elasticity?
+Your ability to automatically increase or decrease your capacity based on the current demand of traffic, memory and computing power
+
+How is Elasticity achieved?
+Elasticity relies on **Horizontal Scaling**. **Vertical Scaling** is generally hard for traditional architecture so you’ll usually only see horizontal scaling described with **Elasticity**.
+**Scaling Out** — Add more servers of the same size
+**Scaling In** — Removing more servers of the same size
+
+How can Elasticity be implemented in AWS?
+[**Auto Scaling Groups (ASG)**](https://docs.aws.amazon.com/autoscaling/ec2/userguide/AutoScalingGroup.html) - are an AWS feature that will automatically add or remove servers based on scaling rules you define.
+
 
 ## 1.4 Highly Fault Tolerance
-The Ability for you service to ensure there is no single point of failure 
+
+What is Highly Fault Tolerant?
+The ability for your service to ensure there is no single point of failure. Preventing the chance of failure
 The Ability that shift traffic to a redundant system in the the primary system fails 
+
+What is a Fail-over?
+Fail-overs are when you have a plan to shift traffic to a redundant system in case the primary system fails
+
+How can Fault Tolerance be achieved?
+A common example is having a copy (secondary) of your database where all ongoing changes are synced. The Secondary is not in-use until a failover occurs and it becomes the primary database.
+
+How can Fault Tolerance be implemented using AWS?
+RDS Multi-AZ - is when you run a duplicate standby database in another Availability Zone in case your primary database fails.
+
 相关的 服务 :  RDS Multi-AZ 
 
 ![](image/Pasted%20image%2020230331173425.png)
 
 ## 1.5 High Durability
 
-The ability to recover from a disaster  , to prevent the loss of data solution
-Disaster Recovery (DR)
-相关的 aws 服务: CloudEndure Disaster Recovery 
+Your ability to recover from a disaster and to prevent the loss of data solutions that recover from a disaster is known as Disaster Recovery (DR)
 
+Questions you should be asking about your Disaster Recovery procedures:
+    Do you have a backup?
+    How fast can you restore that backup?
+    Does your backup still work?
+    How do you ensure current live data is not corrupt?
+
+相关的 aws 服务: CloudEndure Disaster Recovery
+CloudEndure Disaster Recovery continuously replicates your machines into a low-cost staging area in your target AWS account and preferred Region enabling fast and reliable recovery in case of IT data center failures. 
  ![](image/Pasted%20image%2020230331173803.png)
 
 ## 1.6 Disaster Recovery
@@ -76,12 +133,12 @@ A BCP is a document that outlines how a business will continue operating during 
 
 - RPO Recovery Point Objective 
     - The maximum acceptable amount of data loss  after an unplanned data-loss incident, expressed as an amount of time 
-    - How much data are you will to lose 
+        - How much data are you will to lose 
     - The maximum acceptable amount of data loss since the last data revovery point
     - the objective determines what is considered an acceptable loss of data between the last recovery point and the interruption of service and is defined by the organization
 - RTO Recovery Time Objective 
     - The maximum amount of downtime your bussiness can tolerate whithout inccuringa asignificant financial loss 
-    -  How much time are you willing to go down 
+        -  How much time are you willing to go down 
     - The acceptable delay between the interruption of service and restoration of service. 
     - This Objective determine what is considered an acceptable time window when service is unavailable and is defined by the organization
 
@@ -94,6 +151,38 @@ Multiple options for recovery that trade cost vs time to recover
 - cost 越来越大
 - revover 需要的的时间 越来越小
 ![](image/Pasted%20image%2020230331180028.png)
+
+1 **Backup & Restore**
+RPO/RTO (Hours)
+You back up your data and restore it to new infrastructure
+-   Lower priority use cases
+-   Restore data after the event
+-   Deploy resources after the event
+-   Cost $
+
+2 **Pilot Light**
+RPO/RTO (10 mins)
+Data is replicated to another region with minimal services running
+-   Less stringent RTO & RPO
+-   Core Services
+-   Start & scale resources after the event
+-   Cost
+
+3 **Warm Standby**
+RPO/RTO (Minutes)
+Scaled-down copy of your infrastructure running ready to scale up
+-   Business Critical Services
+-   Scale resources after the event
+-   Cost 
+
+4 **Multi-site Active/active**
+RPO/RTO (Real-time)
+Scaled up copy of your infrastructure in another region
+-   Zero downtime
+-   Near-zero loss
+-   Cost 
+
+
 
 ### 1.6.3 RTO Visualized
 
@@ -113,7 +202,7 @@ Multiple options for recovery that trade cost vs time to recover
 
 - RPO Recovery Point Objective 
     - The maximum acceptable amount of data loss  after an unplanned data-loss incident, expressed as an amount of time 
-    - How much data are you will to lose 
+        - How much data are you will to lose 
     - The maximum acceptable amount of data loss since the last data revovery point
     - the objective determines what is considered an acceptable loss of data between the last recovery point and the interruption of service and is defined by the organization
 

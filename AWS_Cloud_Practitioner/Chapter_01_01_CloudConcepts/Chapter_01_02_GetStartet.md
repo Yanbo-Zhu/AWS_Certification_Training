@@ -26,6 +26,24 @@ Some  AWS Services 是=有 region 之分: EC2, S3
 
 
 # 4 AWS Budgets
+
+By default, IAM users and roles within an AWS account can’t access the Billing and Budgets pages even if they have the `AdministratorAccess` policy attached. The AWS account root user can allow IAM users and roles access to Billing console pages by using the **Activate IAM Access** setting. You will still need the AdministratorAccess policy attached, but you will need to do the following using the Root user:
+
+1.  Sign in to your **Root account**
+2.  Go to [My Account](https://console.aws.amazon.com/billing/home?#/account)
+3.  Scroll down, and you should see **IAM User and Role Access to Billing Information**, choose **Edit**
+
+![](https://exampro-support.s3.amazonaws.com/AWS/CCP/Questions/Q2923_1.png)
+
+1.  Select the **Activate IAM Access** checkbox to activate access to the Billing and Cost Management console pages
+
+![](https://exampro-support.s3.amazonaws.com/AWS/CCP/Questions/Q2923_2.png)
+
+1.  Choose **Update**
+2.  Log out of your Root account and log in to your IAM user account. You should be able to see the Billing information.”
+
+----
+
 services name 就是 AWS Budgets
 The first 2 Budgets which you set  are free 
 在 设定 budget 的时候 ,就可以设置 alert 功能,  这样 就会 定期收到 账单 在邮箱里面 

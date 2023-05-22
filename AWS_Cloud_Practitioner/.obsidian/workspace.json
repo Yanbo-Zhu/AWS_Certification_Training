@@ -13,13 +13,38 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Chapter_04_02_Goverance_Provisioning/Chapter_04_05_Provisioning.md",
+                "file": "Chapter_05_01_Serverless_WindowsOnAWS_Logging/Chapter_05_03_logging.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "78cdcbcd25946c1d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Chapter_05_02_MLAIBigData_ArchitectureFramework_TCOMigration/Chapter_05_04_ML_AI_BigData.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "42c3a12e8b246a7c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Chapter_05_02_MLAIBigData_ArchitectureFramework_TCOMigration/Chapter_05_06_TCO_And_Migration.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -93,7 +118,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Chapter_04_02_Goverance_Provisioning/Chapter_04_05_Provisioning.md",
+                "file": "Chapter_05_02_MLAIBigData_ArchitectureFramework_TCOMigration/Chapter_05_06_TCO_And_Migration.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +135,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Chapter_04_02_Goverance_Provisioning/Chapter_04_05_Provisioning.md",
+                "file": "Chapter_05_02_MLAIBigData_ArchitectureFramework_TCOMigration/Chapter_05_06_TCO_And_Migration.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +158,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Chapter_04_02_Goverance_Provisioning/Chapter_04_05_Provisioning.md"
+                "file": "Chapter_05_02_MLAIBigData_ArchitectureFramework_TCOMigration/Chapter_05_06_TCO_And_Migration.md"
               }
             }
           }
@@ -156,53 +181,53 @@
       "workspaces:管理工作区布局": false
     }
   },
-  "active": "aee4f67729b8aac3",
+  "active": "42c3a12e8b246a7c",
   "lastOpenFiles": [
-    "Chapter_04_02_Goverance_Provisioning/image/Pasted image 20230520211824.png",
-    "Chapter_04_02_Goverance_Provisioning/image/Pasted image 20230520211637.png",
-    "Chapter_04_02_Goverance_Provisioning/image/Pasted image 20230520211258.png",
+    "Chapter_05_02_MLAIBigData_ArchitectureFramework_TCOMigration/image/Pasted image 20230522000546.png",
+    "Chapter_05_02_MLAIBigData_ArchitectureFramework_TCOMigration/image/Pasted image 20230522000518.png",
+    "Chapter_03_02_AWS_Services_Database_Network/Chapter_03_04_Network.md",
+    "Chapter_03_01_AWS_Services_Compute_Storage/Chapter_03_02_Storage.md",
+    "Chapter_03_01_AWS_Services_Compute_Storage/Chapter_03_01_Compute.md",
+    "Chapter_02_01_CloudArchitecture_ManagementAndDevelopersTools/Chapter_02_03_Shared_Responsibility_Model.md",
+    "Chapter_02_01_CloudArchitecture_ManagementAndDevelopersTools/Chapter_02_02_Management_And_Developers Tools.md",
+    "Chapter_02_01_CloudArchitecture_ManagementAndDevelopersTools/Chapter_02_01_Cloud Architecture.md",
+    "Chapter_01_02_DigitalTransformation_GlobalInfrastructur/Chapter_01_04_GlobalInfrastructure.md",
+    "Chapter_01_01_CloudConcepts/Chapter_01_01_Cloud_Concepts.md",
+    "Chapter_01_02_DigitalTransformation_GlobalInfrastructur/Chapter_01_03_DigitalTransformation.md",
+    "Chapter_03_02_AWS_Services_Database_Network/Chapter_03_03_Database.md",
+    "Chapter_01_01_CloudConcepts/Chapter_01_02_GetStartet.md",
+    "官方Exam-Guide.md",
+    "AWS服务名的缩写 initialism.md",
+    "AWS-Certified-Cloud-Practitioner_Exam-Guide.pdf",
+    "Chapter_05_02_MLAIBigData_ArchitectureFramework_TCOMigration/Chapter_05_05_AWS_Well-Architected_Framework.md",
+    "Chapter_05_02_MLAIBigData_ArchitectureFramework_TCOMigration/image/Pasted image 20230521190340.png",
+    "Chapter_05_02_MLAIBigData_ArchitectureFramework_TCOMigration/image/Pasted image 20230521190159.png",
+    "Chapter_05_02_MLAIBigData_ArchitectureFramework_TCOMigration/image/Pasted image 20230521190138.png",
+    "Chapter_05_02_MLAIBigData_ArchitectureFramework_TCOMigration/image/Pasted image 20230521190122.png",
+    "Chapter_05_02_MLAIBigData_ArchitectureFramework_TCOMigration/image/Pasted image 20230521190003.png",
+    "Chapter_05_02_MLAIBigData_ArchitectureFramework_TCOMigration/image/Pasted image 20230521185841.png",
+    "Chapter_05_02_MLAIBigData_ArchitectureFramework_TCOMigration/image/Pasted image 20230521185649.png",
+    "Chapter_05_02_MLAIBigData_ArchitectureFramework_TCOMigration/image/Pasted image 20230521183159.png",
+    "Chapter_05_02_MLAIBigData_ArchitectureFramework_TCOMigration/image/Pasted image 20230521182558.png",
+    "Chapter_05_02_MLAIBigData_ArchitectureFramework_TCOMigration/Chapter_05_04_ML_AI_BigData.md",
+    "Chapter_05_02_MLAIBigData_ArchitectureFramework_TCOMigration/image",
+    "Chapter_05_02_MLAIBigData_ArchitectureFramework_TCOMigration/Chapter_05_06_TCO_And_Migration.md",
+    "Chapter_05_01_Serverless_WindowsOnAWS_Logging/Chapter_05_03_logging.md",
+    "Chapter_05_02_MLAIBigData_ArchitectureFramework_TCOMigration",
+    "视频内容.md",
+    "Chapter_03_AWS_Main_Services/Chapter_03_AWS_Main_Services.md",
+    "Chapter_03_TechnolgyOverview/Chapter_03_TechnologiesOverview.md",
+    "Chapter_05_01_Serverless_WindowsOnAWS_Logging/Chapter_05_02_WindowsOnAWS.md",
     "Chapter_05_01_Serverless_WindowsOnAWS_Logging/Chapter_05_01_Serverless.md",
     "Chapter_04_02_Goverance_Provisioning/Chapter_04_05_Provisioning.md",
-    "Chapter_04_02_Goverance_Provisioning/image/Pasted image 20230520211115.png",
-    "Chapter_04_02_Goverance_Provisioning/image/Pasted image 20230520210855.png",
-    "Chapter_04_02_Goverance_Provisioning/image/Pasted image 20230520210624.png",
-    "Chapter_04_02_Goverance_Provisioning/image/Pasted image 20230520210613.png",
-    "Chapter_04_02_Goverance_Provisioning/image/Pasted image 20230520210454.png",
-    "Chapter_04_02_Goverance_Provisioning/image/Pasted image 20230520210435.png",
-    "Chapter_04_02_Goverance_Provisioning/image/Pasted image 20230520210339.png",
-    "Chapter_05_01_Serverless_WindowsOnAWS_Logging/Chapter_05_02_WindowsOnAWS.md",
-    "视频内容.md",
-    "未命名.md",
     "Chapter_05_01_Serverless_WindowsOnAWS_Logging/image",
     "Chapter_05_01_Serverless_WindowsOnAWS_Logging",
-    "Chapter_04_02_Goverance_Provisioning/image/Pasted image 20230520205854.png",
     "Chapter_04_02_Goverance_Provisioning/Chapter_04_04_Goverance_管理方法.md",
     "Chapter_04_01_Identity_ApplicationIntegration_Container/Chapter_04_03_Containers.md",
     "Chapter_04_02_Goverance_Provisioning/image",
     "Chapter_04_02_Goverance_Provisioning",
-    "Chapter_04_01_Identity_ApplicationIntegration_Container/Chapter_04_02_ApplicationIntegration.md",
-    "Chapter_03_AWS_Main_Services/Chapter_03_AWS_Main_Services.md",
-    "Chapter_03_TechnolgyOverview/Chapter_03_TechnologiesOverview.md",
-    "Chapter_04_01_Identity_ApplicationIntegration_Container/Chapter_04_01_Identity.md",
     "Chapter_04_01_/未命名",
     "Chapter_04_01_Identity_ApplicationIntegration_Container/image",
-    "Chapter_06_03_VariationStudy/Chapter_06_03_VariationStudy.md",
-    "Chapter_04_01_Identity_ApplicationIntegration_Container",
-    "Chapter_06_02_Security/Chapter_06_02_Security.md",
-    "Chapter_06_01_BillingAndPricing/Chapter_06_01_BillingAndPricing.md",
-    "Chapter_06_01_BillingAndPricing/image",
-    "Chapter_06_01_BillingAndPricing",
-    "ander",
-    "Chapter_03_03_AWS_Services_EC2/Chapter_03_05_EC2_PricingModels.md",
-    "Chapter_03_03_AWS_Services_EC2/Chapter_03_05_EC2.md",
-    "Chapter_03_03_AWS_Services_EC2/Chapter_04_01_PricingModel.md",
-    "Chapter_04_PricingModel_BillingAndPricing/Chapter_04_02_BillingAndPricing.md",
-    "Chapter_03_02_AWS_Services_Database_Network/Chapter_03_04_Network.md",
-    "Chapter_03_02_AWS_Services_Database_Network/Chapter_03_03_Database.md",
-    "官方Exam-Guide.md",
-    "Chapter_03_01_AWS_Services_Compute_Storage/Chapter_03_02_Storage.md",
-    "Chapter_03_01_AWS_Services_Compute_Storage/Chapter_03_01_Compute.md",
-    "Chapter_02_01_CloudArchitecture_ManagementAndDevelopersTools/Chapter_02_03_Shared Responsibility Model.md",
-    "Chapter_01_01_CloudConcepts/Chapter_01_01_Cloud_Concepts.md"
+    "Chapter_04_01_Identity_ApplicationIntegration_Container"
   ]
 }

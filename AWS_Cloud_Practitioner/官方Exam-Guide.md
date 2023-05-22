@@ -15,6 +15,24 @@ Domain 2: Security and Compliance 25%   16-17 qiestopms
 Domain 3: Technology 33%     21-22 questions
 Domain 4: Billing and Pricing 16%  10-11 questions
 
+
+We have:
+
+1.  **Cloud Concepts** 28%
+2.  **Security** 24%
+3.  **Technology** 36%
+4.  **Billing and Pricing** 12%
+
+The largest portion of the exam is Technology at 36% and Billing and Pricing is the lowest which is funny because I find it to be the most valuable information in the entire course.
+
+With **Cloud Concepts** we need to be able to define the AWS Cloud in its proposition, we need to be able to identify aspects of AWS Cloud Economics and list the different Cloud Architectural Principles.
+
+For **Security** you will learn a variety of AWS Security Services and shared responsibility models.
+
+For **Technology** you will learn all core AWS Services and other AWS Services and Global Infrastructures.
+
+**Billing and Pricing** is how we know how much things cost and how we can save money on AWS, how to compare and contrast various pricing models for AWS, how to recognize the various account structures in relation to ASW Billing and Pricing and how to Identify Resources for Billing Support.
+
 ## 1.1 Domain 1: Cloud Concepts
 1. Define the AWS Cloud and its value proposition
     1. Define the benefits of the AWS cloud including:

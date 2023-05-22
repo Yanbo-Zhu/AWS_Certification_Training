@@ -2,10 +2,36 @@
 # 1 AWS API
 
 AWS API is an HTTP APi and you can interract by sending https requests 
+An API is software that allows two applications/services to talk to each other. The most common type of API is via HTTP/S requests.
+AWS API is an HTTP API and you can interact by sending HTTPS requests, using an application interacting with APIs like Postman.
+Each AWS Service has its own Service Endpoint which you send requests
+
+GET / HTTP/1.1  
+host: monitoring.us-east-1.amazonaws.com  
+x-amz-target: GraniteServiceVersion20100801.GetMetricData  
+x-amz-date: 20180112T092034Z  
+Authorization: AWS4-HMAC-SHA256 Credential=REDACTEDREDACTED/20180411/…..  
+Content-Type: application/json  
+Accept: application/json  
+Content-Encoding: amz-1.0  
+Content-Length: 45  
+Connection: keep-alive
+
+To authorize use you will need generate a signed request You make a separate request with your AWS credentials and get back a token.
+You need to also provide an ACTION and accompanying parameters as the payload
+Rarely do users directly send HTTP requests directly to the AWS API. Its much easier to interact with the API via a variety of Developer Tools
+
+
 在实际中 user 很少 send http request directly to aws api. 一般都是通过 一些 aws service 去跟aws api 互动 
+- HTTP Request:
+    - Directly interact with the AWS API
 - AWS management Console 
+    - A WISWIG Web Interface
 - AWSSDK
+    - Interact with the API using your favourite programming language
 - AWS CLI
+    - Interact with the API via a terminal/shell program
+
 
 https://docs.aws.amazon.com/general/latest/gr/aws-apis.html
 
@@ -38,6 +64,9 @@ https://docs.aws.amazon.com/general/latest/gr/ec2-service.html
 # 2 AWS Management Console
 
 AWS management console is a web-based unified console to build manage and monitor everything from simple web apps to complex cloud deployments 
+Point and Click to manually launch and configure AWS resources with limited programming knowledge.
+This is known as “ClickOps” since you can perform all your system operations via clicks.
+The AWS Management Console is located at: console.aws.amazon.com
 
 https://aws.amazon.com/console/
 
@@ -45,9 +74,32 @@ https://aws.amazon.com/console/
 
 
 # 3 每个 AWS Service 自己的 Console
-aws  services each have their own customized console 
+AWS Service each have their own customized console. You can access these consoles by **searching** the service name
+
+Some AWS Services Console will act as an umbrella console containing many AWS Services: e.g.
+-   VPC Console
+-   EC2 Console
+-   Systems Manager Console
+-   SageMaker Console
+-   CloudWatch Console
 
 # 4 AWS Account ID
+
+Every AWS account has a unique Account ID
+
+The **Account ID** can be easily found by dropping down the current user in the Global Navigation
+
+The AWS Account ID is composed of 12 digits eg:
+-   123456789012
+-   121212121212
+-   498241098510
+
+The AWS Account ID is used
+-   when logging in with a non-root user account
+-   Cross-account roles
+-   Support cases
+
+It is generally good to keep your Account ID private as it is one of many components used to identify an account for the attack by a malicious actor.
 
 ![](image/Pasted%20image%2020230331232112.png)
 
@@ -64,6 +116,15 @@ only from that account id is allowed
 # 5 AWS Tools for PowerShell
 
 let you interact with the aws API via PowerShell Cmdlets 
+
+What is PowerShell?
+PowerShell is a task automation and configuration management framework.
+
+A command-line shell and a scripting language
+Unlike most shells, which accept and return text, PowerShell is built on top of the .NET Common Language Runtime (CLR), and accepts and returns .NET objects.
+
+AWS Tools for PowerShell lets you interact with the AWS API via PowerShell Cmdlets
+Cmdlet is a special type of command in PowerShell in the form of capitalized verb-and-noun e.g. New-S3Bucket
 
 ![](image/Pasted%20image%2020230331232913.png)
 
@@ -108,6 +169,47 @@ Resource ARNs can include a path. Path can include a wildcard character, namely 
 Format variationsn of ARN
 ![](image/Pasted%20image%2020230401144921.png)
 
+The ARN has the following **format variations**
+arn:**partition:service:region:account-id:resource-id**  
+arn:**partition:service:region:account-id:resource-type/resource-id**  
+arn:**partition:service:region:account-id:resource-type:resource-id**  
+
+Partition
+-   aws - AWS Regions
+-   aws-cn - China Regions
+-   aws-us-gov - AWS GovCloud (US) Regions
+
+Service – Identifies the service
+-   ec2
+-   s3
+-   iam
+
+Region – which AWS resource
+-   us-east-1
+-   ca-central-1
+
+Account ID
+-   121212121212
+-   123456789012
+
+Resource ID
+
+Could be a number name or path:
+-   user/Bob
+-   instance/i-1234567890abcdef0
+
+In the AWS Management Console its common to be able to copy the ARN to your clipboard
+arn:aws:s3:::my-bucket
+
+**Paths in ARNs**
+Resource ARNs can include a path Paths can include a wildcard character, namely an asterisk (*)
+
+**IAM Policy ARN Path**
+arn:aws:iam::123456789012:user/Development/product_1234/*
+
+**S3 ARN Path**
+arn:aws:s3:::my_corporate_bucket/Development/*
+
 
 # 7 AWS CLI
 
@@ -115,8 +217,27 @@ https://aws.amazon.com/cli/
 
 CLI allows users to programmatically interact with the aws API via entering single or multi-line commands into a shell or terminal 
 AWS CLI is Python executable programm 
+The AWS CLI can be installed on Windows, Mac or Linux/Unix
+The name of the CLI program is aws
 
 ![](image/Pasted%20image%2020230401151729.png)
+
+What is a CLI?
+A Command Line Interface (CLI) processes commands to a computer program in the form of lines of text.
+Operating systems implement a command-line interface in a shell.
+
+What is a Terminal?
+A terminal is a text only interface (input/output environment)
+
+What is a Console?
+A console is a physical computer to physically input information into a terminal
+
+What is a Shell?
+A shell is the command line program that users interact with to input commands. Popular shell programs:
+    Bash
+    Zsh
+    PowerShell
+
 
 ## 7.1 CLI Terminal Console Shell 
 
@@ -162,8 +283,23 @@ aws s3 help
 aws s3 ls
 
 
-# 8 AWS Software development Kit SDK
-SDK: A Collection of software development tools in one installable package 
+# 8 AWS SDK Software development Kit 
+
+[Software Development Kit (SDK)](https://en.wikipedia.org/wiki/Software_development_kit)
+
+A Software Development Kit (SDK) is a **collection of software development tools** in **one installable package**.
+You can use the **AWS SDK** to programmatically create, modify, delete or interact with AWS resources.
+
+AWS SDK is offered in various programming languages:
+-   Java
+-   Python
+-   Node.js
+-   Ruby
+-   Go
+-   .NET
+-   PHP
+-   JavaScript
+-   C++
 
 ![](image/Pasted%20image%2020230401155402.png)
 
@@ -231,7 +367,10 @@ https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/S3/Client.html#create_bucket
 
 # 9 AWS CloudShell
 
+[What is AWS CloudShell?](https://docs.aws.amazon.com/cloudshell/latest/userguide/welcome.html)
+
 It is a brower-based shell built into the aws management Console 
+AWS CloudShell is scoped per region, Same credentials as logged in user. Free Service!
 - aws Cloudshell is scoped per region
 - 1 GB storage free per aws region 
 - 预装了 很多 tools
@@ -239,16 +378,61 @@ It is a brower-based shell built into the aws management Console
 - 某些 aws region 不支持 cloudshell
 ![](image/Pasted%20image%2020230401202831.png)
 
+
+**Preinstalled Tools**
+AWS CLI, Python, Node.js git, make, pip, sudo, tar, tmux, vim, wget, and zip and more
+
+**Storage included**
+1 GB of storage free per AWS region
+
+**Saved files and settings**
+Files saved in your home directory are available in future sessions for the same AWS region
+
+**Shell Environments**
+Seamlessly switch between
+-   Bash
+-   PowerShell
+-   Zsh
+
 # 10 Infrastructure as Code (LaC)
 
 Write a configuration script to automate creating, updating or destroying cloud infracture 
+-   IaC is a blueprint of your infrastructure.
+-   IaC allows you to easily share, version, or inventory your cloud infrastructure.
+
+AWS has two offerings for writing Infrastructure as Code: 
 AWS CloudFormation and AWS Cloud Development Kit 
+**AWS CloudFormation (CFN)**
+CFN is a Declarative IaC tool
+
+**AWS Cloud Development Kit (CDK)**
+CDK is an Imperative IaC tool.
 
 ![](image/Pasted%20image%2020230401204728.png)
+
+
+
+**Declarative**
+-   You say what you want, and the rest is filled in. ~~Implicit~~ Explicit
+-   More verbose, but zero chance of misconfiguration
+-   Uses scripting languages eg. JSON, YAML, XML
+
+**Imperative**
+-   What you see is what you get. ~~Explicit~~ Implicit
+-   Less verbose, you could end up with misconfiguration
+-   Does more than Declarative
+-   Uses programming languages eg. Python, Ruby, JavaScript
 
 ## 10.1 CloudFormation
 
 write infrastructure as Code as a json or yaml file 
+
+
+AWS CloudFormation allows you to write Infrastructure as Code (IaC) as either a JSON or YAML file.
+CloudFormation is simple but it can lead to large files or is limited in some regard to creating dynamic or repeatable infrastructure compared to CDK.
+CloudFormation can be easier for DevOps Engineers who do not have a background in web programming languages.
+Since CDK generates out CloudFormation it's still important to be able to read and understand CloudFormation in order to debug IaC stacks.
+
 ![](image/Pasted%20image%2020230401205047.png)
 
 ### 10.1.1 CloudFormation 例子
@@ -292,7 +476,19 @@ CloudFormation 中 建立一个 yaml file , 这个用来 创造一个 新的 s3 
 
 ## 10.2 Cloud Development kit (CDK) 
 
+[Construct Hub](https://constructs.dev/)
+[CDK Pipelines: Continuous delivery for AWS CDK applications](https://aws.amazon.com/blogs/developer/cdk-pipelines-continuous-delivery-for-aws-cdk-applications/)
+
 CDK  allows you to use your favorite programming language to implement the  infrastructure as code
+    TypeScript NodeJS Python Java ASP.NET
+
+-   CDK is powered by CloudFormation (it generates out CloudFormation templates)
+-   CDK has a large library of reusable cloud components called CDK Construct [https://constructs.dev](https://constructs.dev)
+-   CDK comes with its own CLI
+-   CDK Pipelines to quickly set up CI/CD pipelines for CDK projects
+-   CDK has a testing framework for Unit and Integration Testing
+
+AWS SDK looks similar, but the key difference is CDK ensures Idempotent of your Infrastructure
 
 ![](image/Pasted%20image%2020230401215533.png)
 
@@ -351,14 +547,41 @@ https://docs.aws.amazon.com/cdk/v2/guide/cli.html
 
 ![](image/Pasted%20image%2020230401222854.png)
 
+AWS Toolkit is an open-source plugin for VSCode to create, debug, deploy AWS resources
+[Working with AWS Services](https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/working-with-aws.html)
+
+**1. AWS Explorer**
+Explore a wide range of AWS resources to your linked AWS Account
+
+**2. AWS CDK Explorer**
+Allows you to explore your stacks defined by CDK.
+
+**3. Amazon Elastic Container Service**
+Provides IntelliSense for ECS task-definitions files
+
+**4. Serverless Applications**
+Create, debug and deploy serverless applications via SAM and CFN
 
 # 12 Access Keys (就是 Aws credentials)
 
-- An access key is a key and secret required to have pragmatic access to database resources when interacting with the awps api outside of the aws management console
+- Access key is a key and secret required to have pragmatic access to database resources when interacting with the awps api outside of the aws management console
 - Access Keys ist Stored in ~/.aws/credentials 
     - Default profile 以及 其他的profile 
 - access keys 通过 aws configure 去设置 
 
+A user must be **granted access** to use Access Keys
+-   Never share your access keys
+-   Never commit access keys to a codebase
+-   You can have two active Access Keys
+-   You can deactivate Access Keys
+-   Access Keys have whatever access a user has to AWS resources.
+
+Access Keys are to be store in ~/.aws/credentials and follow a TOML file format
+**Default** will be the access key used when no profile is specified.
+You can store multiple access keys by giving the **profile** names.
+You can use the **aws configure** CLI command to populate the credential file.
+The AWS SDK will automatically read from these environment variables.
+This is the safe way of using an Access Key within your code.
 
 ![](image/Pasted%20image%2020230401223017.png)
 
@@ -373,6 +596,11 @@ iam 中的 user 的 access key
 
 
 # 13 AWS Documentation
+
+AWS Documentation is a large collection of technical documentation on how to use AWS Services.
+docs.aws.amazon.com
+AWS is very good about providing detailed information about every AWS service.
+The basis of this course and for any AWS Certification will derive mostly from the AWS Documentation
 
 ![](image/Pasted%20image%2020230401223658.png)
 
