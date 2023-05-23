@@ -21,13 +21,16 @@ Example of a 2,500 Virtual Machines (VMs) moved to Amazon EC2
 ![](image/Pasted%20image%2020230522000546.png)
 
 ---
-**CAPEX**
-On-Premis e
+
+
+
+**CAPEX**  Capital expenditure
+On-Premise
 
 Software License Fees
 -   Implementation
 -   Configuration
--   Training
+-   Training![](image/Pasted%20image%2020230522094153.png)
 -   Physical Security
 -   Hardware
 -   IT Personal
@@ -35,9 +38,8 @@ Software License Fees
 
 AWS's Responsibility
 
----
 
-**OPEX**
+**OPEX**   Operational Expenditure
 AWS (75% Savings)
 
 Subscription Fees
@@ -47,6 +49,9 @@ Subscription Fees
 
 # 2 CAPEX vs OPEX
 11:17:40 CAPEX vs OPEX
+
+主要的区别
+- Operational Expenditure 不用再考虑 upfront of equipment
 
 ## 2.1 Capital Expenditure (CAPEX)
 
@@ -89,13 +94,18 @@ A company is considering migrating its workloads from on-premise to the cloud to
 11:20:43 AWS Pricing Calculator
 
 The AWS Pricing Calculator is a free cost estimate tool that can be used within your web browser without the need for an AWS Account to estimate the cost of various AWS services.
-calculator.aws
 
 The AWS Pricing Calculator contains 100+ services that you can configure for a cost estimate.
 To calculate the Total Cost of Ownership an organization needs to compare their existing cost against the AWS costs and so the AWS Pricing Calculator can be used to determine that cost.
 You can export your final estimate to a CSV.
 
+calculator.aws
+
+![](image/Pasted%20image%2020230522095716.png)
+
 11:21:45 AWS Pricing Calculator Follow Along
+
+
 
 # 5 Migration Evaluator
 11:24:14 Migration Evaluator
@@ -107,7 +117,7 @@ You can export your final estimate to a CSV.
 
 Migration Evaluator uses an **Agentless Collector** to collect data from your on-premise infrastructure to extract your on-premise costs
 
-
+![](image/Pasted%20image%2020230522100058.png)
 
 # 6 VM Import Export
 11:25:00 VM Import Export
@@ -125,9 +135,12 @@ vmware, citrix, hyper-v, vhd
 
 ---
 
-Prepare your Virtual Image for Upload
-Upload your Virtual Image to S3
-Use the AWS CLI to Import your Image It will generate an Amazon Machine Image (AMI)
+流程
+1. Prepare your Virtual Image for Upload
+2. Upload your Virtual Image to S3
+3. Use the AWS CLI to Import your Image It will generate an Amazon Machine Image (AMI)
+
+![](image/Pasted%20image%2020230522100154.png)
 
 # 7 Database Migration Service
 11:25:51 Database Migration Service
@@ -136,10 +149,16 @@ Use the AWS CLI to Import your Image It will generate an Amazon Machine Image (A
 [AWS Schema Conversion Tool](https://aws.amazon.com/dms/schema-conversion-tool/?nc=sn&loc=2)
 
 **AWS Database Migration Service (DMS)** allows you to quickly and securely migrate one database to another.
-
 DMS can be used to migrate your on-premise database to AWS.
 
-**Possible Sources:**
+
+**AWS Schema Conversion Tool** is used in many cases to automatically convert a source database schema to a target database schema.
+Each migration path requires a bit of research since not all combinations of sources and targets are possible.
+
+![](image/Pasted%20image%2020230522100318.png)
+
+
+**Possible Sources Database:**
 -   Oracle Database
 -   Microsoft SQL
 -   MySQL
@@ -154,10 +173,7 @@ DMS can be used to migrate your on-premise database to AWS.
 -   Amazon Aurora
 -   Amazon DocumentDB
 
-**AWS Schema Conversion Tool** is used in many cases to automatically convert a source database schema to a target database schema.
-Each migration path requires a bit of research since not all combinations of sources and targets are possible.
-
-**Possible Targets:**
+**Possible Targets Database:**
 -   Oracle Database
 -   Microsoft SQL
 -   MySQL
@@ -185,21 +201,26 @@ Each migration path requires a bit of research since not all combinations of sou
 The AWS Cloud Adoption Framework is a whitepaper to help you plan your migration from on-premise to AWS.
 
 At the highest level, the AWS CAF organizes guidance into **six focus areas**.
+1. Business Perspective
+    1. e.g. Business Managers, Finance Managers, Budget Owners, and Strategy Stakeholders.
+    2. How to update the staff skills and organizational processes to optimize business value as they move ops to the cloud
+2. People Perspective
+    1. e.g. Human Resources, Staffing, People Managers.
+    2. how to update the staff skills and organizational processes to optimize and maintain their workforce, and ensure competencies are in place at the appropriate time.
+3. Governance Perspective
+    1. e.g. CIO, Program Managers, Project Managers, Enterprise Architects, Business Analysts
+    2. how to update the staff skills and organizational processes that are necessary to ensure business governance in the cloud, and manage and measure cloud investments to evaluate their business outcomes.
+4. Platform Perspective
+    1. e.g. CTO, IT Managers, Solution Architects.
+    2. how to update the staff skills and organizational processes that are necessary to deliver and optimize cloud solutions and services.
+5. Security Perspective
+    1. e.g. CISO, IT Security Managers, IT Security Analysts.
+    2. how to update the staff skills and organizational processes that are necessary to ensure that the architecture deployed in the cloud aligns to the organization’s security control requirements, resiliency, and compliance requirements.
+6. Operations Perspective
+    1. e.g. IT Operations Managers, IT Support Managers.
+    2. how to update the staff skills and organizational processes that are necessary to ensure system health and reliability during the move of operations to the cloud and then to operate using agile, ongoing, cloud computing best practices.
 
-**1 Business Perspective** e.g. Business Managers, Finance Managers, Budget Owners, and Strategy Stakeholders.
-How to update the staff skills and organizational processes to optimize business value as they move ops to the cloud
 
-**2 People Perspective** e.g. Human Resources, Staffing, People Managers.
-how to update the staff skills and organizational processes to optimize and maintain their workforce, and ensure competencies are in place at the appropriate time.
 
-**3 Governance Perspective** e.g. CIO, Program Managers, Project Managers, Enterprise Architects, Business Analysts
-how to update the staff skills and organizational processes that are necessary to ensure business governance in the cloud, and manage and measure cloud investments to evaluate their business outcomes.
 
-**4 Platform Perspective** e.g. CTO, IT Managers, Solution Architects.
-how to update the staff skills and organizational processes that are necessary to deliver and optimize cloud solutions and services.
 
-**5 Security Perspective** e.g. CISO, IT Security Managers, IT Security Analysts.
-how to update the staff skills and organizational processes that are necessary to ensure that the architecture deployed in the cloud aligns to the organization’s security control requirements, resiliency, and compliance requirements.
-
-**6 Operations Perspective** e.g. IT Operations Managers, IT Support Managers.
-how to update the staff skills and organizational processes that are necessary to ensure system health and reliability during the move of operations to the cloud and then to operate using agile, ongoing, cloud computing best practices.

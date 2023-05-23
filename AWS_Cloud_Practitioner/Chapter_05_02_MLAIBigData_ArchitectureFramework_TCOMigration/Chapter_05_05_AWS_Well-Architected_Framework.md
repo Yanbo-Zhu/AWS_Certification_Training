@@ -102,7 +102,7 @@ The **Amazon Leadership Principles are a set of principles** used during the com
 7.  Insist on the Highest Standards
 8.  Think Big
 9.  Bias for Action
-10.  Frugality 俭省，节俭
+10.  Frugality 俭省，节俭  frugal
 11.  Earn Trust
 12.  Dive Deep
 13.  Have Backbone; Disagree and Commit
