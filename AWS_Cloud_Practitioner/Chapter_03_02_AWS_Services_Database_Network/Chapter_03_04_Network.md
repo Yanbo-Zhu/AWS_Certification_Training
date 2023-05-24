@@ -130,6 +130,7 @@ Public vs Private Subnets:
 
 cloudfront is a content delivery network and it's used to cache your data all over the place as you can 
 用于缓存网络通信的内容 到 s3 bucket 中
+The best option for the company to ensure that users can view videos with low latency would be to use Amazon CloudFront. CloudFront is a content delivery network (CDN) that speeds up the delivery of static and dynamic web content, such as HTML, CSS, JavaScript, and images, as well as videos.
 
 ![](image/Pasted%20image%2020230513162811.png)
 

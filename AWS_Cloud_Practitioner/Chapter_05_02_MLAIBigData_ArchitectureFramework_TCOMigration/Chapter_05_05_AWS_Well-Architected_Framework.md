@@ -153,6 +153,13 @@ A Pillar of the Well-Architected Framework is **structured** as follows:
 
 # 7 AWS Well-Architected Design Principles (介绍每个 pillar )
 
+
+- Reliablity
+    - The reliability pillar focuses on workloads performing their intended functions and how to recover quickly from failure to meet demands. Key topics include distributed system design, recovery planning, and adapting to changing requirements.
+- Performance Efficiency
+    - The performance efficiency pillar focuses on structured and streamlined allocation of IT and computing resources. Key topics include selecting resource types and sizes optimized for workload requirements, monitoring performance, and maintaining efficiency as business needs evolve.
+
+
 ## 7.1 Operational Excellence
 11:01:59 Operational Excellence
 
