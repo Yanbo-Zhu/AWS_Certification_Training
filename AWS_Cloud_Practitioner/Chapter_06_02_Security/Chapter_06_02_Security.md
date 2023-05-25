@@ -549,7 +549,7 @@ It will alert you of **Findings** which you can automate an incident response vi
 
 ![](image/Pasted%20image%2020230522233210.png)
 
-# 10 Amazon Macie (探测 S3 data access)
+# 10 Amazon Macie (ML Aws 探测 S3 data access)
 [Amazon Macie](https://aws.amazon.com/macie/)
 
 Macie  =  may see
@@ -557,6 +557,7 @@ Macie  =  may see
 用 mahcine learning 的方法 探测 你存在 s3 中的内容 有没有 敏感的, 没有加密的内容
 Macie is a fully managed service that continuously monitors **S3 data access** activity for anomalies, and generates detailed alerts when it detects the risk of unauthorized access or inadvertent data leaks.
 Macie works by using Machine Learning to Analyze your CloudTrail logs
+Amazon Macie is a data security and data privacy service that uses machine learning (ML) and pattern matching to discover and protect your sensitive data.
 
 ![](image/Pasted%20image%2020230314225252.png)
 
@@ -723,31 +724,4 @@ You can also transfer your keys to other commercial HSM solutions to make it eas
 Configure AWS KMS to use AWS CloudHSM cluster as a custom key store rather than the default KMS key store.
 AWS CloudHSM 比 KMS 贵. KMS 是免费的 或者 1 美元 per key
 什么时候要 用AWS CloudHSM; 你是 企业级的, 并且 要  use your encryption keys on FIPS 140-2 Level 3 compliant 
-
-
-# 16 Security Groups vs NACLs (Network Access Control Lists)
-
-Security Groups and NACLs are all within the VPC. But the utility of these are slightly different.
-So in that diagram, you can see that all those instances are contained within a security group,   and they can span multiple subnets. Whereas the  NACLs sit in front of the subnets. 
-And NACLs gonna control access in and out from subnets.  
-
-![](image/Pasted%20image%2020230316093259.png)
-
-## 16.1 NACLs
-- NACLs act as a firewall at the subnet level.  
-- <mark> 通过 Security Groups  只能定义 deny rules </mark>. Via NACLs, you can allow the deny rules.
-    - Example (block a specific IP address to access your a specific Subnet ): The real utility of NACLs is that you can block a specific IP address known for abuse. Because you can have deny rules. And you can say exactly, I want to  deny exactly this IP address. 
-
-## 16.2 Security Groups
-- They act as a firewall at the instance level 
-- <mark> 通过 Security Groups  只能定义 allow rules </mark>
-- 默认情况下关闭所有的交通, 通过 Security Groups  定义 rules. 这些 rules 指定打开那些交通. Security Groups implicitly deny all traffic, and so you have to create allow rules  to get access to things. And so that's  both for inbound and outbound. . 
-    - Example if you wanted to open up Port 22. So you could SSH into an instance, that's an allow  rule you'd create on that security group
-
-## 16.3 Security Groups vs NACLs 比较 
-- they act as a firewall at the instance level, whereas  knackles act as a firewall at the sub net level.  
-- Example (block a specific IP address to access your a specific Subnet  and the )
-    - The real utility of NACLs is that you can block a specific IP address known for abuse. Because you can have deny rules. And you can say exactly, I want to  deny exactly this IP address. 
-    - So the reason you can't do this with security groups is that, because the rules, which are defined in security group,  implicitly denies everything in order for you to deny a single IP and allow everything else,  imagine all the IP addresses in the world, you'd have to create allow rules (via Security Groups) for everything  for those IP addresses, and just exclude that  one IP address, which is like almost impossible.  
-    - So for NACLs, the best use case here is again,  block a specific IP address known for abuse. 
 

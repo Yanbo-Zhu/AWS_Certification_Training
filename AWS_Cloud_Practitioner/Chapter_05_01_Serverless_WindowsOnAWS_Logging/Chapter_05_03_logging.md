@@ -9,6 +9,8 @@ Amazon Web Services (AWS) provides service-specific operational metrics and log 
 
 [**CloudTrail**](https://aws.amazon.com/cloudtrail/?nc2=type_a) - logs all `API calls`(SDK, CLI) between various `AWS services`
 
+https://aws.amazon.com/cloudtrail/features/ "CloudTrail records user activity and API calls across AWS services as events. CloudTrail events help you answer the questions of "who did what, where, and when?""
+
 **Questions that CloudTrail can answer:**
 _Who create this bucket?_ - detect developer mis-configuration
 _Who spun up that expensive EC2 instance?_ - Detect malicious actors

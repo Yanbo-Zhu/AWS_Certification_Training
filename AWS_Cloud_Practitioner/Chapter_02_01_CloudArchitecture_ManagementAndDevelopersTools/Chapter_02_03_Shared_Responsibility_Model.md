@@ -1,5 +1,5 @@
 
-# 2 Introduction to Shared Responsibility Model
+# 1 Introduction to Shared Responsibility Model
 
 Shared Responsibility Model: 
 A cloud security framework that defines the security obligations of the customer versa the cloud service provider. e.g. AWS
@@ -10,7 +10,7 @@ The **type of cloud deployment model** and/or **the scope of the cloud service c
 
 ![](image/Pasted%20image%2020230401230740.png)
 
-# 3 AWS Shared Responsibility Model
+# 2 AWS Shared Responsibility Model
 
 ![](image/Pasted%20image%2020230401231226.png)
 
@@ -23,7 +23,7 @@ The **type of cloud deployment model** and/or **the scope of the cloud service c
     - Configuration
         - if you mis conifguration or dont use the 相应的 aws service to keep them in screct 
 
-### 3.1.1 Customer
+### 2.1.1 Customer
 
 Configuration of Managed Services or Third-Party Software
 -   Platforms
@@ -41,7 +41,7 @@ Security Configuration of Data
 -   Networking Traffic Protection
 -   Customer Data
 
-### 3.1.2 AWS
+### 2.1.2 AWS
 
 Software
 -   Compute
@@ -56,7 +56,7 @@ Hardware / Global Infrastructure
 -   Physical Security
 
 
-# 4 Types of Cloud Responsibilities
+# 3 Types of Cloud Responsibilities
 
 ![](image/Pasted%20image%2020230401231541.png)
 
@@ -74,7 +74,7 @@ Networking 	Networking 	Networking 	Networking
 Legend: Customer is Responsible CSP is Responsible
 
 
-# 5 Shared Responsibility for Compute
+# 4 Shared Responsibility for Compute
 
 Compute as a comparision example of the shared responsibility Model 
 
@@ -184,7 +184,7 @@ AWS
 
 
 
-# 6 Shared Responsibility Model Alternate
+# 5 Shared Responsibility Model Alternate
 
 [Shared Responsibility: What This Means for You as a CISO (Cloud Next '19)](https://www.youtube.com/watch?v=D2zf0SgNdUw)
 [Exploring container security: the shared responsibility model in GKE](https://cloud.google.com/blog/products/containers-kubernetes/exploring-container-security-the-shared-responsibility-model-in-gke-container-security-shared-responsibility-model-gke)
@@ -209,7 +209,7 @@ Responsibility of the cloud: If you can not configure , then you CSP is responsi
 
 
 
-# 7 Shared Responsibility Model Architecture
+# 6 Shared Responsibility Model Architecture
 
 ![](image/Pasted%20image%2020230401234927.png)
 

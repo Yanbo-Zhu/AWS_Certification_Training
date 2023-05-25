@@ -225,6 +225,7 @@ AWS Identity and Access Management (IAM ) you can create and manage AWS users an
 - **IAM Roles**
     - Roles grant AWS resources permissions to specific AWS API actions Associate policies to a Role and then assign it to an AWS resource
 
+Access Analyzer helps you identify the resources in your organization and accounts, such as Amazon S3 buckets or IAM roles, shared with an external entity. This lets you identify unintended access to your resources and data, which is a security risk.
 
 ## 11.1 Anatomy of an IAM Policy
 8:25:05 Anatomy 组成结构 of an IAM Policy

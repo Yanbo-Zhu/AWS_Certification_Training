@@ -40,6 +40,8 @@ A landing zone is a baseline environment following well-architected and best pra
 -   configure your account factory with pre-approved network configuration and region selections
 -   enable self-service for your builders to configure and provision new accounts using AWS Service Catalog
     -  AWS Service Catalog preapproved workflow 
+    - AWS Service Catalog allows organizations to create and manage catalogs of IT services that are approved for use on AWS. These IT services can include everything from virtual machine images, servers, software, and databases to complete multi-tier application architectures.
+    - AWS Service catalog is kind of predefined(by admin) CloudFormation template.
 
 **Guardrails**
 pre-packaged governance rules for security, operations, and compliance that customers can select and apply enterprise-wide or to specific groups of accounts

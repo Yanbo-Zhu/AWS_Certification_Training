@@ -87,8 +87,12 @@ What does a TAM do? (Straight from an AWS Job Posting)
 TAMs follow the Amazon Leadership Principles Especially about being Customer Obsessed!
 TAMs are only available at the Enterprise Support tier.
 
+# 4 AWS infrastructure event management
 
-# 4 AWS Support Follow Along
+https://aws.amazon.com/premiumsupport/programs/iem/
+AWS Infrastructure Event Management (IEM) offers architecture and scaling guidance and operational support during the preparation and execution of planned events, such as shopping holidays, product launches, and migrations. For these events, AWS Infrastructure Event Management will help you assess operational readiness, identify and mitigate risks, and execute your event confidently with AWS experts by your side. The program is included in the Enterprise Support plan and is available to Business Support customers for an additional fee.
+
+# 5 AWS Support Follow Along
 11:38:04 AWS Support Follow Along
 
 
@@ -107,7 +111,7 @@ case history
 
 ![](image/Pasted%20image%2020230522121837.png)
 
-# 5 AWS Marketplace
+# 6 AWS Marketplace
 
 ![](image/Chapter_04_02_BillingAndPricing_03_AWSMarktplace.png)
 
@@ -131,7 +135,7 @@ Products can be offered as
 
 ![](image/Pasted%20image%2020230522122047.png)
 
-# 6 Consolidated Billing (多个 account 一起付钱)
+# 7 Consolidated Billing (多个 account 一起付钱)
 11:47:41 Consolidated Billing
 11:49:07 Consolidated Billing Volume Discounts
 
@@ -147,7 +151,7 @@ You can combine the usage across all accounts in the organization to share the v
 
 ![](image/Chapter_04_02_BillingAndPricing_05_ConsolidatedBilling.png)
 
-## 6.1 Volume Discounts
+## 7.1 Volume Discounts
 [Consolidated billing for AWS Organizations](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/consolidated-billing.html)
 
 AWS has **Volume Discounts** for many services
@@ -169,7 +173,7 @@ Next 40 TB | $0.13 per GB
 ![](image/Chapter_04_02_BillingAndPricing_05_ConsolidatedBilling_VolumnDiscount.png)
 
 
-# 7 AWS Trusted Advisor
+# 8 AWS Trusted Advisor
 
 11:50:38 AWS Trusted Advisor
 11:53:47 AWS Trusted Advisor Follow Along
@@ -356,7 +360,7 @@ AWS provides the following six security checks for free:
 ⌨️ (1:54:13) Follow Along Trusted Advisor
 
 
-# 8 Service Level Agreements SLAs
+# 9 Service Level Agreements SLAs
 
 11:58:29 SLAs
 
@@ -380,7 +384,7 @@ Target percentages
 -   99.999999999% (commonly called **Nine nines**)
 -   99.99999999999% (commonly called ~~Nine elevens~~ **Eleven nines**)
 
-## 8.1 AWS SLA Examples
+## 9.1 AWS SLA Examples
 11:59:57 AWS SLA Examples
 
 [AWS Service Level Agreements (SLAs)](https://aws.amazon.com/legal/service-level-agreements/)
@@ -391,7 +395,7 @@ Target percentages
 In the event Amazon RDS does not meet the Monthly Uptime Percentage commitment, you will be eligible to receive a Service Credit as described below.
 
 
-## 8.2 **DynamoDB SLA**
+## 9.2 **DynamoDB SLA**
 AWS will use commercially reasonable efforts to make DynamoDB available with a Monthly Uptime Percentage for each AWS region, during any monthly billing cycle, of (a) at least 99.999% if the Global Tables SLA applies, or (b) at least 99.99% if the Standard SLA applies
 
 In the event DynamoDB does not meet the Service Commitment, you will be eligible to receive a Service Credit as described below
@@ -412,7 +416,7 @@ Less than 99.99% but equal to or greater than 99.0%, Less than 99.0% but equal t
 10%, 25%, 100%
 
 
-## 8.3 **Compute SLAs**
+## 9.3 **Compute SLAs**
 
 -   Amazon Elastic Compute Cloud (Amazon EC2)*
 -   Amazon Elastic Block Store (Amazon EBS)
@@ -437,7 +441,7 @@ Instance-Level SLA
 Less than 99.5% but equal to or greater than 99.0%, Less than 99.0% but equal to or greater than 95.0%, Less than 95.0%
 10%, 30%, 100%
 
-## 8.4 **RDS SLA**
+## 9.4 **RDS SLA**
 
 AWS will use commercially reasonable efforts to make Multi-AZ instances available with a Monthly Uptime Percentage of at least 99.95% during any monthly billing cycle
 
@@ -452,12 +456,12 @@ In the event Amazon RDS does not meet the Monthly Uptime Percentage commitment, 
 Less than 99.95% but equal to or greater than 99.0%, Less than 99.0% but equal to or greater than 95.0%, Less than 95.0%
 10%, 25%, 100%
 
-## 8.5 AWS SLA Follow Along
+## 9.5 AWS SLA Follow Along
 12:02:48 AWS SLA Follow Along
 
 ![](image/Pasted%20image%2020230522124130.png)
 
-# 9 Service Health Dashboard
+# 10 Service Health Dashboard
 12:03:23 Service Health Dashboard
 [AWS Personal Health Dashboard](https://aws.amazon.com/premiumsupport/technology/personal-health-dashboard/)
 
@@ -466,7 +470,7 @@ An icon and details will indicate the status of each AWS Service
 
 ![](image/Pasted%20image%2020230522124204.png)
 
-## 9.1 AWS Personal Health Dashboard (针对你个人的)
+## 10.1 AWS Personal Health Dashboard (针对你个人的)
 12:04:03 AWS Personal Health Dashboard
 [Automating processes for handling and remediating AWS Abuse alerts](https://aws.amazon.com/blogs/mt/automating-processes-for-handling-and-remediating-aws-abuse-alerts/)
 
@@ -480,7 +484,7 @@ Use these alerts to get notified about changes that can affect your AWS resource
 
 ![](image/Pasted%20image%2020230522124259.png)
 
-# 10 AWS Abuse (骚扰行为)
+# 11 AWS Abuse (骚扰行为)
 12:04:56 AWS Abuse
 
 [Automating processes for handling and remediating AWS Abuse alerts](https://aws.amazon.com/blogs/mt/automating-processes-for-handling-and-remediating-aws-abuse-alerts/)
@@ -510,14 +514,14 @@ You have evidence that AWS resources are used to host or distribute prohibited c
 You have evidence that AWS resources are used to distribute software that was knowingly created to compromise or cause harm to computers or machines that it's installed on.
 
 
-## 10.1 AWS Abuse Report Follow Along
+## 11.1 AWS Abuse Report Follow Along
 12:06:32 AWS Abuse Report Follow Along
 
 ![](image/Pasted%20image%2020230522124550.png)
 
 ![](image/Pasted%20image%2020230522124605.png)
 
-# 11 AWS Free Tier
+# 12 AWS Free Tier
 12:07:14 AWS Free Tier
 
 [AWS Free Tier](https://aws.amazon.com/free/)
@@ -569,7 +573,7 @@ Best Deals *
 -   1M free request per month
 -   3.2M seconds of compute time per month
 
-# 12 AWS Credits
+# 13 AWS Credits
 12:10:09 AWS Credits
 
 [AWS credits](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/useconsolidatedbilling-credits.html)
@@ -586,7 +590,7 @@ AWS Credits generally have an expiry date attached to them.
 AWS Credits can be used for most services but there are exceptions where AWS Credits cannot be used eg. Purchasing a domain via Route53
 
 
-# 13 AWS Partner Network
+# 14 AWS Partner Network
 12:11:06 AWS Partner Network
 
 [AWS Partner Network](https://aws.amazon.com/partners/)
@@ -611,7 +615,7 @@ Technology Partner – you build technology on top of AWS as a service offering
 -   Being part of the APN is a requirement to be a Sponsor with a vendor booth at AWS Events
 
 
-# 14 AWS Budgets
+# 15 AWS Budgets
 
 12:13:28 AWS Budgets
 
@@ -648,7 +652,7 @@ You can see your budget history, download it as a CSV
 ![](image/Pasted%20image%2020230308161611.png)
 
 
-## 14.1 AWS Budget Reports
+## 15.1 AWS Budget Reports
 12:15:10 AWS Budget Reports
 
 AWS Budget Report is used alongside AWS Budgets to create and send daily, weekly, or monthly reports to monitor the performance of your AWS Budget that will be emailed to specific emails.
@@ -658,7 +662,7 @@ AWS Budget Reports serve as a more convenient way of staying on top of reports s
 ![](image/Pasted%20image%2020230522125601.png)
 
 
-## 14.2 AWS Budgets Follow Along
+## 15.2 AWS Budgets Follow Along
 
 ![](image/Pasted%20image%2020230308162817.png)
 
@@ -668,7 +672,7 @@ AWS Budget Reports serve as a more convenient way of staying on top of reports s
 
 
 
-# 15 AWS Cost and Usage Report
+# 16 AWS Cost and Usage Report
 用这个服务可以生成一个 csv, 里面有 关于 花费的情况 .  
 这个csv  必须导入到 S3,  然后 利用 aws 中的 其他功能 可以将 这个 表 视觉化出来 
 [Amazon EC2 Reserved Instances](https://aws.amazon.com/ec2/pricing/reserved-instances/)
@@ -685,7 +689,7 @@ CUR data is stored in a CSV (GZIP) or Parquet format in your selected S3 bucket
 
 ![](image/Pasted%20image%2020230308224409.png)
 
-## 15.1 例子 
+## 16.1 例子 
 
 
 ![](image/Pasted%20image%2020230308224713.png)
@@ -704,7 +708,7 @@ CUR data is stored in a CSV (GZIP) or Parquet format in your selected S3 bucket
 
 ![](image/Pasted%20image%2020230308225252.png)
 
-# 16 Cost Allocation Tags
+# 17 Cost Allocation Tags
 
 12:16:49 Cost Allocation Tags
 [Using Cost Allocation Tags](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/cost-alloc-tags.html)
@@ -722,7 +726,7 @@ You have to **activate** the tags you want to show up in the report
 
 ![](image/Pasted%20image%2020230522125852.png)
 
-# 17 Billing Alerts/Alarms
+# 18 Billing Alerts/Alarms
 12:17:37 Billing Alarms
 
 You can create your own Alarms in CloudWatch Alarms to monitor spending. They are commonly called “Billing Alarms”
@@ -733,7 +737,7 @@ Billing Alarms are much more flexible than AWS Budgets and ideal for more comple
 
 ![](image/Pasted%20image%2020230522125923.png)
 
-# 18 AWS Cost Explorer
+# 19 AWS Cost Explorer
 
 对应的服务是 aws cost management 
 
@@ -766,7 +770,7 @@ Cost Explorer shows up in **US-East-1**, 其他区域不能使用
 
 ![](image/Pasted%20image%2020230522130204.png)
 
-## 18.1 AWS Cost Explorer Follow Among
+## 19.1 AWS Cost Explorer Follow Among
 
 ![](image/Pasted%20image%2020230522130519.png)
 
@@ -780,14 +784,14 @@ Costs for EC2-Other include things such EBS, Data transfer, Load Balancers, etc.
 If you'd really want to check internally what you're being charged for, go to "Cost Explorer", select the monthly cost report, filter on the right the "EC2-Other" service, and group by "Usage Type"
 
 
-## 18.2 billing Dashboard
+## 19.2 billing Dashboard
 
 ![](image/Pasted%20image%2020230522130543.png)
 
 ![](image/Pasted%20image%2020230522130602.png)
 
 
-# 19 Programmatic Pricing APIs
+# 20 Programmatic Pricing APIs
 12:22:03 Programmatic Pricing APIs
 
 用 api 的方式 获取 prcing info 
@@ -804,7 +808,7 @@ You can also subscribe to Amazon Simple Notification Service (Amazon SNS) notifi
 AWS prices change periodically, such as when AWS cuts prices when new instance types are launched, or when new services are introduced
 
 
-# 20 AWS Savings Plan Follow Along
+# 21 AWS Savings Plan Follow Along
 12:23:06 AWS Savings Plan Follow Along
 
 save money 的一些建议 

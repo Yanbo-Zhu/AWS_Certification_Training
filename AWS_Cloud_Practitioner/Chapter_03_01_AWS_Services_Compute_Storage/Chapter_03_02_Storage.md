@@ -163,6 +163,10 @@ Data is delivered to Amazon S3
 进入到 aws service Quotas 
 ![](image/Pasted%20image%2020230403150311.png)
 
+https://aws.amazon.com/about-aws/whats-new/2021/04/service-quotas-available-aws-govcloud-us-regions/
+You can now use Service Quotas in AWS GovCloud (US) Regions to view and manage your service quotas at scale as your AWS workloads grow.
+The AWS Service Quotas service can be used by companies to centrally request and track service limit increases for their AWS accounts. AWS Service Quotas enables you to view and manage your AWS service quotas in a single location, monitor usage, and request increases for those quotas.
+
 ![](image/Pasted%20image%2020230403150320.png)
 
 

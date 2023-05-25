@@ -406,6 +406,7 @@ For workloads that need to meet compliance boundaries strictly defining the data
     - **IAM Policies** can be written explicitly to deny access to specific AWS Regions. A Service Control Policy (SCP) are permissions applied organization-wide.
 - Services Control Policy (SCP)
     - if you wanted to have it organizational wide across all of your aws accounts you can use something called a service control policy
+    -  A global media company uses AWS Organizations to manage multiple AWS accounts. Which AWS service or feature can the company use to limit the access to AWS services for member accounts? 答案是 Services Control Policy
 
 ![](image/Pasted%20image%2020230321002131.png)
 

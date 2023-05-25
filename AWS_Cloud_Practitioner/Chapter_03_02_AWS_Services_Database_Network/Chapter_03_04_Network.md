@@ -40,9 +40,17 @@
     - is a dedicated Gigabit network connection from your premises location to AWS. Provides a direct fiber optic cable running straight to the AWS network
 - VPN - establishes a secure connection to your AWS network
     - Site-to-Site VPN - connecting your on-premise to your AWS network
+        -  Which of the following are components of an AWS Site-to-Site VPN connection? (Choose two.): Virtual private gateway and Customer gateway 
+        - The VPC has an attached virtual private gateway, and your on-premises (remote) network includes a customer gateway device, which you must configure to enable the Site-to-Site VPN connection. You set up the routing so that any traffic from the VPC bound for your network is routed to the virtual private gateway.
     - Client VPN - connecting a Client (ie users laptop) to your AWS network
-- PrivateLinks (VPC Interface Endpoints) 
+- VPC Private Links (VPC Interface Endpoints) 
     - keeps traffic within the AWS network and not traverse the internet to keep traffic is secure.​
+    - AWS PrivateLink provides private connectivity between virtual private clouds (VPCs), supported AWS services, and your on-premises networks without exposing your traffic to the public internet.
+    - VPC Private Link is a way of making your service available to set of consumers. You can expose a service and the consumers can consume your service by creating an endpoint for your service.  With PrivateLink, endpoints are instead created directly inside of your VPC, using Elastic Network Interfaces (ENIs) and IP addresses in your VPC's subnets. 
+    - To use AWS PrivateLink, create a VPC endpoint in your VPC, specifying the name of the service and a subnet. This creates an elastic network interface in the subnet that serves as an entry point for traffic destined to the service. The service is now in your VPC, enabling connectivity to AWS services via private IP addresses.
+- AWS Transit Gateway
+    - A large enterprise with multiple VPCs in several AWS Regions around the world needs to connect and centrally manage network connectivity between its VPCs. Which AWS service or feature meets these requirements? use AWS Transit Gateway
+        - AWS Transit Gateway is a service that simplifies network connectivity between VPCs, VPNs, and on-premises networks. It allows the company to centrally connect to multiple VPCs in different AWS regions using a single gateway, making it easier to manage large-scale network connectivity.
 
 
 # 3 Virtual Private Cloud (VPC) & Subnets
@@ -64,27 +72,64 @@ Public vs Private Subnets:
 - Public subnet is one that can reach the Internet. Public subnet are generally used for placing resources which are accessible on the internet
 - Private subnet is one that can not reach the internet. Private subnet are used when you need resources to be more secured and only accessible through tightly filtered traffic into the subnet
 
-# 4 Security Groups vs NACLs
+## 3.1 VPC peeruing 
+
+You can create a VPC peering connection between your own VPCs, or with a VPC in another AWS account. The VPCs can be in different Regions. AWS uses the existing infrastructure of a VPC to create a VPC peering connection.   Answer = Peering
+
+VPC peering can be used to establish a connection between two VPCs located in different AWS Regions while using their existing infrastructure. VPC peering allows traffic to flow between the two VPCs privately using AWS' network. This can be useful for scenarios where there is a need to transfer data between VPCs in different regions without exposing the data to the public internet.
+
+
+
+# 4 Security Groups vs NACLs (Network Access Control Lists)
 6:39:49 Security Groups vs NACLs
 
 [Security groups for your VPC](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_SecurityGroups.html)
 
+Security Groups and NACLs are all within the VPC. But the utility of these are slightly different.
+So in that diagram, you can see that all those instances are contained within a security group,   and they can span multiple subnets. Whereas the  NACLs sit in front of the subnets. 
+And NACLs gonna control access in and out from subnets.  
+
+![](image/Pasted%20image%2020230316093259.png)
+
 ![](image/Pasted%20image%2020230513155137.png)
 
+## 4.1 NACLs
+- NACLs act as a firewall at the subnet level.  
+- <mark> 通过 Security Groups  只能定义 deny rules </mark>. Via NACLs, you can allow the deny rules.
+    - Example (block a specific IP address to access your a specific Subnet ): The real utility of NACLs is that you can block a specific IP address known for abuse. Because you can have deny rules. And you can say exactly, I want to  deny exactly this IP address. 
+    - ==Network ACLs are stateless, which means that responses to allowed inbound traffic are subject to the rules for outbound traffic (and vice versa).  These are stateless, meaning any change applied to an incoming rule isn't automatically applied to an outgoing rule==
+    - Rules are evaluated starting with the lowest numbered rule. As soon as a rule matches traffic, it's applied regardless of any higher-numbered rule that might contradict it.
+
+## 4.2 Security Groups
+- They act as a firewall at the instance level 
+- <mark> 通过 Security Groups  只能定义 allow rules </mark>
+- 默认情况下关闭所有的交通, 通过 Security Groups  定义 rules. 这些 rules 指定打开那些交通. Security Groups implicitly deny all traffic, and so you have to create allow rules  to get access to things. And so that's  both for inbound and outbound. . 
+    - Example if you wanted to open up Port 22. So you could SSH into an instance, that's an allow  rule you'd create on that security group
+
+## 4.3 Security Groups vs NACLs 比较 
+- they act as a firewall at the instance level, whereas  knackles act as a firewall at the sub net level.  
+- Example (block a specific IP address to access your a specific Subnet  and the )
+    - The real utility of NACLs is that you can block a specific IP address known for abuse. Because you can have deny rules. And you can say exactly, I want to  deny exactly this IP address. 
+    - So the reason you can't do this with security groups is that, because the rules, which are defined in security group,  implicitly denies everything in order for you to deny a single IP and allow everything else,  imagine all the IP addresses in the world, you'd have to create allow rules (via Security Groups) for everything  for those IP addresses, and just exclude that  one IP address, which is like almost impossible.  
+    - So for NACLs, the best use case here is again,  block a specific IP address known for abuse. 
+
+
 - Network Access Control Lists (NACLs)
+    - stateless
     - Acts as a virtual firewall at the **subnet level**
     - You create **Allow and Deny rules**.
     - eg. Block a specific IP address known for abuse
 - Security Groups
+    - stateful
     - Acts as a virtual firewall at the **instance level**
     - Implicitly denies all traffic. You create **only Allow rules**.
     - eg. Allow EC2 instance access on port 22 for SSH
     - eg. You cannot block a single IP address.
 
-## 4.1 Follow Along
+## 4.4 Follow Along
 6:41:07 Security Groups vs NACLs Follow Along
 
-### 4.1.1 设置新的VPC and Subnet
+### 4.4.1 设置新的VPC and Subnet
 ![](image/Pasted%20image%2020230513160034.png)
 
 ![](image/Pasted%20image%2020230513160253.png)
@@ -92,24 +137,24 @@ Public vs Private Subnets:
 ![](image/Pasted%20image%2020230513160055.png)
 
 
-### 4.1.2 设置新的 Internet Gateway 
+### 4.4.2 设置新的 Internet Gateway 
 ![](image/Pasted%20image%2020230513160436.png)
 
-### 4.1.3 新的Route Table
+### 4.4.3 新的Route Table
 ![](image/Pasted%20image%2020230513160503.png)
 
 ![](image/Pasted%20image%2020230513160642.png)
 
 
-### 4.1.4 ###
+### 4.4.4 ###
 给某个subnet 分配 他的 iPhonev addreasse 
 ![](image/Pasted%20image%2020230513161013.png)
 
-### 4.1.5 生成新的 ec instacne , 让他run 在我们新的 subnet 中 
+### 4.4.5 生成新的 ec instacne , 让他run 在我们新的 subnet 中 
 
 ![](image/Pasted%20image%2020230513161703.png)
 
-### 4.1.6 Security group
+### 4.4.6 Security group
 
 设置 一个 Security group 中的 allows 
 
@@ -120,7 +165,7 @@ Public vs Private Subnets:
 并且将他赋给 某个 ec2 instance
 
 
-### 4.1.7 Access Control Lists (NACLs)
+### 4.4.7 Access Control Lists (NACLs)
 
 ![](image/Pasted%20image%2020230513162343.png)
 
