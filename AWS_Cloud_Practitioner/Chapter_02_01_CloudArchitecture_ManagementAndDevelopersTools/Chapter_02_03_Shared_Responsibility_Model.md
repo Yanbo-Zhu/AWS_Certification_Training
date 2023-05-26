@@ -16,14 +16,23 @@ The **type of cloud deployment model** and/or **the scope of the cloud service c
 
 ![](image/Pasted%20image%2020230401231259.png)
 
+## 2.1 Shared Controls 
+Which IT controls do AWS and the customer share, according to the AWS shared responsibility model? (Choose two.)
+ 
+Controls which apply to both the infrastructure layer and customer layers, but in completely separate contexts or perspectives. 
+In a shared control, AWS provides the requirements for the infrastructure and the customer must provide their own control implementation within their use of AWS services. Examples include: 
+- Patch Management – AWS is responsible for patching and fixing flaws within the infrastructure, but customers are responsible for patching their guest OS and applications. Configuration Management – AWS maintains the configuration of its infrastructure devices, but a customer is responsible for configuring their own guest operating systems, databases, and applications. 
+- Awareness & Training - AWS trains AWS employees, but a customer must train their own employees.
+
+
+### 2.1.1 Customer
+
 
 - Customer's responsibilities  
     - secure the data
         - if you don not turn on monitoring services to monitor sensitive data. It's your fault
     - Configuration
         - if you mis conifguration or dont use the 相应的 aws service to keep them in screct 
-
-### 2.1.1 Customer
 
 Configuration of Managed Services or Third-Party Software
 -   Platforms

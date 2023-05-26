@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "刷题.md",
+                "file": "Chapter_02_01_CloudArchitecture_ManagementAndDevelopersTools/Chapter_02_03_Shared_Responsibility_Model.md",
                 "mode": "source",
                 "source": false
               }
@@ -61,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "technical account manager",
+                "query": "Shared Controls",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -86,7 +86,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -106,7 +107,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "刷题.md",
+                "file": "Chapter_02_01_CloudArchitecture_ManagementAndDevelopersTools/Chapter_02_03_Shared_Responsibility_Model.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +124,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "刷题.md",
+                "file": "Chapter_02_01_CloudArchitecture_ManagementAndDevelopersTools/Chapter_02_03_Shared_Responsibility_Model.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +147,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "刷题.md"
+                "file": "Chapter_02_01_CloudArchitecture_ManagementAndDevelopersTools/Chapter_02_03_Shared_Responsibility_Model.md"
               }
             }
           }
@@ -169,23 +170,23 @@
       "workspaces:管理工作区布局": false
     }
   },
-  "active": "ba7b1296865c75fc",
+  "active": "f395d55323fb4db7",
   "lastOpenFiles": [
+    "Chapter_04_02_Goverance_Provisioning/Chapter_04_04_Goverance_管理方法.md",
+    "Chapter_03_TechnolgyOverview/Chapter_03_TechnologiesOverview.md",
+    "Chapter_01_02_DigitalTransformation_GlobalInfrastructur/Chapter_01_04_GlobalInfrastructure.md",
+    "刷题.md",
     "Chapter_06_01_BillingAndPricing/Chapter_06_01_BillingAndPricing.md",
     "Chapter_02_01_CloudArchitecture_ManagementAndDevelopersTools/Chapter_02_02_Management_And_Developers Tools.md",
     "Chapter_05_01_Serverless_WindowsOnAWS_Logging/Chapter_05_03_logging.md",
     "Chapter_04_01_Identity_ApplicationIntegration_Container/Chapter_04_01_Identity.md",
-    "Chapter_03_TechnolgyOverview/Chapter_03_TechnologiesOverview.md",
     "Chapter_06_02_Security/Chapter_06_02_Security.md",
     "Chapter_03_02_AWS_Services_Database_Network/Chapter_03_04_Network.md",
-    "Chapter_01_02_DigitalTransformation_GlobalInfrastructur/Chapter_01_04_GlobalInfrastructure.md",
     "Chapter_02_01_CloudArchitecture_ManagementAndDevelopersTools/Chapter_02_03_Shared_Responsibility_Model.md",
     "Chapter_01_01_CloudConcepts/Chapter_01_02_GetStartet.md",
     "Chapter_03_01_AWS_Services_Compute_Storage/Chapter_03_01_Compute.md",
-    "Chapter_04_02_Goverance_Provisioning/Chapter_04_04_Goverance_管理方法.md",
     "官方Exam-Guide.md",
     "视频内容.md",
-    "刷题.md",
     "AWS服务名的缩写 initialism.md",
     "Chapter_01_01_CloudConcepts/Chapter_01_01_Cloud_Concepts.md",
     "Chapter_04_02_Goverance_Provisioning/Chapter_04_05_Provisioning.md",

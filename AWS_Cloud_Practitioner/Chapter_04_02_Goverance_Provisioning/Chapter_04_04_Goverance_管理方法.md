@@ -1,10 +1,10 @@
 
-# 1 Organizations and Accounts
+# 1 AWS Organizations and Accounts
 9:16:09 Organizations and Accounts
 
 ![](image/Pasted%20image%2020230515182704.png)
 
--   [**Organizations**](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_org.html) allow the creation of new AWS accounts. Centrally manage billing, control access, compliance, security, and share resources across your AWS accounts.
+-  AWS [**Organizations**](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_org.html) allow the creation of new AWS accounts. Centrally manage billing, control access, compliance, security, and share resources across your AWS accounts.
 -   [**Root Account User**](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_root-user.html) is a single sign-in identity that has complete access to all AWS services and resources in an account. Each account has a Root Account User
 -   [**Organization Units**](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_ous.html) are a group of AWS accounts within an organization which can also contain other organizational units - creating a hierarchy
 -   [**Service Control Policies**](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scp.html) give central control over the allowed permissions for all accounts in your organization, helping to ensure your accounts stay within your organization’s guidelines.
