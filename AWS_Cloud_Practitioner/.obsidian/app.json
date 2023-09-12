@@ -7,10 +7,7 @@
   "readableLineLength": false,
   "showFrontmatter": true,
   "strictLineBreaks": false,
-  "spellcheckLanguages": [
-    "de",
-    "en-US"
-  ],
+  "spellcheckLanguages": null,
   "useTab": false,
   "newLinkFormat": "relative",
   "attachmentFolderPath": "./image",

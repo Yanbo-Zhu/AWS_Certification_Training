@@ -1,6 +1,9 @@
+官方的 AWS Certified Cloud Practitioner (CLF-C01) Exam Guide
 https://d1.awsstatic.com/training-and-certification/docs-cloud-practitioner/AWS-Certified-Cloud-Practitioner_Exam-Guide.pdf
 
 ![](image/Pasted%20image%2020230211182450.png)
+
+![](image/Pasted%20image%2020230601181916.png)
 
 # 1 Exam Concept
 
