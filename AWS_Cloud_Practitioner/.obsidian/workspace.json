@@ -11,8 +11,12 @@
             "id": "c3ffd6b7af063a96",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Chapter_01_01_CloudConcepts/Chapter_01_01_Cloud_Concepts.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -89,6 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Chapter_01_01_CloudConcepts/Chapter_01_01_Cloud_Concepts.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,6 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Chapter_01_01_CloudConcepts/Chapter_01_01_Cloud_Concepts.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +132,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Chapter_01_01_CloudConcepts/Chapter_01_01_Cloud_Concepts.md"
+              }
             }
           }
         ],
@@ -150,6 +158,10 @@
   },
   "active": "c3ffd6b7af063a96",
   "lastOpenFiles": [
+    "Chapter_06_01_BillingAndPricing/Chapter_06_01_BillingAndPricing.md",
+    "Chapter_06_01_BillingAndPricing/Chapter_06_01_Other.md",
+    "Chapter_01_01_CloudConcepts/Chapter_01_01_Cloud_Concepts.md",
+    "Chapter_01_01_CloudConcepts/Chapter_01_02_GetStartet.md",
     "Chapter_05_02_MLAIBigData_ArchitectureFramework_TCOMigration/Chapter_05_05_AWS_Well-Architected_Framework.md",
     "00_资料/WhitePaper/AWS-Certified-Cloud-Practitioner_Exam-Guide.pdf",
     "00_资料/学习视频和 他人笔记.md",
@@ -165,22 +177,18 @@
     "Chapter_04_02_Goverance_Provisioning/Chapter_04_04_Goverance_管理方法.md",
     "Chapter_03_TechnolgyOverview/Chapter_03_TechnologiesOverview.md",
     "Chapter_01_02_DigitalTransformation_GlobalInfrastructur/Chapter_01_04_GlobalInfrastructure.md",
-    "Chapter_06_01_BillingAndPricing/Chapter_06_01_BillingAndPricing.md",
     "Chapter_02_01_CloudArchitecture_ManagementAndDevelopersTools/Chapter_02_02_Management_And_Developers Tools.md",
     "Chapter_05_01_Serverless_WindowsOnAWS_Logging/Chapter_05_03_logging.md",
     "Chapter_04_01_Identity_ApplicationIntegration_Container/Chapter_04_01_Identity.md",
     "Chapter_06_02_Security/Chapter_06_02_Security.md",
     "Chapter_03_02_AWS_Services_Database_Network/Chapter_03_04_Network.md",
-    "Chapter_01_01_CloudConcepts/Chapter_01_02_GetStartet.md",
     "Chapter_03_01_AWS_Services_Compute_Storage/Chapter_03_01_Compute.md",
-    "Chapter_01_01_CloudConcepts/Chapter_01_01_Cloud_Concepts.md",
     "Chapter_04_02_Goverance_Provisioning/Chapter_04_05_Provisioning.md",
     "Chapter_04_01_Identity_ApplicationIntegration_Container/Chapter_04_02_ApplicationIntegration.md",
     "Chapter_05_02_MLAIBigData_ArchitectureFramework_TCOMigration/Chapter_05_04_ML_AI_BigData.md",
     "Chapter_03_01_AWS_Services_Compute_Storage/Chapter_03_02_Storage.md",
     "Chapter_05_01_Serverless_WindowsOnAWS_Logging/Chapter_05_02_WindowsOnAWS.md",
     "Chapter_05_01_Serverless_WindowsOnAWS_Logging/Chapter_05_01_Serverless.md",
-    "Chapter_04_01_Identity_ApplicationIntegration_Container/Chapter_04_03_Containers.md",
     "Chapter_06_02_Security/image/Pasted image 20230523001520.png",
     "Chapter_06_02_Security/image/Pasted image 20230523001449.png",
     "Chapter_06_02_Security/image/Pasted image 20230523001348.png",

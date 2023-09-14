@@ -7,17 +7,15 @@ The "textbook" definition of **Cloud Computing**:
 
 **Cloud Computing** is the practice of using a network of remote servers hosted on the Internet to store, manage, and process data, rather than on a local server or personal computer.
 Cloud computing allows companies or individuals to rent the resources they need for their companies or personal projects like storage space.
-Companies no longer have to purchase physical hardware with expensive IT departments.
-This has helped a lot of smaller companies launch their projects or services quickly.
-Companies can adjust the types of services they need on demand instead of waiting weeks or longer for new servers or other equipment to scale their businesses.
-Individuals no longer need a computer with a huge hard drive for photos or files. They can now store these on services like Google Drive.
+- Companies no longer have to purchase physical hardware with expensive IT departments. This has helped a lot of smaller companies launch their projects or services quickly.
+- Companies can adjust the types of services they need on demand instead of waiting weeks or longer for new servers or other equipment to scale their businesses.
+- Individuals no longer need a computer with a huge hard drive for photos or files. They can now store these on services like Google Drive.
 
 ## 1.1 **On-premises vs Cloud Providers**
 
 
 On-premises 和 Cloud Providers的区别
 ![](image/Pasted%20image%2020230318164103.png)
-
 
 On-premises
 -   You own the servers
@@ -75,7 +73,6 @@ Amazon has expanded beyond just online e-commerce store into:
 
 Andy Jassy is the current CEO of Amazon. Previously the CEO of AWS. So Jeff Bezos can focus on space travel.
 
-
 Amazon is an American multinational computer technology corporation headquartered in Seattle, Washington.
 Amazon was founded in 1994 by Jeff Bezos and the company started as an online store for books and expanded to other products.
 
@@ -90,6 +87,7 @@ Amazon calls their cloud provider service ​**Amazon Web Services​** (Commonl
 **Note:** Cloud Service Providers can be initialized as `CSPs`
 
 # 4 Cloud Service Provider (CSP)
+
 Cloud Service Provider (CSP) ist a company 
 ![](image/Pasted%20image%2020230318165611.png)
 
@@ -111,7 +109,7 @@ There are three main cloud service providers that own the market share. These pr
 ## 4.2 Common Cloud Services
 -   **Compute​** - Imagine having a virtual computer that​ can run applications, programs, and code.
 -   **Networking​** - Imagine having a virtual network that allows you to define internet connections or network isolations
--   **Storage​**- Imagine having a virtual hard-drive that​ can store files
+-   **Storage​** - Imagine having a virtual hard-drive that​ can store files
 -   **Databases​** - Imagine a virtual database for storing and reporting data or a database for general-purpose web-application
 
 > **Note:** - AWS has over 200+ cloud services
@@ -120,6 +118,7 @@ The term **“Cloud Computing”** can be used to refer to all categories, even 
 
 
 # 5 Landscape of CSPs 
+
 ![](image/Pasted%20image%2020230318231352.png)
 
 **Tier-1 (Top Tier)** – Early to market, wide offering, strong synergies between services, well recognized in the industry
@@ -144,9 +143,8 @@ The term **“Cloud Computing”** can be used to refer to all categories, even 
 
 ![](image/Pasted%20image%2020230318231508.png)
 
+
 ![](image/Pasted%20image%2020230318231651.png)
-
-
 
 
 # 7 Common Cloud Services 
@@ -248,7 +246,7 @@ Dedicated Server -> Virtual Machine -> Containers -> Functions
 -   A physical server shared by multiple customers​
 -   You are to pay for a fraction of the server​
 -   You’ll overpay for an underutilized Virtual Machine ​
--   You are limited by your Guest Operating System​
+-   You are limited by your Guest Operating System​ 
 -   Multiple apps on a single Virtual Machine can result in conflicts in resource sharing​
 -   Easy to export or import images for migration​
 -   Easy to Vertically or Horizontally scale​
@@ -278,7 +276,7 @@ Dedicated Server -> Virtual Machine -> Containers -> Functions
 确定是 a lots of work for maintan
 ![](image/Pasted%20image%2020230318233627.png)
 
-4 Functions
+4 Functions/ Serverless Compute​**
 Cold Starts:  where the virtual machine has to spin up and so sometimes requests can be a bit slow so there's a bit of trade-off
 
 ![](image/Pasted%20image%2020230318234429.png)
@@ -314,7 +312,6 @@ There are three main models of Cloud Computing:
 Most basic building blocks of cloud IT infrastructure. It has the most flexibility and management control of all the different cloud computing models. It is the closest to having a traditional on-premises data center.
 
 **Examples:**
-
 -   Amazon Web Services
 -   Microsoft Azure
 -   Google Cloud
@@ -323,7 +320,6 @@ Most basic building blocks of cloud IT infrastructure. It has the most flexibili
 Provides a platform allowing customers to develop, run, and manage applications without the complexity of building and maintaining the infrastructure typically associated with developing and launching an app. Less flexibility than IaaS because of pre-constructed packages.
 
 **Examples:**
-
 -   AWS Elastic Beanstalk
 -   Windows Azure
 -   Heroku
@@ -340,10 +336,8 @@ Completed projects managed by a service provider. Easy to use and comes complete
 
 Public Cloud 
 Private Cloud 
-Hybrid
+Hybrid 
 Cross Cloud : Using Multiple Cloud Providers at same time  , aka multi-cloud, but not hybrid-cloud 
-
-
 
 ![](image/Pasted%20image%2020230319121708.png)
 
@@ -376,7 +370,7 @@ On-premises(Private cloud) Deployment
 
 ## 11.1 Cross-cloud
 
-桥梁的产品: offering for a control plane for cimpute across multiple CSPs and On-premise Environments
+桥梁的产品: offering for a control plane for compute across multiple CSPs and On-premise Environments
 
 - Anthos: google cloud platform 的产品 
 - azure arc : 微软的产品
@@ -411,7 +405,7 @@ The benefits of the cloud are a summary of reasons why an organization would con
     -   Go global in minutes
 -   Security
 -   Reliability
-    -   Stop spending money on running and maintaining data centers
+    -   Stop spending money on running and maintaining data centers 
 -   High Availability
 -   Scalability  
     -   Stop guessing capacity
