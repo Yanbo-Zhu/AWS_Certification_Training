@@ -33,8 +33,8 @@ AWS Global Infrastructure is globally distributed hardware and data centers that
 
 
 The AWS Global Infrastructure is globally distributed hardware and data centers that are physically networked together to act as one large resource for the end customer.
-This is so you, the customer, can access their services no matter where you are located around the globe.
 
+This is so you, the customer, can access their services no matter where you are located around the globe.
 
 -   30 Launched Regions​
 -   96 Availability Zones​
@@ -70,15 +70,13 @@ AZs are within 100 km (60 miles) of each other.
 EC2: 创建一个 ec2 instance 的时候, 需要选 az
 s3: 只用选 aws region, 不需要选 az
 
-
-
 ### 1.2.2 Regions
 
 Region: a Geographically Distinct Location, which has multiple datacentres(AZs).
 
 **Every region is physically isolated from and independent of every other region in terms of location, power, water supply**
 -   Each region has at least two Availability Zones (AZs) ​
--   AWS US-EAST-1 (North Virginia) is the largest region​
+-   AWS US-EAST-1 (North Virginia) is the largest region​ 
 -   New services almost always become available first in US-EAST​
 -   Not all AWS Services are available in all regions​
 -   All your billing information appears in US-EAST-1 (North Virginia)​
@@ -106,7 +104,6 @@ Europa (Paris)  eu-werst-2 是一个单独的 aws region.  (和 eu-werst-2 不�
 Region 的一些常见规律: 
 Each Region generally hat 3 avaiabilty Zones
 ![](image/Pasted%20image%2020230319215924.png)
-
 
 Four Factors has to be condesiderd during choosing a region there 
 ![](image/Pasted%20image%2020230319215841.png)
@@ -148,47 +145,36 @@ Its common practice to run workloads in at least​ 3 AZs to ensure services rem
 
 A data center is a secured building that contains hundreds or thousands of computers
 A Region will generally contain three availability zones. An Availability Zones contains one or more datacenter 
+AZs are represented by a Region Code, followed by a letter identifier , eg. , us-east-1a, us-east-1b,  us-east-1 is name of a region 
 
 ![](image/Domain1_02_AWS_Global_Infrastructure_AvailabilityZones.png)
 
 ![](image/Pasted%20image%2020230320123050.png)
 
+
 ### 1.2.5 subnets and Availability Zones 关系 
 
+Subnet 隶属于 某个 AZs
+EC2 instance launchs in the subnets
+
 ![](image/Pasted%20image%2020230320123305.png)
-
-
 
 ## 1.3 Fault Tolerance  
 
 It's up to the Cloud Service Provider (CSPs) to define the boundaries of a domain
-
 An AWS Region would be a **Fault Level** → Fault Level us-east-1 (Region)
 
-
-Each Amazon Region is designed to be completely **isolated** from the other Amazon Regions.
-
+每个 Region 都是独立的
+- Each Amazon Region is designed to be completely **isolated** from the other Amazon Regions.
 -   This achieves the greatest possible fault tolerance and stability
 
-Each Availability Zone is isolated, but the Availability Zones in a Region are connected through low-latency links  
-Each Availability Zone is designed as an independent failure zone
-
--   A ”Failure Zone” is AWS describing a Fault Domain.
-
-**Failure Zone**
-
--   Availability Zones are physically separated within a typical metropolitan region and are located in lower risk flood plains
--   discrete uninterruptible power supply (UPS) and onsite backup generation facilities
--   data centers located in different Availability Zones are designed to be supplied by independent substations to reduce the risk of an event on the power grid impacting more than one Availability Zone.
--   Availability Zones are all redundantly connected to multiple tier-1 transit providers
-
-**Multi-AZ for High Availability**
-
-If an application is partitioned across AZs, companies are better isolated and protected from issues such as **power outages, lightning strikes, tornadoes, earthquakes**, and more.
+每个 Availability Zone  都是独立的
+- Each Availability Zone is isolated, but the Availability Zones in a Region are connected through low-latency links  
+- Each Availability Zone is designed as an independent failure zone
 
 -----
 
-
+Fault Domain
 - Fault Domain
     - A fault domain is so a fault domain is a section of a network that is vulnerable to damage if a critical device or system fails.  
     - The purpose of a fault domain is that if a failure occurs it will not cascade outside that domain limiting the possible damage
@@ -201,31 +187,32 @@ If an application is partitioned across AZs, companies are better isolated and p
     -  an entire room in a datacenter
     -  the entire data center building
 
-- Fault Level
-    - A Fault level is a collection of fault domains . 
-- Fault level and Fault domain in AWS
+Fault Level
+- A Fault level is a collection of fault domains . 
+- Fault level and Fault domain in AWS 之间的关系 
     - ![](image/Pasted%20image%2020230320132409.png)
-
 - The Isolation of Fault level and Fault Domain 
     - Each amazon region is designed to be completely isolated from the other amazon region. they achieved this with the greatest possible fault tolerance and stability
     - Each availability zone is also isolated but the availability zone in a region are connected through low-latency links
     - Each availability zone is designed as an independent failure zone 
-- Fault Zone in AWS ( = Fault Domain ) 
-    - A ”Failure Zone” is AWS describing a Fault Domain.
-    - ![](image/Pasted%20image%2020230320133016.png)
-    -  Availability Zones are physically separated within a typical metropolitan region and are located in lower risk flood plains
-    -   discrete uninterruptible power supply (UPS) and onsite backup generation facilities
-    -   data centers located in different Availability Zones are designed to be supplied by independent substations to reduce the risk of an event on the power grid impacting more than one Availability Zone.
-    -   Availability Zones are all redundantly connected to multiple tier-1 transit providers
-- Multi-AZ for High Availability 
-    - If an application is partitioned across azs companies are better isolated and protected from issues such as power outages lightning strikes tornadoes earthquakes and more 
+
+--- 
+
+**Failure Zone** 
+-  Failure Zone 和 Fault Domain 之间的关系:   A ”Failure Zone” is AWS describing a Fault Domain.
+-  Availability Zones are physically separated within a typical metropolitan region and are located in lower risk flood plains
+-   discrete uninterruptible power supply (UPS) and onsite backup generation facilities
+-   data centers located in different Availability Zones are designed to be supplied by independent substations to reduce the risk of an event on the power grid impacting more than one Availability Zone.
+-   Availability Zones are all redundantly connected to multiple tier-1 transit providers
+
+---- 
+**Multi-AZ for High Availability**
+- If an application is partitioned across AZs, companies are better isolated and protected from issues such as **power outages, lightning strikes, tornadoes, earthquakes**, and more.
+
 
 [Global Infrastructure](https://docs.aws.amazon.com/whitepapers/latest/aws-overview/global-infrastructure.html)
-
 [Describing fault domains.](https://lethain.com/fault-domains/)
-
 [Fault Domain Awareness](https://mesosphere.github.io/marathon/docs/fault-domain-awareness.html)
-
 [Fault Domains and the Vegas Rule](https://m.subbu.org/fault-domains-and-the-vegas-rule-923fc037119)
 
  

@@ -27,6 +27,9 @@ Some  AWS Services 是=有 region 之分: EC2, S3
 
 # 4 AWS Budgets
 
+原本 只有 root user 才能查看 billing 信息. 
+其他 IAM user 想要这个权利, 必须先 被 root user 打开 **Activate IAM Access** 这个特权
+
 By default, IAM users and roles within an AWS account can’t access the Billing and Budgets pages even if they have the `AdministratorAccess` policy attached. The AWS account root user can allow IAM users and roles access to Billing console pages by using the **Activate IAM Access** setting. You will still need the AdministratorAccess policy attached, but you will need to do the following using the Root user:
 
 1.  Sign in to your **Root account**
@@ -72,7 +75,8 @@ Billing 中设置 收到 free tier usage Alerts 的提醒
 # 6 Billing Alarm (via cloudWatch)
 
 a old new before aws budgets
-使用 cloudWatch  这 Aws services 
+使用 cloudWatch  这 Aws Services 
+
 You get 10 free alarms with a thousand free email notifications each month as part of the free tier
 
 
@@ -94,6 +98,3 @@ You get 10 free alarms with a thousand free email notifications each month as pa
 
 Virtual MFA: 手机 装个 app. 用它来验证. 
 ![](image/Pasted%20image%2020230319142217.png)
-
-
-
