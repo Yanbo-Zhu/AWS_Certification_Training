@@ -4,33 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "321184216ed4f3bc",
+        "id": "495bb580f074080e",
         "type": "tabs",
         "children": [
           {
-            "id": "c3ffd6b7af063a96",
+            "id": "69987b7120db0f1b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Chapter_03_03_AWS_Services_EC2/Chapter_03_05_EC2_PricingModels.md",
+                "file": "2023-10-04/lab7/Lab7.md",
                 "mode": "source",
                 "source": false
               }
             }
-          },
-          {
-            "id": "ed12de165b200641",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.4.14"
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -104,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Chapter_03_03_AWS_Services_EC2/Chapter_03_05_EC2_PricingModels.md",
+                "file": "2023-10-04/lab7/Lab7.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Chapter_03_03_AWS_Services_EC2/Chapter_03_05_EC2_PricingModels.md",
+                "file": "2023-10-04/lab7/Lab7.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -144,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Chapter_03_03_AWS_Services_EC2/Chapter_03_05_EC2_PricingModels.md"
+                "file": "2023-10-04/lab7/Lab7.md"
               }
             }
           },
@@ -177,53 +166,52 @@
       "workspaces:管理工作区布局": false
     }
   },
-  "active": "ed12de165b200641",
+  "active": "69987b7120db0f1b",
   "lastOpenFiles": [
+    "2023-10-04/Modul_14_CourseSummary/Modul_14_Summary.md",
+    "2023-10-04/Modul_14_CourseSummary/image/Pasted image 20231004152843.png",
+    "2023-10-02/课程大纲/1_课程大纲.md",
+    "2023-10-04/lab7/Lab7.md",
+    "2023-10-04/lab7/image/Pasted image 20231004151852.png",
+    "2023-10-04/lab7/image/Pasted image 20231004151651.png",
+    "2023-10-04/lab7/image/Pasted image 20231004151527.png",
+    "2023-10-04/lab7/image/Pasted image 20231004151518.png",
+    "2023-10-04/lab7/image",
+    "2023-10-04/lab7",
+    "2023-10-04/Modul_14_CourseSummary/image/Pasted image 20231004150847.png",
+    "2023-10-04/Modul_14_CourseSummary/image/Pasted image 20231004150044.png",
+    "2023-10-04/Modul_14_CourseSummary/image/Pasted image 20231004145911.png",
+    "2023-10-04/Modul_14_CourseSummary/image/Pasted image 20231004145616.png",
+    "2023-10-04/Modul_14_CourseSummary/image/Pasted image 20231004145505.png",
+    "2023-10-04/Modul_14_CourseSummary/image",
+    "2023-10-04/Modul_13_BackupAndRecovery/Modul_12_1.md",
+    "2023-10-04/Modul_13_BackupAndRecovery/image",
+    "2023-10-04/Modul_12_EdgeServices/Modul_12_1.md",
+    "2023-10-03/Modul_7_Monitoring_LoadBalancing_Scaling/Modul_7_3_AutoScaling.md",
+    "2023-10-03/Modul_6_database_services/Modul_6_1.md",
+    "2023-10-03/Modul_5_Storage/Modul_5_1.md",
+    "2023-10-03/Modul_8_Automation/Modul_8_1.md",
+    "2023-10-04/Modul_12_EdgeServices/image",
+    "2023-10-04/Exam/Exam_preproration.md",
+    "2023-10-04/Exam/image",
+    "2023-10-04/Exam",
+    "2023-10-03/未命名",
+    "2023-10-04/Modul_11_Serverless/Modul_11_1.md",
+    "2023-10-04/Modul_11_Serverless/image",
+    "2023-10-04/Modul_10_Networking2/Modul_10_1.md",
+    "2023-10-04/Modul_10_Networking2/image",
+    "2023-10-03/Modul_9_Container/Modul_9_1.md",
+    "2023-10-03/Modul_7_Monitoring_LoadBalancing_Scaling/Modul_7_2_Load Balancing.md",
+    "2023-10-03/Modul_7_Monitoring_LoadBalancing_Scaling/Modul_7_1_Monitoring.md",
+    "2023-10-02/Modul_4_Compute/Modul_4_1_.md",
+    "2023-10-02/Modul_3_Networking_1/Modul_3_1_.md",
+    "2023-10-02/Modul_2_Account_Security/Modul_2_1.md",
+    "2023-10-02/Modul_1_Architecting_Fundamentals/Modul_1_1_基础知识.md",
+    "2023-10-02/Modul_1_Architecting_Fundamentals/Moud_1_Review.md",
+    "2023-10-02/Modul_1_Architecting_Fundamentals/Modul_1_2 AWS_Well-architected_framework.md",
     "Chapter_03_03_AWS_Services_EC2/Chapter_03_05_EC2.md",
     "Chapter_03_01_AWS_Services_Compute_Storage/Chapter_03_01_Compute.md",
     "Chapter_01_02_DigitalTransformation_GlobalInfrastructur/Chapter_01_04_GlobalInfrastructure.md",
-    "Chapter_01_02_DigitalTransformation_GlobalInfrastructur/Chapter_01_03_DigitalTransformation.md",
-    "Chapter_01_01_CloudConcepts/Chapter_01_02_GetStartet.md",
-    "Chapter_01_01_CloudConcepts/Chapter_01_01_Cloud_Concepts.md",
-    "Chapter_06_01_BillingAndPricing/Chapter_06_01_BillingAndPricing.md",
-    "Chapter_06_01_BillingAndPricing/Chapter_06_01_Other.md",
-    "Chapter_05_02_MLAIBigData_ArchitectureFramework_TCOMigration/Chapter_05_05_AWS_Well-Architected_Framework.md",
-    "00_资料/WhitePaper/AWS-Certified-Cloud-Practitioner_Exam-Guide.pdf",
-    "00_资料/学习视频和 他人笔记.md",
-    "00_资料/官方Exam-Guide.md",
-    "00_资料/刷题.md",
-    "00_资料/WhitePaper/总览.md",
-    "未命名",
-    "00_资料/AWS服务名的缩写 initialism.md",
-    "00_资料/AWS-Certified-Cloud-Practitioner_Exam-Guide.pdf",
-    "00_资料",
-    "00_资料/image/Pasted image 20230601181916.png",
-    "Chapter_02_01_CloudArchitecture_ManagementAndDevelopersTools/Chapter_02_03_Shared_Responsibility_Model.md",
-    "Chapter_04_02_Goverance_Provisioning/Chapter_04_04_Goverance_管理方法.md",
-    "Chapter_03_TechnolgyOverview/Chapter_03_TechnologiesOverview.md",
-    "Chapter_02_01_CloudArchitecture_ManagementAndDevelopersTools/Chapter_02_02_Management_And_Developers Tools.md",
-    "Chapter_05_01_Serverless_WindowsOnAWS_Logging/Chapter_05_03_logging.md",
-    "Chapter_04_01_Identity_ApplicationIntegration_Container/Chapter_04_01_Identity.md",
-    "Chapter_06_02_Security/Chapter_06_02_Security.md",
-    "Chapter_03_02_AWS_Services_Database_Network/Chapter_03_04_Network.md",
-    "Chapter_04_02_Goverance_Provisioning/Chapter_04_05_Provisioning.md",
-    "Chapter_04_01_Identity_ApplicationIntegration_Container/Chapter_04_02_ApplicationIntegration.md",
-    "Chapter_05_02_MLAIBigData_ArchitectureFramework_TCOMigration/Chapter_05_04_ML_AI_BigData.md",
-    "Chapter_03_01_AWS_Services_Compute_Storage/Chapter_03_02_Storage.md",
-    "Chapter_06_02_Security/image/Pasted image 20230523001520.png",
-    "Chapter_06_02_Security/image/Pasted image 20230523001449.png",
-    "Chapter_06_02_Security/image/Pasted image 20230523001348.png",
-    "Chapter_06_02_Security/image/Pasted image 20230523001323.png",
-    "Chapter_06_02_Security/image/Pasted image 20230523001258.png",
-    "Chapter_06_02_Security/image/Pasted image 20230523001244.png",
-    "Chapter_06_02_Security/image/Pasted image 20230523000438.png",
-    "Chapter_06_02_Security/image/Pasted image 20230523000339.png",
-    "Chapter_06_02_Security/image/Pasted image 20230523000257.png",
-    "Chapter_06_01_BillingAndPricing/未命名",
-    "Chapter_05_02_MLAIBigData_ArchitectureFramework_TCOMigration/image",
-    "Chapter_05_02_MLAIBigData_ArchitectureFramework_TCOMigration",
-    "Chapter_05_01_Serverless_WindowsOnAWS_Logging/image",
-    "Chapter_05_01_Serverless_WindowsOnAWS_Logging",
-    "Chapter_04_02_Goverance_Provisioning/image"
+    "Chapter_01_02_DigitalTransformation_GlobalInfrastructur/Chapter_01_03_DigitalTransformation.md"
   ]
 }
