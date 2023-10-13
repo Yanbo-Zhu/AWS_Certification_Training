@@ -10,6 +10,14 @@ In this module, you explored:
 • AWS Fargate 
 • AWS Lambda
 
+In this module, you explored: 
+• Key concepts of Amazon Elastic Compute Cloud (Amazon EC2) 
+• Amazon Elastic Container Service (Amazon ECS) 
+• Amazon Elastic Kubernetes Service (Amazon EKS) 
+• AWS Fargate • AWS Lambda
+
+The next module explores AWS networking offerings
+
 
 ![](image/Pasted%20image%2020231010195019.png)
 
@@ -272,14 +280,8 @@ The correct response option is A. Instance family and instance size.
 
 Explanation: Amazon EC2 provides a wide selection of instance types optimized to fit different use cases. Instance types comprise varying combinations of CPU, memory, storage, and networking capacity and give you the flexibility to choose the appropriate mix of resources for your applications. Each instance type includes one or more instance sizes, allowing you to scale your resources to the requirements of your target workload.
 
-
 ![](image/Pasted%20image%2020231010214625.png)
----
-In this module, you explored: 
-• Key concepts of Amazon Elastic Compute Cloud (Amazon EC2) 
-• Amazon Elastic Container Service (Amazon ECS) 
-• Amazon Elastic Kubernetes Service (Amazon EKS) 
-• AWS Fargate • AWS Lambda
 
-The next module explores AWS networking offerings
+---
+
 
