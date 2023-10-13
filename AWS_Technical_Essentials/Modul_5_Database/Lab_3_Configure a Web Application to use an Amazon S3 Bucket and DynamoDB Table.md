@@ -1,5 +1,5 @@
 
-![](image/Pasted%20image%2020231013112453.png)
+![](../Modul_6_Monitoring_LoadBalancing_Scaling/image/Pasted%20image%2020231013112453.png)
 
 
 

@@ -14,105 +14,8 @@
               "type": "empty",
               "state": {}
             }
-          },
-          {
-            "id": "ed12de165b200641",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Modul_1_Introduction_to_AWS/Lab_1.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "20c248b289bca9eb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "0_总览/介绍.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ae0a318a50da4908",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Modul_3_AWS_Networking/Modul_3.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "6bd8c3b10151429f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Modul_4_Storage/Modul_4.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "d86bbd5991070161",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Modul_4_Storage/Modul_4.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "66bbe29aaa895004",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Modul_5_Database/Modul_5.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "5086297ad29d5a38",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Modul_5_Database/Modul_5.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "9bd4f026668f7db7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Modul_6_Monitoring_LoadBalancing_Scaling/Modul_6.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 8
+        ]
       }
     ],
     "direction": "vertical"
@@ -170,7 +73,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 355.5
+    "width": 259.5
   },
   "right": {
     "id": "75bad08b258c7b53",
@@ -186,7 +89,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Modul_6_Monitoring_LoadBalancing_Scaling/Modul_6.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -203,7 +105,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Modul_6_Monitoring_LoadBalancing_Scaling/Modul_6.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -225,9 +126,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Modul_6_Monitoring_LoadBalancing_Scaling/Modul_6.md"
-              }
+              "state": {}
             }
           },
           {
@@ -245,7 +144,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 203.5
+    "width": 201.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -259,39 +158,40 @@
       "workspaces:管理工作区布局": false
     }
   },
-  "active": "9bd4f026668f7db7",
+  "active": "c3ffd6b7af063a96",
   "lastOpenFiles": [
-    "Modul_6_Monitoring_LoadBalancing_Scaling/image",
+    "Modul_1_Introduction_to_AWS/Lab_1.md",
+    "0_总览/介绍.md",
+    "Modul_3_AWS_Networking/Modul_3.md",
+    "Modul_4_Storage/Modul_4.md",
     "Modul_5_Database/Modul_5.md",
     "Modul_6_Monitoring_LoadBalancing_Scaling/Modul_6.md",
+    "Modul_6_Monitoring_LoadBalancing_Scaling/image/Pasted image 20231013112453.png",
+    "99_Course_Summary/99_Summary.md",
+    "99_Course_Summary/image/Pasted image 20231013145118.png",
+    "99_Course_Summary/image/Pasted image 20231013145101.png",
+    "99_Course_Summary/image/Pasted image 20231013145046.png",
+    "99_Course_Summary/image/Pasted image 20231013144957.png",
+    "99_Course_Summary/image/Pasted image 20231013144931.png",
+    "99_Course_Summary/image/Pasted image 20231013144910.png",
+    "99_Course_Summary/image/Pasted image 20231013144906.png",
+    "99_Course_Summary/image/Pasted image 20231013144842.png",
+    "99_Course_Summary/image/Pasted image 20231013144756.png",
+    "99_Course_Summary/image",
+    "99_Course_Summary",
+    "Modul_6_Monitoring_LoadBalancing_Scaling/Lab_4_Configure_High_Availability_For_Your_Application.md",
+    "Modul_6_Monitoring_LoadBalancing_Scaling/image",
     "Modul_6_Monitoring_LoadBalancing_Scaling",
     "Modul_5_Database/Lab_3_Configure a Web Application to use an Amazon S3 Bucket and DynamoDB Table.md",
-    "image/Pasted image 20231013112453.png",
     "image",
-    "Modul_5_Database/image/Pasted image 20231013112255.png",
-    "Modul_5_Database/image/Pasted image 20231013112156.png",
-    "Modul_5_Database/image/Pasted image 20231013112051.png",
-    "Modul_5_Database/image/Pasted image 20231013112030.png",
-    "Modul_5_Database/image/Pasted image 20231013111950.png",
-    "Modul_5_Database/image/Pasted image 20231013111856.png",
-    "Modul_5_Database/image/Pasted image 20231013111821.png",
-    "Modul_5_Database/image/Pasted image 20231013111729.png",
-    "Modul_5_Database/image/Pasted image 20231013111717.png",
     "Modul_5_Database/image",
-    "Modul_4_Storage/Modul_4.md",
     "Modul_5_Database",
     "Modul_4_Storage/image",
-    "Modul_3_AWS_Networking/Modul_3.md",
     "Modul_4_Storage",
     "Modul_3_AWS_Networking/Lab_2.md",
     "Modul_3_AWS_Networking/image",
-    "0_总览/介绍.md",
     "Modul_2_aws_compute/Modul_2.md",
-    "Modul_3_AWS_Networking",
     "Modul_1_Introduction_to_AWS/Modul_1_.md",
-    "Modul_1_Introduction_to_AWS/Lab_1.md",
-    "Modul_2_aws_compute/image",
-    "Modul_2_aws_compute",
     "Chapter_03_03_AWS_Services_EC2/Chapter_03_05_EC2.md",
     "Chapter_03_01_AWS_Services_Compute_Storage/Chapter_03_01_Compute.md",
     "Chapter_01_02_DigitalTransformation_GlobalInfrastructur/Chapter_01_04_GlobalInfrastructure.md",
@@ -304,8 +204,6 @@
     "00_资料/学习视频和 他人笔记.md",
     "00_资料/官方Exam-Guide.md",
     "00_资料/刷题.md",
-    "00_资料/WhitePaper/总览.md",
-    "00_资料/AWS服务名的缩写 initialism.md",
-    "Chapter_02_01_CloudArchitecture_ManagementAndDevelopersTools/Chapter_02_03_Shared_Responsibility_Model.md"
+    "00_资料/WhitePaper/总览.md"
   ]
 }
