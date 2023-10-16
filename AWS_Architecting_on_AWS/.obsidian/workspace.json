@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2023-10-04/lab7/Lab7.md",
+                "file": "2023-10-02/Modul_2_Account_Security/Modul_2_1.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2023-10-04/lab7/Lab7.md",
+                "file": "2023-10-02/Modul_2_Account_Security/Modul_2_1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2023-10-04/lab7/Lab7.md",
+                "file": "2023-10-02/Modul_2_Account_Security/Modul_2_1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2023-10-04/lab7/Lab7.md"
+                "file": "2023-10-02/Modul_2_Account_Security/Modul_2_1.md"
               }
             }
           },
@@ -168,21 +168,26 @@
   },
   "active": "69987b7120db0f1b",
   "lastOpenFiles": [
+    "2023-10-02/Modul_2_Account_Security/image/Pasted image 20231016202858.png",
+    "2023-10-02/Modul_1_Architecting_Fundamentals/Lab_1_Explore and interact with the AWS Management Console and AWS Command Line Interface.md",
+    "2023-10-02/Modul_1_Architecting_Fundamentals/image/Pasted image 20231016202321.png",
+    "2023-10-02/Modul_1_Architecting_Fundamentals/image/Pasted image 20231016202258.png",
+    "2023-10-02/Modul_1_Architecting_Fundamentals/Moud_1_3_Review.md",
+    "2023-10-02/Modul_1_Architecting_Fundamentals/Modul_1_2 AWS_Well-architected_framework.md",
+    "2023-10-02/Modul_1_Architecting_Fundamentals/Modul_1_1_基础知识.md",
+    "2023-10-02/Modul_1_Architecting_Fundamentals/image/Pasted image 20231016201428.png",
+    "2023-10-02/Modul_1_Architecting_Fundamentals/image/Pasted image 20231016200429.png",
+    "2023-10-02/0_课程大纲/1_课程大纲.md",
+    "2023-10-02/0_课程大纲/image/Pasted image 20231016200127.png",
+    "2023-10-02/0_课程大纲/image/Pasted image 20231016195724.png",
+    "2023-10-02/0_课程大纲/image/Pasted image 20231016195713.png",
+    "2023-10-02/0_课程大纲/image/Pasted image 20231016195621.png",
+    "2023-10-04/lab7/Lab7.md",
     "2023-10-04/Modul_14_CourseSummary/Modul_14_Summary.md",
     "2023-10-04/Modul_14_CourseSummary/image/Pasted image 20231004152843.png",
-    "2023-10-02/课程大纲/1_课程大纲.md",
-    "2023-10-04/lab7/Lab7.md",
     "2023-10-04/lab7/image/Pasted image 20231004151852.png",
-    "2023-10-04/lab7/image/Pasted image 20231004151651.png",
-    "2023-10-04/lab7/image/Pasted image 20231004151527.png",
-    "2023-10-04/lab7/image/Pasted image 20231004151518.png",
     "2023-10-04/lab7/image",
     "2023-10-04/lab7",
-    "2023-10-04/Modul_14_CourseSummary/image/Pasted image 20231004150847.png",
-    "2023-10-04/Modul_14_CourseSummary/image/Pasted image 20231004150044.png",
-    "2023-10-04/Modul_14_CourseSummary/image/Pasted image 20231004145911.png",
-    "2023-10-04/Modul_14_CourseSummary/image/Pasted image 20231004145616.png",
-    "2023-10-04/Modul_14_CourseSummary/image/Pasted image 20231004145505.png",
     "2023-10-04/Modul_14_CourseSummary/image",
     "2023-10-04/Modul_13_BackupAndRecovery/Modul_12_1.md",
     "2023-10-04/Modul_13_BackupAndRecovery/image",
@@ -206,12 +211,8 @@
     "2023-10-02/Modul_4_Compute/Modul_4_1_.md",
     "2023-10-02/Modul_3_Networking_1/Modul_3_1_.md",
     "2023-10-02/Modul_2_Account_Security/Modul_2_1.md",
-    "2023-10-02/Modul_1_Architecting_Fundamentals/Modul_1_1_基础知识.md",
-    "2023-10-02/Modul_1_Architecting_Fundamentals/Moud_1_Review.md",
-    "2023-10-02/Modul_1_Architecting_Fundamentals/Modul_1_2 AWS_Well-architected_framework.md",
     "Chapter_03_03_AWS_Services_EC2/Chapter_03_05_EC2.md",
     "Chapter_03_01_AWS_Services_Compute_Storage/Chapter_03_01_Compute.md",
-    "Chapter_01_02_DigitalTransformation_GlobalInfrastructur/Chapter_01_04_GlobalInfrastructure.md",
-    "Chapter_01_02_DigitalTransformation_GlobalInfrastructur/Chapter_01_03_DigitalTransformation.md"
+    "Chapter_01_02_DigitalTransformation_GlobalInfrastructur/Chapter_01_04_GlobalInfrastructure.md"
   ]
 }

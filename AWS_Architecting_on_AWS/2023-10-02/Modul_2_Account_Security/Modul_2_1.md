@@ -6,13 +6,38 @@
 
 The least privileged access or the least privileged principle
 
-# 2 princple and identities of aws account 
+Imagine that your security specialist meets with you to discuss how to start building accounts with least privilege in AWS. Here are some questions that they are asking about account security.
+At the end of this module, you meet with the security specialist and present some solutions. 
 
+# 2 Princple and identities of aws account 
+
+
+![](image/Pasted%20image%2020231016202858.png)
+
+The security specialist asks, “What are the best practices to manage access to AWS accounts and resources?” 
+The security team must start setting up accounts. 
+The company wants your advice for how to provide access.
 
 ## 2.1 root user 
 ![](image/Pasted%20image%2020231002102423.png)
 
+
+When you first create an AWS account, you begin with a root user. This user has complete access to all AWS services and resources in the account. You access the root user identity by signing in with the email address and password, which were provided when you created the account. AWS strongly recommends that you not use root account credentials for day-to-day interactions with AWS. Create users for everyday tasks. You can manage and audit users with relative ease.
+Create your additional users and assign permissions to these users by following the principle of least privilege. Grant users only the level of access that they require and nothing more. You can start by creating an administrator user. Manage the account with the administrator user instead of the root user.
+As a best practice, require multi-factor authentication (MFA) for your root user. It provides you with an extra layer of security for your AWS accounts. Use your root user only for tasks that require it.
+
+For more information about the root user, see “AWS account root user” in the AWS Identity and Access Management User Guide at https://docs.aws.amazon.com/IAM/latest/UserGuide/id_root-user.html.
+
+For more information about least privilege and IAM best practices, see “Grant least privilege” in the AWS Identity and Access Management User Guide at https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html#grant-least-privilege
+
 ## 2.2 IAM
+
+IAM is a web service that helps you securely control access to AWS resources. Use IAM to control who is authenticated (signed in) and authorized (has permissions) to use resources.
+Think of IAM as the tool to centrally manage access to launching, configuring, managing, and terminating your resources. You have granular control over access permissions. This control is based on resources and helps you define who has permissions to which API calls.
+You manage access in AWS by creating and using security policies. You learn about IAM users, IAM user groups, and roles in this section.
+For more information about IAM, see “What is IAM?” in the AWS Identity and Access Management User Guide at https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html.
+For more information about policy types and their uses, see “Policies and permissions in IAM” at https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html.
+
 
 ![](image/Pasted%20image%2020231002102644.png)
 
@@ -25,19 +50,64 @@ The least privileged access or the least privileged principle
 
 Federated user,
 
+A principal is an entity that can request an action or operation on an AWS resource. IAM users and IAM roles are the most common principals that you work with, and you learn about them in this lesson.
+
+The principal can also be an AWS service, such as Amazon Elastic Compute Cloud (Amazon EC2), a Security Assertion Markup Language 2.0 (SAML 2.0) provider, or an identity provider (IdP). With an IdP, you manage identities outside IAM — for example, Login with Amazon, Facebook, or Google. You can give these external identities permissions to use AWS resources in your account.
+
+Federated users are external identities that IAM does not manage directly.
+For more information about federated users, see “Identity federation in AWS” at https://aws.amazon.com/identity/federation/.
+
+
 # 3 IAM 仔细介绍
 ## 3.1 IAM user
+
+
+
+
 ![](image/Pasted%20image%2020231002103249.png)
+
+By default, a new IAM user has no permissions to do anything. The user is not authorized to perform any AWS operations or access any AWS resources. An advantage of having individual IAM users is that you can assign permissions individually to each user.
+
+For example, this diagram shows three IAM users — an administrator, developer, and auditor — and their permissions within an AWS account. The administrator has permissions to access an Amazon Simple Storage Service (Amazon S3) bucket, an EC2 instance, and a list of IAM users in your account. The auditor has read-only permissions to Amazon S3 and IAM, but not Amazon EC2. The developer only has permissions to the EC2 instance.
+
+As a best practice, require multi-factor authentication (MFA) for your IAM users and set up an IAM user password policy.
+
+For more information about IAM users, see “IAM users” in the AWS Identity and Access Management User Guide at https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users.html.
 
 IAM user 自己的 credentials should never be shared to others
 
 ![](image/Pasted%20image%2020231002103703.png)
 
+
+Provide the type of credentials that are required for the type of access that a user will need.
+
+Ways to access AWS services include: 
+• AWS Management Console access – Create a password for a user.
+• Programmatic access – The IAM user might need to make API calls, use the AWS CLI, or use the AWS SDKs. In that case, you will create an access key (access key ID and a secret access key) for that user.
+
+As a best practice, apply the principle of least privilege, which means that you create only the credentials that the user needs. For example, do not create access keys for a user who requires access only through the console.
+
+AWS requires different types of security credentials, depending on how you access AWS.
+
+For more information, see “Understanding and getting your AWS credentials” in the AWS General Reference at https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html.
+For more information about password creation, see “Managing passwords for IAM users” in the AWS Identity Access and Management User Guide at https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_passwords_admin-change-user.html
+
+
 API: You just exposes resources for you to access any functionalities where it is accessed using a URL
 
 ![](image/Pasted%20image%2020231002104217.png)
 
+Programmatic access gives your IAM user the credentials to make API calls in the AWS CLI or AWS SDKs. AWS provides an SDK for programming languages such as Java, Python, and .NET.
 
+When programmatic access is granted to your IAM user, it creates a unique key pair that comprises an access key ID and a secret access key. Use your key pair to configure the AWS CLI, or make API calls through an AWS SDK.
+
+To set up AWS CLI in your client, enter the aws configure command. The example code shows the four elements that are required to configure your IAM user in AWS CLI: 
+• AWS Access Key ID 
+• AWS Secret Access Key 
+• Default region name
+• Default output format (json, yaml, yaml-stream, text, table)
+
+For more information about configuring your key pair in AWS CLI, see “Configuration basics” in the AWS Command Line Interface User Guide at https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html
 ## 3.2 IAM policy 
 
 ![](image/Pasted%20image%2020231002104426.png)
