@@ -1,4 +1,13 @@
 
+Explore and interact with the AWS Management Console and AWS Command Line Interface 
+
+![](image/Pasted%20image%2020231002094128.png)
+
+
+![](image/Pasted%20image%2020231002094242.png)
+
+
+
 ![](image/Pasted%20image%2020231016202258.png)
 You can use the following tools to interact with AWS: 
 • AWS Management Console – This tool is the easiest place to start interacting with AWS services. It is a graphical user interface (GUI) to manage your AWS account and take actions.

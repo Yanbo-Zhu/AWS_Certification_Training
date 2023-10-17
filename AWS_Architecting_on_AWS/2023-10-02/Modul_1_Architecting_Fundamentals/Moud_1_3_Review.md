@@ -70,12 +70,3 @@ due to the security, give the extractly what i am need, 不给多 , 也不给少
 
 The correct answer is B, security.
 The principle of least privilege (POLP) is a concept in computer security that limits users' access rights to only what is strictly required to do their job
-
-# 1 lab 1
-
-Lab 1 - Explore and interact with the AWS Management Console and AWS Command Line Interface 
-
-![](image/Pasted%20image%2020231002094128.png)
-
-
-![](image/Pasted%20image%2020231002094242.png)
