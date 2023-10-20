@@ -8,18 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "69987b7120db0f1b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2023-10-02/Modul_1_Architecting_Fundamentals/Moud_1_3_Review.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "2e77221006228c80",
             "type": "leaf",
             "state": {
@@ -31,8 +19,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -181,6 +168,8 @@
   },
   "active": "2e77221006228c80",
   "lastOpenFiles": [
+    "2023-10-02/Modul_1_Architecting_Fundamentals/Moud_1_3_Review.md",
+    "2023-10-03/Modul_6_database_services/Modul_6_1.md",
     "2023-10-03/Modul_6_database_services/image/Pasted image 20231020120041.png",
     "2023-10-03/Modul_6_database_services/image/Pasted image 20231020120001.png",
     "2023-10-03/Modul_6_database_services/image/Pasted image 20231020115200.png",
@@ -194,11 +183,9 @@
     "2023-10-02/Modul_4_Compute/Lab_2_Build your Amazon VPC infrastructure.md",
     "2023-10-02/Modul_1_Architecting_Fundamentals/Lab_1_Explore and interact with the AWS Management Console and AWS Command Line Interface.md",
     "2023-10-02/Modul_1_Architecting_Fundamentals/Lab_1_.md",
-    "2023-10-02/Modul_1_Architecting_Fundamentals/Moud_1_3_Review.md",
     "2023-10-02/Modul_4_Compute/image/Pasted image 20231017175558.png",
     "2023-10-02/Modul_4_Compute/image/Pasted image 20231017175546.png",
     "2023-10-02/Modul_4_Compute/image/Pasted image 20231017175415.png",
-    "2023-10-02/Modul_4_Compute/image/Pasted image 20231017175327.png",
     "2023-10-02/Modul_3_Networking_1/Modul_3_1_Networking.md",
     "2023-10-02/Modul_2_Account_Security/Modul_2_1.md",
     "2023-10-02/Modul_1_Architecting_Fundamentals/Modul_1_2 AWS_Well-architected_framework.md",
@@ -212,7 +199,6 @@
     "2023-10-04/Modul_13_BackupAndRecovery/image",
     "2023-10-04/Modul_12_EdgeServices/Modul_12_1.md",
     "2023-10-03/Modul_7_Monitoring_LoadBalancing_Scaling/Modul_7_3_AutoScaling.md",
-    "2023-10-03/Modul_6_database_services/Modul_6_1.md",
     "2023-10-03/Modul_8_Automation/Modul_8_1.md",
     "2023-10-04/Modul_12_EdgeServices/image",
     "2023-10-04/Exam/Exam_preproration.md",
