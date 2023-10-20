@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2023-10-03/Modul_5_Storage/Modul_5_1_Storage.md",
+                "file": "2023-10-03/Modul_6_database_services/Modul_6_1.md",
                 "mode": "source",
                 "source": false
               }
@@ -90,7 +90,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 355.5
+    "width": 328.5
   },
   "right": {
     "id": "75bad08b258c7b53",
@@ -106,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2023-10-03/Modul_5_Storage/Modul_5_1_Storage.md",
+                "file": "2023-10-03/Modul_6_database_services/Modul_6_1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2023-10-03/Modul_5_Storage/Modul_5_1_Storage.md",
+                "file": "2023-10-03/Modul_6_database_services/Modul_6_1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2023-10-03/Modul_5_Storage/Modul_5_1_Storage.md"
+                "file": "2023-10-03/Modul_6_database_services/Modul_6_1.md"
               }
             }
           },
@@ -165,7 +165,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 339.5
+    "width": 274.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -181,6 +181,15 @@
   },
   "active": "2e77221006228c80",
   "lastOpenFiles": [
+    "2023-10-03/Modul_6_database_services/image/Pasted image 20231020120041.png",
+    "2023-10-03/Modul_6_database_services/image/Pasted image 20231020120001.png",
+    "2023-10-03/Modul_6_database_services/image/Pasted image 20231020115200.png",
+    "2023-10-03/Modul_6_database_services/image/Pasted image 20231020115139.png",
+    "2023-10-03/Modul_6_database_services/image/Pasted image 20231020114901.png",
+    "2023-10-03/Modul_5_Storage/Modul_5_1_Storage.md",
+    "2023-10-03/Modul_5_Storage/image/Pasted image 20231020114111.png",
+    "2023-10-03/Modul_5_Storage/image/Pasted image 20231020114020.png",
+    "2023-10-02/0_课程大纲/1_课程大纲.md",
     "2023-10-02/Modul_4_Compute/Modul_4_1_Compute.md",
     "2023-10-02/Modul_4_Compute/Lab_2_Build your Amazon VPC infrastructure.md",
     "2023-10-02/Modul_1_Architecting_Fundamentals/Lab_1_Explore and interact with the AWS Management Console and AWS Command Line Interface.md",
@@ -191,16 +200,9 @@
     "2023-10-02/Modul_4_Compute/image/Pasted image 20231017175415.png",
     "2023-10-02/Modul_4_Compute/image/Pasted image 20231017175327.png",
     "2023-10-02/Modul_3_Networking_1/Modul_3_1_Networking.md",
-    "2023-10-02/Modul_3_Networking_1/image/Pasted image 20231017171014.png",
     "2023-10-02/Modul_2_Account_Security/Modul_2_1.md",
-    "2023-10-02/Modul_2_Account_Security/image/Pasted image 20231016202858.png",
-    "2023-10-02/Modul_1_Architecting_Fundamentals/image/Pasted image 20231016202321.png",
-    "2023-10-02/Modul_1_Architecting_Fundamentals/image/Pasted image 20231016202258.png",
     "2023-10-02/Modul_1_Architecting_Fundamentals/Modul_1_2 AWS_Well-architected_framework.md",
     "2023-10-02/Modul_1_Architecting_Fundamentals/Modul_1_1_基础知识.md",
-    "2023-10-02/Modul_1_Architecting_Fundamentals/image/Pasted image 20231016201428.png",
-    "2023-10-02/Modul_1_Architecting_Fundamentals/image/Pasted image 20231016200429.png",
-    "2023-10-02/0_课程大纲/1_课程大纲.md",
     "2023-10-04/lab7/Lab7.md",
     "2023-10-04/Modul_14_CourseSummary/Modul_14_Summary.md",
     "2023-10-04/lab7/image",
@@ -211,7 +213,6 @@
     "2023-10-04/Modul_12_EdgeServices/Modul_12_1.md",
     "2023-10-03/Modul_7_Monitoring_LoadBalancing_Scaling/Modul_7_3_AutoScaling.md",
     "2023-10-03/Modul_6_database_services/Modul_6_1.md",
-    "2023-10-03/Modul_5_Storage/Modul_5_1_Storage.md",
     "2023-10-03/Modul_8_Automation/Modul_8_1.md",
     "2023-10-04/Modul_12_EdgeServices/image",
     "2023-10-04/Exam/Exam_preproration.md",
@@ -225,7 +226,6 @@
     "2023-10-03/Modul_9_Container/Modul_9_1.md",
     "2023-10-03/Modul_7_Monitoring_LoadBalancing_Scaling/Modul_7_2_Load Balancing.md",
     "2023-10-03/Modul_7_Monitoring_LoadBalancing_Scaling/Modul_7_1_Monitoring.md",
-    "Chapter_03_03_AWS_Services_EC2/Chapter_03_05_EC2.md",
-    "Chapter_03_01_AWS_Services_Compute_Storage/Chapter_03_01_Compute.md"
+    "Chapter_03_03_AWS_Services_EC2/Chapter_03_05_EC2.md"
   ]
 }

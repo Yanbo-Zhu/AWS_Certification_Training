@@ -340,7 +340,16 @@ Learn how to meet business data resiliency. For more information, see “How to 
 To learn more about replication, see “Amazon S3 Replication” at https://aws.amazon.com/s3/features/replication/.
 
 
-----
+## 3.1 Addtional Amazon s3 features
+
+Earlier you were provided some examples that related to securing and storing objects. Next, think about how you might place objects into your S3 buckets. You want to be efficient with how you upload the object and use features that help you manage what happens when the object is there.
+
+Consider the following questions:
+• What if you need to upload large objects? How do you upload them, and how does it work? 
+• How can you increase the speed at which objects are uploaded to AWS Regions that are not close to you? • Can actions be automated based on events like when you upload an object?
+
+---
+
 
 if file ist more than more 5 gb 
 the s3 will take the large file , then cut it off into segments and then upload it paraellel , using multiport , 不同的 request 
@@ -348,11 +357,6 @@ the s3 will take the large file , then cut it off into segments and then upload 
 
 ![](image/Pasted%20image%2020231003091545.png)
 
-Earlier you were provided some examples that related to securing and storing objects. Next, think about how you might place objects into your S3 buckets. You want to be efficient with how you upload the object and use features that help you manage what happens when the object is there.
-Consider the following questions:
-• What if you need to upload large objects? How do you upload them, and how does it work? 
-• How can you increase the speed at which objects are uploaded to AWS Regions that are not close to you? 
-• Can actions be automated based on events like when you upload an object
 
 With a multipart upload, you can consistently upload large objects in manageable parts. This process involves three steps: • Initiating the upload • Uploading the object parts 
 • Completing the multipart upload
@@ -441,53 +445,117 @@ For more information, see “Amazon S3 pricing” at https://aws.amazon.com/s3/p
 
 The storage team lead asks, “What are some file-based options for building secure and scalable storage in the AWS Cloud?”
 
-![](image/Pasted%20image%2020231003092621.png)
-
 
 ![](image/Pasted%20image%2020231003092644.png)
 
-## 4.1 EFS (only for linux)
 
-![](image/Pasted%20image%2020231003092745.png)
+How do you handle an application that is running on multiple instances and must use the same file system?
+
+Amazon EBS provides block storage, so it could be used as the underlying storage component of a self-managed file storage solution. Amazon EBS supports Multi-Attach for up to 16 Linux EC2 instance attachments, but it is a very specialized use case. In most cases, an EBS volume is attached to one Amazon Elastic Compute Cloud (Amazon EC2) instance. This limit makes it difficult to have the scalability, availability, and affordability of a fully managed file storage solution.
+
+Amazon S3 is an option, but what if you need the performance and read/write capacity of a network file system? S3 is an object store system, not a block store, so changes overwrite entire files, not blocks of characters within files.
+
+For high throughput changes to files of varying sizes, a file system will be superior to an object store system. Amazon Elastic File System (Amazon EFS) and Amazon FSx are ideal for this use case.
+Using a fully managed cloud file storage solution removes complexities, reduces costs, and simplifies management. You will continue to learn about shared file systems in this section of the module.
+
+Learn about the considerations and limitations of multi-attach. For more information, see “Attach a volume to multiple instances with Amazon EBS Multi-Attach” in the Amazon Elastic Compute Cloud User Guide for Linux Instances at https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-volumes-multi.html
+
+## 4.1 EFS (only for Linux)
 
 security gourp should alow the mount target via  protocal 2049  nfsv4
+![](image/Pasted%20image%2020231003092745.png)
 
+
+
+Amazon EFS provides a scalable, elastic file system for Linux-based workloads for use with AWS Cloud services and on-premises resources.
+You can create a file system, mount it on an Amazon EC2 instance, and then read and write data to and from your file system. You can mount an Amazon EFS file system in your VPC through the Network File System (NFS) versions 4.0 and 4.1 (NFSv4) protocol. You do not need to take action to expand the file system as your storage needs grow.
+EC2 instances in your VPC can access Amazon EFS file systems concurrently, so applications that scale beyond a single connection can access a file system.
+
+Availability and durability refer to the redundancy with which an Amazon EFS file system stores data within an AWS Region. You have the following choices for your file system's availability and durability: 
+• Choosing a Standard storage class creates a file system that stores file system data and metadata redundantly across all Availability Zones within an AWS Region. You can also create mount targets in each Availability Zone in the AWS Region. Standard storage classes offer the highest levels of availability and durability.
+• Choosing a One Zone storage class creates a file system that stores file system data and metadata redundantly within a single Availability Zone. File systems that use One Zone storage classes can have only a single mount target. This mount target is located in the Availability Zone in which the file system is created.
+
+In this example, a VPC uses Amazon EFS standard storage class. The VPC has three private subnets, each in a different Availability Zone. With standard storage class, each subnet can have its own mount target. The EC2 instances in each subnet can access the file system through the mount target located in its Availability Zone.
+
+
+---
 
 File locking: 
 
 ![](image/Pasted%20image%2020231003093035.png)
 
-
 efs can shrink or grow based on data 
 
+Amazon EFS provides a shared, persistent layer that provides stateful applications the ability to elastically scale up and down. Examples include DevOps, web serving, web content systems, media processing, machine learning, analytics, search index, and stateful microservices applications. Amazon EFS can support a petabyte-scale file system, and the throughput of the file system also scales with the capacity of the file system.
 
+Because Amazon EFS is serverless, you don’t need to provision or manage the infrastructure or capacity. Amazon EFS file systems can be shared with up to tens of thousands of concurrent clients, regardless of the type. These clients could be traditional EC2 instances or containers that run in one of your self-managed clusters. They might run in one of the AWS container services: Amazon Elastic Container Service (Amazon ECS), Amazon Elastic Kubernetes Service (Amazon EKS), and AWS Fargate. Or they might run in a serverless function that runs in Lambda.
 
-## 4.2 Fsx (for Windows File Server)
+Use Amazon EFS to lower your total cost of ownership for shared file storage. Choose Amazon EFS One Zone for data that does not require replication across multiple Availability Zones and save on storage costs. Amazon EFS Standard-Infrequent Access (EFS Standard-IA) and Amazon EFS One Zone-Infrequent Access (EFS One Zone-IA) are storage classes for files not accessed every day. They provide cost-optimized price and performance for these files.
+
+Use Amazon EFS scaling and automation to save on management costs, and pay only for what you use.
+For more information about Amazon EFS use cases, see “File Systems for Enterprise Applications” at https://aws.amazon.com/efs/enterprise-applications/
+
+## 4.2 FSx (for Windows File Server)
 
 ![](image/Pasted%20image%2020231003093135.png)
 
-
-
 can be mounted to server 
-
 SMB: server managment block , mount the fsx with several instance 
-
 nfs: use it in client comunicated client  
+
+With Amazon FSx, you can quickly launch and run feature-rich and high-performing file systems. The service provides you with four file systems to choose from. This choice is based on your familiarity with a given file system or matching the feature sets, performance profiles, and data management capabilities to your needs.
+FSx for Windows File Server provides fully managed Microsoft Windows file servers that are backed by a native Windows file system. Built on Windows Server, Amazon FSx delivers a wide range of administrative features such as data deduplication, end-user file restore, and Microsoft Active Directory.
+FSx for Lustre is a fully managed service that provides high-performance, cost-effective storage. FSx for Lustre is compatible with the most popular Linux-based AMIs. They include Amazon Linux, Amazon Linux 2, Red Hat Enterprise Linux (RHEL), CentOS, SUSE Linux, and Ubuntu.
+FSx for NetApp ONTAP provides fully managed shared storage in the AWS Cloud with the popular data access and management capabilities of ONTAP.
+FSx for OpenZFS provides fully managed shared file storage built on the OpenZFS file system. It is powered by the AWS Graviton family of processors, and accessible through the NFS protocol (v3, v4, v4.1, v4.2).
+For more information about Amazon FSx file system options, see “Choosing an Amazon FSx File System” at https://aws.amazon.com/fsx/when-to-choose-fsx/.
+
 
 
 # 5 Dara migration tools 
 
 ![](image/Pasted%20image%2020231003093402.png)
 
+The storage team lead asks, “How can we move lots of data to the cloud in a relatively short time period?”
+The storage team must plan data migrations from on-premises data centers to the AWS Cloud. The company wants your advice to choose the right tools
+
+
+---
 
 
 ![](image/Pasted%20image%2020231003093428.png)
 
+Before selecting which tool to use, you should know the following information: 
+• Where you are moving data 
+• For what use cases 
+• The types of data that you are moving 
+• The network resources available
+
+AWS offers a wide variety of services and AWS Partner tools to help you migrate your datasets (files, databases, machine images, block volumes, or tape backups). In this module, you will learn about the following tools:
+• AWS Storage Gateway simplifies on-premises adoption of AWS storage. You can use Storage Gateway to seamlessly connect and extend your on-premises applications to AWS storage. It supports multiple file transfer protocols: Server Message Block (SMB), Network File System (NFS), and Internet Small Computer Systems Interface (iSCSI).
+• AWS DataSync is a data transfer service that facilitates moving data between on-premises storage and Amazon EFS, Amazon FSx, and Amazon S3.
+• AWS Transfer Family permits the transfer of files into and out of Amazon S3 or Amazon Elastic File System (EFS) over the following protocols. (The Transfer Family will not be covered in this course.)
+    • Secure Shell File Transfer Protocol (SFTP)
+    • File Transfer Protocol Secure (FTPS) 
+    • File Transfer Protocol (FTP) 
+    • Applicability Statement 2 (AS2)
+    • AWS Snow Family is a group of edge computing, data migration, or edge storage devices that are designed for secure, physical transport.
+
+Learn more about on-premises AWS storage services. For more information, see “Comparing your on-premises storage patterns with AWS Storage services” in the AWS Storage Blog at https://aws.amazon.com/blogs/storage/comparing-your-on-premises-storage-patterns-with-aws-storage-services/.
+
+
+
+---
+
+
 
 ![](image/Pasted%20image%2020231003093641.png)
 
+AWS Storage Gateway connects an on-premises software appliance with cloud-based storage. It provides seamless integration with data security features between your on-premises IT environment and the AWS storage infrastructure.
+You can use the service to store data in the AWS Cloud for scalable and cost-effective storage that helps maintain data security. Storage Gateway offers file-based, volume-based, and tape-based storage solutions, which are integrated with IAM, AWS KMS, AWS CloudTrail, and Amazon CloudWatch.
 
 
+---
 
 ![](image/Pasted%20image%2020231003093926.png)
 
@@ -496,23 +564,48 @@ nfs: use it in client comunicated client
 smb 
 fns 
 每一个需要配一个独立的  file gateway 
-
-
-
 后两个用 isito 
 
 
-## 5.1 
-两种 传输形式的区别 
+Choose a Storage Gateway type that is the best fit for your workload.
+Amazon S3 File Gateway presents a file interface that you can use to store files as objects in Amazon S3. You use the industry-standard NFS and SMB file protocols. Access your files through NFS and SMB from your data center or Amazon EC2, or access those files as objects directly in Amazon S3.
+
+Amazon FSx File Gateway provides fast, low-latency, on-premises access to fully managed, highly reliable, and scalable file shares in Amazon FSx for Windows File Server. It uses the industry-standard SMB protocol. You can store and access file data in Amazon FSx with Microsoft Windows features, including full New Technology File System (NTFS) support, shadow copies, and ACLs.
+
+Tape Gateway presents an iSCSI-based virtual tape library (VTL) of virtual tape drives and a virtual media changer to your on-premises backup application. Tape Gateway stores your virtual tapes in Amazon S3 and creates new ones automatically, which simplifies management and your transition to AWS.
+
+Volume Gateway presents block storage volumes of your applications by using the iSCSI protocol. You can asynchronously back up data that is written to these volumes as point-in-time snapshots of your volumes. Then, you can store it in the cloud as Amazon EBS snapshots. You can back up your on-premises Volume Gateway volumes by using the service’s snapshot scheduler or by using the AWS Backup service.
+
+
+
+## 5.1 两种 传输形式的区别 Storage Gateway and DataSync
 
 ![](image/Pasted%20image%2020231003094052.png)
 
+The Storage Gateway Appliance supports the following protocols to connect to your local data: • NFS or SMB for files 
+• iSCSI for volumes 
+• iSCSI VTL for tapes
+
+Your storage gateway appliance runs in one of four modes: Amazon S3 File Gateway, Amazon FSx File Gateway, Tape Gateway, or Volume Gateway.
+Data that is moved to AWS by using Storage Gateway can be sent to the following destinations through the Storage Gateway managed service: 
+• Amazon S3 (Amazon S3 File Gateway, Tape Gateway)
+• Amazon S3 Glacier (Amazon S3 File Gateway, Tape Gateway) 
+• Amazon FSx for Windows File Server (Amazon FSx File Gateway)
+• Amazon EBS (Volume Gateway)
+
+AWS Backup can be used to schedule volume snapshots with Volume Gateway.
+
+---
 
 
 ![](image/Pasted%20image%2020231003094122.png)
 
 
-## 5.2 offline data migration 
+Manual tasks that are related to data transfers can slow down migrations and burden IT operations. DataSync facilitates moving large amounts of data between on-premises storage and Amazon EFS, Amazon FSx, and Amazon S3. By default, data is encrypted in transit by using TLS 1.2. DataSync automatically handles scripting copy jobs, scheduling and monitoring transfers, validating data, and optimizing network usage.
+Reduce on-premises storage infrastructure by shifting SMB-based data stores and content repositories from file servers and NAS arrays to Amazon S3 and Amazon EFS for analytics.
+DataSync deploys as a single software agent that can connect to multiple shared file systems and run multiple tasks. The software agent is typically deployed on premises through a virtual machine to handle the transfer of data over the wide area network (WAN) to AWS. On the AWS side, the agent connects to the DataSync service infrastructure. Because DataSync is a service, there is no infrastructure for customers to set up or maintain in the cloud. DataSync configuration is managed directly from the console.
+
+## 5.2 Offline data migration 
 
 
 
@@ -522,26 +615,57 @@ fns
 
 snowball  上传速率更大 
 
-
+AWS Snowcone is ruggedized, secure, and purpose-built for use outside of a traditional data center. Its small size makes it a perfect fit for tight spaces or where portability is a necessity and network connectivity is unreliable. For more information, see “AWS Snowcone” at https://aws.amazon.com/snowcone/.
+Snowball Edge is a petabyte-scale data transport option that doesn’t require you to write code or purchase hardware to transfer data. All that you need to do is create a job in the console, and a Snowball appliance will be shipped to you. Attach the appliance into your local network and transfer the files directly onto it. When the device is ready to be returned, the E Ink shipping label will automatically update the return address. Thus, it ensures that the device is delivered to the correct AWS facility. For more information, see “AWS Snowball FAQs” at https://aws.amazon.com/snowball/faqs/.
+Snowball Edge Optimized is ideal for edge processing use cases that require additional computing, memory, and storage power in remote, disconnected, or harsh environments. For more information, see “AWS Snowball Edge Specifications” at https://docs.aws.amazon.com/snowball/latest/developer-guide/specifications.htm
 
 # 6 Review
 
 
 ![](image/Pasted%20image%2020231003094714.png)
 
+Imagine that you are now ready to talk to the storage team lead and present solutions that meet their architectural needs.
+Your answers should include the following solutions: 
+• Use Amazon EBS for block-level storage. Amazon S3 and Amazon S3 Glacier have object-level storage options to review. For file-level storage, choose Amazon EFS or Amazon FSx.
+• Review the Amazon S3 storage classes. Think about the objects that you are storing and how often they will be accessed. Use that information to choose a cost-effective solution. Consider using Amazon S3 Glacier for long-term archive data.
+• Amazon EFS is a quick, straightforward, and scalable file storage solution that supports the NFS protocol. For more specialized solutions, learn more about the Amazon FSx family of services.
+• To move data from one source to another destination, use AWS DataSync. For hybrid storage solutions, use AWS Storage Gateway. For an offline way to move data from on-premises to AWS Cloud destinations, use the AWS Snow Family
+
+
+![](image/Pasted%20image%2020231020114020.png)
+
+
+# 7 Capstone Architecture
 
 ![](image/Pasted%20image%2020231003094749.png)
 
+At the end of this course is a Capstone Lab project. You will be provided a scenario and asked to build an architecture based on project data, best practices, and the Well-Architected Framework
 
 
-# 7 #
+![](image/Pasted%20image%2020231020114111.png)
+
+In this module, you explored multiple storage solutions. You are now able to build the following for the capstone project: 
+• A shared file storage system for your WordPress application that uses Amazon EFS Standard
+This solution automatically creates one EFS mount target for you in each Availability Zone. The WordPress installation directory is placed on the EFS mount so that multiple EC2 instances can read it. If one instance fails and is replaced, the files already exist in an accessible and redundant file share.
+
+The WordPress website also requires you to build a database to use for the three-tier architecture. You should think about what options there are in AWS for database services. You will explore this topic in the next module.
+
+For accessibility: Partial selection of capstone architecture with one VPC in one Region. Two Availability Zones are shown. Each has a public subnet, app subnet, and database subnet. An internet gateway is placed at the edge of the VPC. Each Availability Zone has a NAT gateway in a public subnet. App servers and an EFS mount target are placed in each app subnet. An Amazon EFS file system is placed in the VPC but is connected to EFS mount targets in each app subnet. App servers communicate with the EFS mount targets in their own subnets to reach the EFS file system. App servers send requests to the public internet through a NAT gateway in their Availability Zone. End description.
+
+
+# 8 Know Ledge
 
 
 d
 
 ![](image/Pasted%20image%2020231003094804.png)
 
+The answer is D, Cross-Region Replication.
 
+S3 Cross-Region Replication (CRR) is used to copy objects across Amazon S3 buckets in different AWS Regions. CRR can help you do the following tasks: 
+• Meet compliance requirements – Although Amazon S3 stores your data across multiple geographically distant Availability Zones by default, compliance requirements might dictate that you store data at greater distances. To satisfy these requirements, use Cross-Region Replication to replicate data between distant AWS Regions.
+• Minimize latency – Imagine that your customers are in two geographic locations. You can minimize latency in accessing objects by maintaining object copies in AWS Regions that are geographically closer to your users.
+• Increase operational efficiency – If you have compute clusters in two different AWS Regions that analyze the same set of objects, you might choose to maintain object copies in those Regions.
 
 
 ---
@@ -550,12 +674,23 @@ b
 
 ![](image/Pasted%20image%2020231003094822.png)
 
+The answer is B, event notification.
+With Amazon S3 Event Notifications, you can receive notifications when certain object events happen in your bucket. These notifications can invoke actions in other AWS services like AWS Lambda.
+For more information about Amazon S3 Event Notifications, see “Reliable event processing with Amazon S3 Event Notifications” in the AWS Storage Blog at https://aws.amazon.com/blogs/storage/reliable-event-processing-with-amazon-s3-event-notifications/.
+
+
+
 ----
 d
 
 ![](image/Pasted%20image%2020231003094849.png)
 
 
+The answer is D, Amazon EFS.
+
+Other file sharing systems are available to choose from like Amazon FSx for Lustre or Amazon FSx for OpenZFS. However, neither of these solutions is presented as a possible answer. Amazon EFS presents a scalable file system that can be mounted with the Network File System (NFS) protocol by multiple Linux EC2 instances.
+
+AWS Storage Gateway supports hybrid environments, which is not mentioned here. FSx for Windows File Server would permit a Linux application to mount the file system through Server Message Block (SMB). However, it can be a complicated solution to implement. Amazon S3 is an object storage solution, and it does not natively present you with a mountable file system.
 
 
 
@@ -568,4 +703,7 @@ e
 
 
 ![](image/Pasted%20image%2020231003094916.png)
+
+The correct answer is B, C, and E: Tape Gateway, Volume Gateway, and File Gateway. A fourth mode is also available for Amazon FSx File Gateway
+
 
