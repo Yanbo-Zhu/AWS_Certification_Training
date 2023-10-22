@@ -270,24 +270,114 @@ Eventually consistent reads When you read data from a DynamoDB table, the respon
 Strongly consistent reads When you request a strongly consistent read, DynamoDB returns a response with the most up-to-date data, which reflects updates from all prior successful write operations. A strongly consistent read might not be available if a network delay or outage occurs.
 DynamoDB uses eventually consistent reads, unless you specify otherwise. Read operations (such as GetItem, Query, and Scan) provide a ConsistentRead parameter. If you set this parameter to true, DynamoDB uses strongly consistent reads during the operation.
 
+---
+
+![](image/Pasted%20image%2020231022174350.png)
+
+A global table is a collection of one or more DynamoDB tables, which are all owned by a single AWS account, identified as replica tables. A replica table (or replica, for short) is a single DynamoDB table that functions as part of a global table. Each replica stores the same set of data items. Any given global table can only have one replica table per Region, and every replica has the same table name and the same primary key schema.
+DynamoDB global tables provide a fully managed solution for deploying a multi-Region, multi-active database, without having to build and maintain your own replication solution. When you create a global table, you specify the Regions where you want the table to be available. DynamoDB performs all the necessary tasks to create identical tables in these Regions and propagate ongoing data changes to all of them. DynamoDB communicates these changes over the AWS network backbone.
+For more information about Amazon DynamoDB global tables, see “Amazon DynamoDB global tables” at https://aws.amazon.com/dynamodb/global-tables/.
 
 
-# 4 ElastiCache 
+# 4 Database Caching 
 
+The database services manager asks, “How can we cache databases in the cloud to maximize performance?”
+The database team has identified some common queries that are causing a lot of read traffic. The company is looking for your advice on how to cache this commonly accessed data to improve performance and decrease the load on the databases
+
+---
+
+![](image/Pasted%20image%2020231022174442.png)
+
+To determine whether your application should use database caching, consider the following points:
+• Speed and expense – Some database queries are inherently slower and more expensive than others. For example, queries that perform joins on multiple tables are significantly slower and more expensive than simple, single-table queries. If requesting data requires a slow and expensive query, it's a candidate for caching.
+• Data and access pattern – Determining what to cache also involves understanding the data itself and its access patterns. For example, it doesn't make sense to cache data that is rapidly changing or is seldom accessed. For caching to provide meaningful benefit, the data should be relatively static and frequently accessed, such as a personal profile on a social media site.
+• Cache validity – Data can become out-of-date while it is stored in cache. Writes that occur on that data in the database might not be reflected in that cached data. To determine whether your data is a candidate for caching, you must determine your application's tolerance for occasionally inaccurate cached data
+
+
+![](image/Pasted%20image%2020231022174507.png)
+
+Without caching, EC2 instances read and write directly to the database. With caching, an instance first attempts to read from a cache, which uses high performance memory. For example, database caches on AWS such as Amazon ElastiCache and Amazon DynamoDB Accelerator (DAX) are in-memory databases. They use a cache cluster that contains a set of cache nodes distributed between subnets. Resources within those subnets have high-speed access to those nodes.
+In this example, a VPC has an app subnet and a data subnet in each of two Availability Zones. The application servers in both app subnets connect to a primary database in one data subnet. The other data subnet holds a replica database. A cache cluster spans both app subnets with cache nodes in each.
+When you’re using a cache for a backend data store, a side-cache is a common approach. Canonical examples include both Redis and Memcached. These caches are general-purpose and are decoupled from the underlying data store. They can help with both read and write throughput, depending on the workload and durability requirements.
+
+
+
+---
+
+## 4.1 Common Caching Strategy 
+
+![](image/Pasted%20image%2020231022174533.png)
+
+Multiple strategies are available for keeping information in the cache in sync with the database. Two common caching strategies include lazy loading and write-through.
+In lazy loading, updates are made to the database without updating the cache. In the case of a cache miss, the information that is retrieved from the database can be subsequently written to the cache. Lazy loading loads data that the application needs into the cache, but it can result in high cache-miss-to-cache-hit ratios in some use cases.
+
+---
+
+
+![](image/Pasted%20image%2020231022174614.png)
+
+An alternative strategy is to write through to the cache every time the database is accessed. This approach results in fewer cache misses. The result is improved performance, but it requires additional storage for data that the applications might not need.
+The best strategy depends on your use case. It is critical to understand the impact of stale data on your use case. If the impact is high, then consider maintaining freshness with write-throughs. If the impact is low, then lazy loading might be sufficient. It also helps to understand the frequency of change of the underlying data because it affects the performance and cost tradeoffs of the caching strategies.
+After you decide on a strategy for maintaining your cache, you will want to implement this approach within your application.
+
+For more information about ElastiCache, see “Caching strategies” in the following resources: 
+• Amazon ElastiCache for Redis User Guide at https://docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/Strategies.html.
+• Amazon ElastiCache for Memcached User Guide at https://docs.aws.amazon.com/AmazonElastiCache/latest/mem-ug/Strategies.html.
+
+
+---
+
+
+![](image/Pasted%20image%2020231022174645.png)
+
+Lazy loading can have stale data, but doesn't fail with empty nodes. Write-through maintains fresh data, but can fail with empty nodes and can populate the cache with superfluous data. By adding a time to live (TTL) value to each write to the cache, you can maintain fresh data without cluttering the cache with extra data.
+TTL is an integer value that specifies the number of seconds or milliseconds until the key expires. When an application attempts to read an expired key, it is treated as though the data is not found in cache. Thus, the database is queried and the cache is updated. As a result, it keeps data from getting too stale and requires that values in the cache are occasionally refreshed from the database.
+
+When cache memory is full, the cache engine removes data from memory to make space for new data. It chooses this data based on the eviction policy that you set. An eviction policy evaluates the following characteristics of your data: 
+• Which were accessed least recently? 
+• Which have been accessed least frequently? 
+• Which have a TTL set and the TTL value?
+
+
+# 5 Amazon ElastiCahce
 
 ![](image/Pasted%20image%2020231003110024.png)
 
+Amazon ElastiCache is a web service that facilitates setting up, managing, and scaling a distributed in-memory data store or cache environment in the cloud. It provides a high-performance, scalable, and cost-effective caching solution. At the same time, it helps remove the complexity that is associated with deploying and managing a distributed cache environment.
+ElastiCache supports two open-source in-memory engines (in-memory as compared to disk): • Redis • Memcached
+For more information about ElastiCache, see “Amazon ElastiCache” at https://aws.amazon.com/elasticache/. 
 
 
 
+---
+
+![](image/Pasted%20image%2020231022174804.png)
+
+ElastiCache offers fully managed capabilities for two popular, open-source compatible in-memory data stores: Memcached and Redis.
+With ElastiCache for Memcached, you can build a scalable caching tier for data-intensive apps. The service works as an in-memory data store and cache to support the most demanding applications requiring sub-millisecond response times. ElastiCache for Memcached is fully managed, scalable, and secure, which makes it an ideal candidate for use cases where frequently accessed data must be in memory. This engine offers a simple caching model with multi-threading. The service is a popular choice for use cases such as web, mobile apps, gaming, ad tech, and ecommerce. The Memcached-compatible service also supports Auto Discovery.
+
+ElastiCache for Redis is an in-memory data store that provides sub-millisecond latency at internet scale. ElastiCache for Redis combines the speed, simplicity, and versatility of open-source Redis with manageability, security, and scalability from Amazon. It can power the most demanding real-time applications in gaming, ad tech, ecommerce, healthcare, financial services, and Internet of Things (IoT).
+For more information, see “Comparing Redis and Memcached” at https://aws.amazon.com/elasticache/redis-vs-memcached/.
+
+
+---
+
+# 6 Amazon DynamoDB Accelerator 
 
 ![](image/Pasted%20image%2020231003110201.png)
 
+DynamoDB is designed for scale and performance. In most cases, the DynamoDB response times can be measured in single-digit milliseconds. However, certain use cases require response times in microseconds. For those use cases, DynamoDB Accelerator (DAX) delivers fast response times for accessing eventually consistent data.
+DAX is a caching service compatible with DynamoDB that provides fast in-memory performance for demanding applications.
+You create a DAX cluster in your Amazon VPC to store cached data closer to your application. You install a DAX client on the EC2 instance that is running your application in that VPC. At runtime, the DAX client directs all of your application's DynamoDB requests to the DAX cluster. If DAX can process a request directly, it does so. Otherwise, it passes the request through to DynamoDB.
+For more information about memory acceleration, see “In-Memory Acceleration with DynamoDB Accelerator (DAX)” in the Amazon DynamoDB Developer Guide at https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX.html.
 
-
-# 5 Database migration tools 
+# 7 Database migration tools 
 
 ![](image/Pasted%20image%2020231003110359.png)
+
+The database services manager asks, “What tools are available for migrating an existing database to the AWS Cloud?”
+The database team is planning to move some of their on-premises databases to the cloud. The company wants you to identify tools that can help them with this process and minimize downtime.
+
 
 
 ![](image/Pasted%20image%2020231003110412.png)
@@ -295,30 +385,71 @@ DynamoDB uses eventually consistent reads, unless you specify otherwise. Read op
 heterroegense database migration: no sql db to sql db  也是可以的 , 
 source can aws or on-premises .    或者 aws to aws 
 
+AWS Database Migration Service (AWS DMS) replicates data from a source to a target database in the AWS Cloud. You create a source and a target connection to tell AWS DMS where to extract from and load to. Then you schedule a task that runs on this server to move your data. AWS DMS creates the tables and associated primary keys if they don't exist on the target.
+AWS DMS supports migration between the most widely used databases, which include Oracle, PostgreSQL, SQL Server, Amazon Redshift, Aurora, MariaDB, and MySQL. It also supports homogenous (same engine) and heterogeneous (different engines) migrations. You can use the service to migrate between on-premises databases, Amazon EC2 databases, and Amazon RDS databases. However, you cannot migrate between two on-premises databases. Either the source or the target database (or both) must reside in Amazon RDS or on Amazon EC2.
+With AWS DMS, you can also use a Snowball Edge device as a migration target. You would use this method if your environment has poor internet connectivity or if the source database is too large to move over the internet. You would also use it if your organization has privacy or security requirements.
+AWS DMS automatically handles formatting of the source data for consumption by the target database. It does not perform schema or code conversion.
+For homogenous migrations, you can use native tools to perform these conversions. For heterogeneous migrations, you can use the AWS Schema Conversion Tool (AWS SCT).
+For more information about AWS DMS, see “What is AWS Database Migration Service?” in the AWS Database Migration Service User Guide at https://docs.aws.amazon.com/dms/latest/userguide/Welcome.html.
 
+
+
+---
 
 
 ![](image/Pasted%20image%2020231003110457.png)
 
+The AWS Schema Conversion Tool (AWS SCT) makes heterogeneous database migrations predictable. It automatically converts the source database schema and a majority of the database code objects. The conversion includes views, stored procedures, and functions. They are converted to a format that is compatible with the target database. Any objects that cannot be automatically converted are marked so that they can be manually converted to complete the migration.
+The AWS SCT can also scan your application source code for embedded SQL statements and convert them as part of a database schema conversion project. During this process, the AWS SCT optimizes code that is built for the cloud. It converts legacy Oracle and SQL Server functions to their equivalent AWS service, thus modernizing the applications at the same time of database migration.
+After the schema conversion is complete, AWS SCT can help migrate data from various data warehouses to Amazon Redshift by using built-in data migration agents.
+For more information about the AWS SCT, see “AWS Schema Conversion Tool” at https://aws.amazon.com/dms/schema-conversion-tool/
+
+# 8 Review 
+
+![](image/Pasted%20image%2020231022175044.png)
 
 
-# 6 Review 
+
+Imagine that you are now ready to talk to the database services manager and present solutions that meet their architectural needs.
+Think about how you would answer the questions from the beginning of the lesson.
+Your answers should include the following solutions: • AWS offers services that support relational and nonrelational databases. • You can manage your relational databases efficiently with Amazon RDS and Amazon Aurora. • You can manage your nonrelational key-value databases with Amazon DynamoDB. • You can use Amazon ElastiCache and Amazon DynamoDB Accelerator for database caching. • You can use AWS Database Migration Service to migrate your databases to the cloud.
+
+## 8.1 Capstone 
 
 ![](image/Pasted%20image%2020231003110749.png)
 
 
+At the end of this course is a Capstone Lab project. You will be provided a scenario and asked to build an architecture based on project data, best practices, and the Well-Architected Framework.
+Note: The diagram on this slide contains several abbreviations. The following list includes some services that are not covered in this module, but are included for completeness: 
+• EFS
+• Aurora 
+• NAT 
+• VPC
+
+Amazon Elastic File Service
+Amazon Aurora
+network address translation 
+virtual private gateway
 
 
-# 7 Knowledge check 
+
+In this module, you explored AWS database services and resources.
+Review the capstone architecture to explore some of the design decisions. This architecture helps you provide the following benefits: 
+• In the capstone, you set up an application that requires a MySQL database. Amazon Aurora supports this engine. Using a managed service for hosting the database also provides the following benefits:
+    • You do not have to manage server OS patches or database software updates. 
+    • Amazon Aurora helps you configure scaling, backups, and high availability.
+• The capstone architecture achieves resiliency by using an Aurora replica. If the primary instance fails, the replica can be promoted to primary
+
+# 9 Knowledge check 
 
 b
 
 ![](image/Pasted%20image%2020231003110805.png)
 
-
 ![](image/Pasted%20image%2020231003110906.png)
 
-
+The correct answer is B: It provides automatic failover across Availability Zones.
+When you provision a Multi-AZ DB instance, Amazon RDS synchronously replicates the data to a standby instance in a different Availability Zone. In case of the primary instance failure, Amazon RDS performs an automatic failover to the standby instance. Database operations can be resumed as soon as the failover is complete. Because the endpoint for your DB instance remains the same after a failover, your application can resume database operation. You don’t need to manually intervene in the administration.
 
 ----
 
@@ -326,6 +457,10 @@ a
 
 ![](image/Pasted%20image%2020231003110914.png)
 
+The correct answer is A: Amazon ElastiCache for Redis. ElastiCache for Redis sorts and ranks datasets.
+For more information about Redis and Memcached, see the following resources:
+• “Comparing Redis and Memcached” at https://aws.amazon.com/elasticache/redis-vs-memcached/ 
+• The “Performance at Scale with Amazon ElastiCache” whitepaper at https://d0.awsstatic.com/whitepapers/performance-at-scale-with-amazon-elasticache.pdf
 
 
 ------------
@@ -336,7 +471,9 @@ d
 ![](image/Pasted%20image%2020231003111004.png)
 
 
-
+The correct answer is D: tables can be in different AWS Regions.
+When you create a global table, you specify the Regions where you want the table to be available. DynamoDB performs all the necessary tasks to create identical tables in these Regions and to propagate ongoing data changes to all of them.
+For more information about Amazon DynamoDB global tables, see “Amazon DynamoDB global tables” at https://aws.amazon.com/dynamodb/global-tables/.
 
 --------
 c
@@ -349,18 +486,9 @@ b: aurora database have 15 replicas maxiaml
 ![](image/Pasted%20image%2020231003111141.png)
 
 
-# 8 Lab 
-
-![](image/Pasted%20image%2020231003111201.png)
-
-
-![](image/Pasted%20image%2020231003111211.png)
-
-
-![](image/Pasted%20image%2020231004132029.png)
-
-
-
+The correct answer is C: Aurora is compatible with MySQL or PostgreSQL.
+Aurora is an enterprise-class relational database. It is compatible with MySQL or PostgreSQL relational databases. It is up to five times faster than standard MySQL databases and up to three times faster than standard PostgreSQL databases.
+For more information about Amazon Aurora storage, see “Amazon Aurora storage and reliability” at https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.Overview.StorageReliability.htm
 
 
 
