@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2023-10-03/Modul_7_Monitoring_LoadBalancing_Scaling/Modul_7_3_AutoScaling.md",
+                "file": "2023-10-02/0_课程大纲/1_课程大纲.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2023-10-03/Modul_7_Monitoring_LoadBalancing_Scaling/Modul_7_3_AutoScaling.md",
+                "file": "2023-10-02/0_课程大纲/1_课程大纲.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2023-10-03/Modul_7_Monitoring_LoadBalancing_Scaling/Modul_7_3_AutoScaling.md",
+                "file": "2023-10-02/0_课程大纲/1_课程大纲.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2023-10-03/Modul_7_Monitoring_LoadBalancing_Scaling/Modul_7_3_AutoScaling.md"
+                "file": "2023-10-02/0_课程大纲/1_课程大纲.md"
               }
             }
           },
@@ -168,23 +168,35 @@
   },
   "active": "2e77221006228c80",
   "lastOpenFiles": [
-    "2023-10-03/Modul_7_Monitoring_LoadBalancing_Scaling/Modul_7_2_Load Balancing.md",
+    "2023-10-04/Modul_14_CourseSummary/Modul_14_Summary.md",
+    "2023-10-04/Modul_14_CourseSummary/image/Pasted image 20231023154959.png",
+    "2023-10-04/lab7_Capstone_Build_an_AWS_multi-tier_Architecture/Lab7_CapstoneLab_Build_an_AWS_multi-tier_Architecture.md",
+    "2023-10-04/lab7_Capstone_Build_an_AWS_multi-tier_Architecture/image/Pasted image 20231023154851.png",
+    "2023-10-04/lab7_Capstone_Build_an_AWS_multi-tier_Architecture/image/Pasted image 20231023154702.png",
+    "2023-10-04/Modul_13_BackupAndRecovery/Modul_12_1.md",
+    "2023-10-04/Modul_13_BackupAndRecovery/image/Pasted image 20231023154310.png",
+    "2023-10-04/Modul_13_BackupAndRecovery/image/Pasted image 20231023154223.png",
+    "2023-10-04/Modul_12_EdgeServices/Lab_6_Configure_an_Amazon_CloudFront_distribution_with_an_Amazon_S3_origin.md",
+    "2023-10-04/Modul_12_EdgeServices/Modul_12_1.md",
+    "2023-10-04/Modul_11_Serverless/Modul_11_1_Serverless.md",
+    "2023-10-04/Modul_12_EdgeServices/未命名",
+    "2023-10-04/Modul_12_EdgeServices/image/Pasted image 20231023152312.png",
+    "2023-10-04/Modul_12_EdgeServices/image/Pasted image 20231023152300.png",
+    "2023-10-04/Modul_12_EdgeServices/image/Pasted image 20231023151712.png",
+    "2023-10-04/Modul_12_EdgeServices/image/Pasted image 20231023151421.png",
+    "2023-10-04/Modul_12_EdgeServices/image/Pasted image 20231023151314.png",
+    "2023-10-04/Modul_11_Serverless/Lab_5_Build_A_Serverless_Architecture.md",
+    "2023-10-04/Modul_10_Networking2/Modul_10_1.md",
+    "2023-10-03/Modul_9_Container/Modul_9_1_Container.md",
+    "2023-10-03/Modul_8_Automation/Modul_8_Automation.md",
+    "2023-10-03/Modul_7_Monitoring_LoadBalancing_Scaling/Lab_4_Configure_high_availability_in_your_Amazon_VPC.md",
     "2023-10-03/Modul_7_Monitoring_LoadBalancing_Scaling/Modul_7_3_AutoScaling.md",
+    "2023-10-03/Modul_7_Monitoring_LoadBalancing_Scaling/Modul_7_2_Load Balancing.md",
     "2023-10-03/Modul_7_Monitoring_LoadBalancing_Scaling/Modul_7_1_Monitoring.md",
-    "2023-10-03/Modul_7_Monitoring_LoadBalancing_Scaling/image/Pasted image 20231022180345.png",
     "2023-10-03/Modul_6_database_services/Lab_3_Create_A_database_layer_in_Amazon_VPC_infrastructure.md",
     "2023-10-03/Modul_6_database_services/Modul_6_1_Database_Services.md",
-    "2023-10-03/Modul_6_database_services/image/Pasted image 20231022175044.png",
-    "2023-10-03/Modul_6_database_services/image/Pasted image 20231022174804.png",
-    "2023-10-03/Modul_6_database_services/image/Pasted image 20231022174645.png",
-    "2023-10-03/Modul_6_database_services/image/Pasted image 20231022174614.png",
-    "2023-10-03/Modul_6_database_services/image/Pasted image 20231022174533.png",
-    "2023-10-03/Modul_6_database_services/image/Pasted image 20231022174507.png",
-    "2023-10-03/Modul_6_database_services/image/Pasted image 20231022174442.png",
-    "2023-10-03/Modul_6_database_services/image/Pasted image 20231022174350.png",
     "2023-10-02/0_课程大纲/1_课程大纲.md",
     "2023-10-02/Modul_1_Architecting_Fundamentals/Moud_1_3_Review.md",
-    "2023-10-03/Modul_6_database_services/image/Pasted image 20231020120041.png",
     "2023-10-03/Modul_5_Storage/Modul_5_1_Storage.md",
     "2023-10-02/Modul_4_Compute/Modul_4_1_Compute.md",
     "2023-10-02/Modul_4_Compute/Lab_2_Build your Amazon VPC infrastructure.md",
@@ -193,25 +205,14 @@
     "2023-10-02/Modul_3_Networking_1/Modul_3_1_Networking.md",
     "2023-10-02/Modul_2_Account_Security/Modul_2_1.md",
     "2023-10-02/Modul_1_Architecting_Fundamentals/Modul_1_2 AWS_Well-architected_framework.md",
-    "2023-10-02/Modul_1_Architecting_Fundamentals/Modul_1_1_基础知识.md",
-    "2023-10-04/lab7/Lab7.md",
-    "2023-10-04/Modul_14_CourseSummary/Modul_14_Summary.md",
-    "2023-10-04/lab7/image",
-    "2023-10-04/lab7",
+    "2023-10-04/lab7_Capstone_Build_an_AWS_multi-tier_Architecture/image",
+    "2023-10-04/lab7_Capstone_Build_an_AWS_multi-tier_Architecture",
     "2023-10-04/Modul_14_CourseSummary/image",
-    "2023-10-04/Modul_13_BackupAndRecovery/Modul_12_1.md",
     "2023-10-04/Modul_13_BackupAndRecovery/image",
-    "2023-10-04/Modul_12_EdgeServices/Modul_12_1.md",
-    "2023-10-03/Modul_8_Automation/Modul_8_1.md",
     "2023-10-04/Modul_12_EdgeServices/image",
-    "2023-10-04/Exam/Exam_preproration.md",
     "2023-10-04/Exam/image",
     "2023-10-04/Exam",
     "2023-10-03/未命名",
-    "2023-10-04/Modul_11_Serverless/Modul_11_1.md",
-    "2023-10-04/Modul_11_Serverless/image",
-    "2023-10-04/Modul_10_Networking2/Modul_10_1.md",
-    "2023-10-04/Modul_10_Networking2/image",
-    "2023-10-03/Modul_9_Container/Modul_9_1.md"
+    "2023-10-04/Modul_11_Serverless/image"
   ]
 }
