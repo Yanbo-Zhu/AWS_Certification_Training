@@ -11,8 +11,12 @@
             "id": "c3ffd6b7af063a96",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "0_总览/介绍.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -89,6 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "0_总览/介绍.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,6 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "0_总览/介绍.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +132,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "0_总览/介绍.md"
+              }
             }
           },
           {
@@ -160,7 +168,10 @@
   },
   "active": "c3ffd6b7af063a96",
   "lastOpenFiles": [
-    "Modul_1_Introduction_to_AWS/Lab_1.md",
+    "Modul_6_Monitoring_LoadBalancing_Scaling/Lab_4_Configure_High_Availability_For_Your_Application.md",
+    "Modul_5_Database/Lab_3_Configure a Web Application to use an Amazon S3 Bucket and DynamoDB Table.md",
+    "Modul_1_Introduction_to_AWS/Lab_1_Introfuction_to_AWS_Identity_and_Access_Management.md",
+    "Modul_3_AWS_Networking/Lab_2_Creating a VPC and Launching a Web Application in an Amazon EC2 Instance.md",
     "0_总览/介绍.md",
     "Modul_3_AWS_Networking/Modul_3.md",
     "Modul_4_Storage/Modul_4.md",
@@ -179,16 +190,13 @@
     "99_Course_Summary/image/Pasted image 20231013144756.png",
     "99_Course_Summary/image",
     "99_Course_Summary",
-    "Modul_6_Monitoring_LoadBalancing_Scaling/Lab_4_Configure_High_Availability_For_Your_Application.md",
     "Modul_6_Monitoring_LoadBalancing_Scaling/image",
     "Modul_6_Monitoring_LoadBalancing_Scaling",
-    "Modul_5_Database/Lab_3_Configure a Web Application to use an Amazon S3 Bucket and DynamoDB Table.md",
     "image",
     "Modul_5_Database/image",
     "Modul_5_Database",
     "Modul_4_Storage/image",
     "Modul_4_Storage",
-    "Modul_3_AWS_Networking/Lab_2.md",
     "Modul_3_AWS_Networking/image",
     "Modul_2_aws_compute/Modul_2.md",
     "Modul_1_Introduction_to_AWS/Modul_1_.md",

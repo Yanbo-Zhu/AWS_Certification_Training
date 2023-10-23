@@ -1,5 +1,6 @@
 
-Creating a VPC and Launching a Web Application in an Amazon EC2 Instance In this lab, you will: • Create a new Amazon VPC with two public subnets.
+Creating a VPC and Launching a Web Application in an Amazon EC2 Instance 
+In this lab, you will: • Create a new Amazon VPC with two public subnets.
 • Create an internet gateway.
 • Create a route table with a public route to the internet.
 • Create a security group. 
