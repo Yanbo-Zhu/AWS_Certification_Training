@@ -1,9 +1,15 @@
 
+![](image/Pasted%20image%2020231023201249.png)
 
-![](image/Pasted%20image%2020231003140836.png)
+
+![](image/Pasted%20image%2020231023201306.png)
+
 
 
 ![](image/Pasted%20image%2020231003135050.png)
+
+
+![](image/Pasted%20image%2020231003140836.png)
 
 
 # 1 #

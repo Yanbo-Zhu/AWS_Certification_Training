@@ -1,4 +1,5 @@
 
+![](image/Pasted%20image%2020231023192902.png)
 
 
 ![](image/Pasted%20image%2020231003111201.png)
@@ -14,5 +15,12 @@ Lab 3 uses a VPC across two Availability Zones with a private and public subnet 
 
 
 
+
+---
+
+aurora.cluster-cnivujrhnjy7.us-west-2.rds.amazonaws.com
+
+
+LabAppALB-1024778587.us-west-2.elb.amazonaws.com
 
 

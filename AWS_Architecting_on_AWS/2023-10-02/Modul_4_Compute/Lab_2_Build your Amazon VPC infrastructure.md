@@ -1,4 +1,8 @@
 
+![](image/Pasted%20image%2020231023192758.png)
+
+![](image/Pasted%20image%2020231023192808.png)
+
 
 ![](image/Pasted%20image%2020231002153857.png)
 
@@ -8,7 +12,11 @@ Review the diagram here, and then read the lab tasks on the following page
 ![](image/Pasted%20image%2020231002153943.png)
 
 
-## 0.1 task 1 : testing connectivity to the private instance from the public instance 
+
+
+# 1 Task
+
+## 1.1 task 1 : testing connectivity to the private instance from the public instance 
 
 加入一个 inbound rules for icmp, 因为 ping 用的是 ic,p protocol 
 
@@ -18,7 +26,7 @@ Review the diagram here, and then read the lab tasks on the following page
 ![](image/Pasted%20image%2020231002163224.png)
 
 
-## 0.2 task 2: retrieving instance metadata 
+## 1.2 task 2: retrieving instance metadata 
 
 ![](image/Pasted%20image%2020231002163541.png)
 

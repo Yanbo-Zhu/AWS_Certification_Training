@@ -22,3 +22,6 @@ Learn how to get started with using the AWS CDK. For more information, see “Ge
 
 ![](image/Pasted%20image%2020231016202321.png)
 
+![](image/Pasted%20image%2020231023192701.png)
+
+

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "0_总览/介绍.md",
+                "file": "Modul_1_Introduction_to_AWS/Lab_1_Introfuction_to_AWS_Identity_and_Access_Management.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "0_总览/介绍.md",
+                "file": "Modul_1_Introduction_to_AWS/Lab_1_Introfuction_to_AWS_Identity_and_Access_Management.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "0_总览/介绍.md",
+                "file": "Modul_1_Introduction_to_AWS/Lab_1_Introfuction_to_AWS_Identity_and_Access_Management.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "0_总览/介绍.md"
+                "file": "Modul_1_Introduction_to_AWS/Lab_1_Introfuction_to_AWS_Identity_and_Access_Management.md"
               }
             }
           },
@@ -166,13 +166,13 @@
       "workspaces:管理工作区布局": false
     }
   },
-  "active": "c3ffd6b7af063a96",
+  "active": "ba7b1296865c75fc",
   "lastOpenFiles": [
+    "0_总览/介绍.md",
     "Modul_6_Monitoring_LoadBalancing_Scaling/Lab_4_Configure_High_Availability_For_Your_Application.md",
     "Modul_5_Database/Lab_3_Configure a Web Application to use an Amazon S3 Bucket and DynamoDB Table.md",
     "Modul_1_Introduction_to_AWS/Lab_1_Introfuction_to_AWS_Identity_and_Access_Management.md",
     "Modul_3_AWS_Networking/Lab_2_Creating a VPC and Launching a Web Application in an Amazon EC2 Instance.md",
-    "0_总览/介绍.md",
     "Modul_3_AWS_Networking/Modul_3.md",
     "Modul_4_Storage/Modul_4.md",
     "Modul_5_Database/Modul_5.md",

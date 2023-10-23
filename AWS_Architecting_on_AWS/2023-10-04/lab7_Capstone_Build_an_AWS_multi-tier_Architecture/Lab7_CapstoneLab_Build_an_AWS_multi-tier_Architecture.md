@@ -46,6 +46,12 @@ This is the multi-tier architecture you build in the capstone lab. Review the la
 The lab is organized into six tasks. Remember that you can view the more detailed instructions if you need more assistance with a task step.
 Begin reading the instructions for the capstone lab and have fun building
 
+
+----
+
+![](image/Pasted%20image%2020231023202915.png)
+
+
 --- 
 
 这两个 section 都是一样的 , 只不过 section 1 解释的很抽象. section 2 解释的 比较具体 
@@ -60,10 +66,37 @@ section 2
 ![](image/Pasted%20image%2020231004151527.png)
 
 
+---
+
 endpoint of database 
 
 mydbcluster.cluster-cthvawfj8tqy.us-west-2.rds.amazonaws.com
 mydbcluster.cluster-ro-cthvawfj8tqy.us-west-2.rds.amazonaws.com
 
+1 mydbcluster
+
+![](image/Pasted%20image%2020231023204341.png)
+
+admin
+6sFu7jRkpbY4
+mydbcluster.cluster-cda8cqfmresm.us-east-2.rds.amazonaws.com
 
 
+2 mydbcluster-instance-1
+DB name: WPDatabase
+
+
+3 File System ID of myWPEFS
+[fs-03f9da3983743058b](https://us-east-2.console.aws.amazon.com/efs/home?region=us-east-2#/file-systems/fs-03f9da3983743058b)
+fs-03f9da3983743058b
+
+4 Load Balancers 's dns name
+
+myWPAppALB-863020081.us-east-2.elb.amazonaws.com
+
+
+
+
+5
+
+myWPAppALB-863020081.us-east-2.elb.amazonaws.com/wp-login.php

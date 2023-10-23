@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "495bb580f074080e",
+        "id": "286fc77b46fc5247",
         "type": "tabs",
         "children": [
           {
-            "id": "2e77221006228c80",
+            "id": "c521a32a94da2a97",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2023-10-02/0_课程大纲/Lab_总览.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -93,7 +89,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2023-10-02/0_课程大纲/Lab_总览.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +105,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2023-10-02/0_课程大纲/Lab_总览.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -132,9 +126,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "2023-10-02/0_课程大纲/Lab_总览.md"
-              }
+              "state": {}
             }
           },
           {
@@ -166,31 +158,34 @@
       "workspaces:管理工作区布局": false
     }
   },
-  "active": "2e77221006228c80",
+  "active": "c521a32a94da2a97",
   "lastOpenFiles": [
-    "2023-10-02/Modul_2_Account_Security/Modul_2_1.md",
-    "2023-10-02/0_课程大纲/Lab_总览.md",
-    "2023-10-03/Modul_6_database_services/Lab_3_Create_A_database_layer_in_Amazon_VPC_infrastructure.md",
-    "2023-10-03/Modul_7_Monitoring_LoadBalancing_Scaling/Lab_4_Configure_high_availability_in_your_Amazon_VPC.md",
-    "2023-10-02/0_课程大纲/1_课程大纲.md",
-    "2023-10-04/Modul_14_CourseSummary/Modul_14_Summary.md",
-    "2023-10-04/Modul_14_CourseSummary/image/Pasted image 20231023154959.png",
     "2023-10-04/lab7_Capstone_Build_an_AWS_multi-tier_Architecture/Lab7_CapstoneLab_Build_an_AWS_multi-tier_Architecture.md",
-    "2023-10-04/lab7_Capstone_Build_an_AWS_multi-tier_Architecture/image/Pasted image 20231023154851.png",
-    "2023-10-04/lab7_Capstone_Build_an_AWS_multi-tier_Architecture/image/Pasted image 20231023154702.png",
-    "2023-10-04/Modul_13_BackupAndRecovery/Modul_12_1.md",
-    "2023-10-04/Modul_13_BackupAndRecovery/image/Pasted image 20231023154310.png",
-    "2023-10-04/Modul_13_BackupAndRecovery/image/Pasted image 20231023154223.png",
+    "2023-10-04/lab7_Capstone_Build_an_AWS_multi-tier_Architecture/image/Pasted image 20231023204341.png",
+    "2023-10-04/lab7_Capstone_Build_an_AWS_multi-tier_Architecture/image/Pasted image 20231023202915.png",
     "2023-10-04/Modul_12_EdgeServices/Lab_6_Configure_an_Amazon_CloudFront_distribution_with_an_Amazon_S3_origin.md",
+    "2023-10-04/Modul_12_EdgeServices/image/Pasted image 20231023202340.png",
+    "2023-10-03/Modul_6_database_services/Lab_3_Create_A_database_layer_in_Amazon_VPC_infrastructure.md",
+    "2023-10-04/Modul_11_Serverless/Lab_5_Build_A_Serverless_Architecture.md",
+    "2023-10-04/Modul_11_Serverless/image/Pasted image 20231023201441.png",
+    "2023-10-04/Modul_11_Serverless/image/Pasted image 20231023201428.png",
+    "2023-10-03/Modul_7_Monitoring_LoadBalancing_Scaling/Lab_4_Configure_high_availability_in_your_Amazon_VPC.md",
+    "2023-10-03/Modul_7_Monitoring_LoadBalancing_Scaling/image/Pasted image 20231023201306.png",
+    "2023-10-03/Modul_7_Monitoring_LoadBalancing_Scaling/image/Pasted image 20231023201249.png",
+    "2023-10-02/Modul_4_Compute/Lab_2_Build your Amazon VPC infrastructure.md",
+    "2023-10-02/Modul_4_Compute/Modul_4_1_Compute.md",
     "2023-10-04/Modul_12_EdgeServices/Modul_12_1.md",
+    "2023-10-03/Modul_6_database_services/image/Pasted image 20231023192902.png",
+    "2023-10-02/Modul_4_Compute/image/Pasted image 20231023192808.png",
+    "2023-10-02/Modul_4_Compute/image/Pasted image 20231023192758.png",
+    "2023-10-02/Modul_1_Architecting_Fundamentals/Lab_1_Explore and interact with the AWS Management Console and AWS Command Line Interface.md",
+    "2023-10-02/0_课程大纲/1_课程大纲.md",
+    "2023-10-02/0_课程大纲/Lab_总览.md",
+    "2023-10-02/Modul_2_Account_Security/Modul_2_1.md",
+    "2023-10-04/Modul_14_CourseSummary/Modul_14_Summary.md",
+    "2023-10-04/Modul_13_BackupAndRecovery/Modul_12_1.md",
     "2023-10-04/Modul_11_Serverless/Modul_11_1_Serverless.md",
     "2023-10-04/Modul_12_EdgeServices/未命名",
-    "2023-10-04/Modul_12_EdgeServices/image/Pasted image 20231023152312.png",
-    "2023-10-04/Modul_12_EdgeServices/image/Pasted image 20231023152300.png",
-    "2023-10-04/Modul_12_EdgeServices/image/Pasted image 20231023151712.png",
-    "2023-10-04/Modul_12_EdgeServices/image/Pasted image 20231023151421.png",
-    "2023-10-04/Modul_12_EdgeServices/image/Pasted image 20231023151314.png",
-    "2023-10-04/Modul_11_Serverless/Lab_5_Build_A_Serverless_Architecture.md",
     "2023-10-04/Modul_10_Networking2/Modul_10_1.md",
     "2023-10-03/Modul_9_Container/Modul_9_1_Container.md",
     "2023-10-03/Modul_8_Automation/Modul_8_Automation.md",
@@ -200,11 +195,7 @@
     "2023-10-03/Modul_6_database_services/Modul_6_1_Database_Services.md",
     "2023-10-02/Modul_1_Architecting_Fundamentals/Moud_1_3_Review.md",
     "2023-10-03/Modul_5_Storage/Modul_5_1_Storage.md",
-    "2023-10-02/Modul_4_Compute/Modul_4_1_Compute.md",
-    "2023-10-02/Modul_4_Compute/Lab_2_Build your Amazon VPC infrastructure.md",
-    "2023-10-02/Modul_1_Architecting_Fundamentals/Lab_1_Explore and interact with the AWS Management Console and AWS Command Line Interface.md",
     "2023-10-02/Modul_1_Architecting_Fundamentals/Lab_1_.md",
-    "2023-10-02/Modul_3_Networking_1/Modul_3_1_Networking.md",
     "2023-10-04/lab7_Capstone_Build_an_AWS_multi-tier_Architecture/image",
     "2023-10-04/lab7_Capstone_Build_an_AWS_multi-tier_Architecture",
     "2023-10-04/Modul_14_CourseSummary/image",
