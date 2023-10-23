@@ -2,6 +2,8 @@
 ![](../Modul_6_Monitoring_LoadBalancing_Scaling/image/Pasted%20image%2020231013112453.png)
 
 
+![](image/Pasted%20image%2020231023232003.png)
+
 
 In this lab, you will do the following:
 1. Create an Amazon S3 bucket. 
@@ -14,4 +16,13 @@ In this lab, you will do the following:
 8. Create items in a DynamoDB table using the console.
 
 
+
+![](image/Pasted%20image%2020231023231732.png)
+
+
+
+
+---
+
+employee-photo-bucket-yzh-1234
 

@@ -9,3 +9,6 @@ After completing this lab, you will be able to:
 • Locate and use the IAM sign-in URL 
 • Experiment with policies and service acce
 
+
+![](image/Pasted%20image%2020231023222634.png)
+
