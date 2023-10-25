@@ -2,6 +2,7 @@
 
 ![](image/Pasted%20image%2020231013144030.png)
 
+This lab guides you through the process of how to configure High Availability for a web application, so it can scale horizontally as demand increases.
 
 In this lab, you will do the following:
 1. Review an Amazon EC2 instance and web application and validate the configuration. 
@@ -16,6 +17,14 @@ In this lab, you will do the following:
 ![](image/Pasted%20image%2020231023235113.png)
 
 
+# 1 Task 
+
+Task1 : Review an Ec2 Instance and web application to validate the configuration 
+
+![](image/Pasted%20image%2020231024210449.png)
 
 
+Availability Zone: ap-southeast-1a
 
+
+dns name : Web-Application-ALB-280281459.ap-southeast-1.elb.amazonaws.com
