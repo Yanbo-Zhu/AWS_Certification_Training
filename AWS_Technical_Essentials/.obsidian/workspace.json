@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Modul_6_Monitoring_LoadBalancing_Scaling/Lab_4_Configure_High_Availability_For_Your_Application.md",
+                "file": "Modul_2_aws_compute/Modul_2.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Shared Controls",
+                "query": "NAT gateway",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Modul_6_Monitoring_LoadBalancing_Scaling/Lab_4_Configure_High_Availability_For_Your_Application.md",
+                "file": "Modul_2_aws_compute/Modul_2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Modul_6_Monitoring_LoadBalancing_Scaling/Lab_4_Configure_High_Availability_For_Your_Application.md",
+                "file": "Modul_2_aws_compute/Modul_2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Modul_6_Monitoring_LoadBalancing_Scaling/Lab_4_Configure_High_Availability_For_Your_Application.md"
+                "file": "Modul_2_aws_compute/Modul_2.md"
               }
             }
           },
@@ -168,26 +168,26 @@
   },
   "active": "c3ffd6b7af063a96",
   "lastOpenFiles": [
-    "Modul_6_Monitoring_LoadBalancing_Scaling/Modul_6.md",
-    "Modul_6_Monitoring_LoadBalancing_Scaling/Lab_4_Configure_High_Availability_For_Your_Application.md",
-    "Modul_6_Monitoring_LoadBalancing_Scaling/image/Pasted image 20231024210449.png",
-    "0_总览/介绍.md",
-    "Modul_6_Monitoring_LoadBalancing_Scaling/image/Pasted image 20231023235113.png",
-    "Modul_6_Monitoring_LoadBalancing_Scaling/image/Pasted image 20231023235052.png",
-    "Modul_5_Database/Lab_3_Configure a Web Application to use an Amazon S3 Bucket and DynamoDB Table.md",
-    "Modul_5_Database/image/Pasted image 20231023232003.png",
-    "Modul_5_Database/image/Pasted image 20231023231732.png",
-    "Modul_3_AWS_Networking/Lab_2_Creating a VPC and Launching a Web Application in an Amazon EC2 Instance.md",
-    "Modul_3_AWS_Networking/image/Pasted image 20231023231400.png",
-    "Modul_3_AWS_Networking/image/Pasted image 20231023231340.png",
-    "Modul_3_AWS_Networking/image/Pasted image 20231023230453.png",
-    "Modul_3_AWS_Networking/image/Pasted image 20231023222800.png",
-    "Modul_1_Introduction_to_AWS/Lab_1_Introfuction_to_AWS_Identity_and_Access_Management.md",
-    "Modul_1_Introduction_to_AWS/image/Pasted image 20231023222634.png",
-    "99_Course_Summary/99_Summary.md",
     "Modul_3_AWS_Networking/Modul_3.md",
+    "99_Course_Summary/99_Summary.md",
+    "0_总览/介绍.md",
+    "Modul_6_Monitoring_LoadBalancing_Scaling/Lab_4_Configure_High_Availability_For_Your_Application.md",
+    "Modul_5_Database/Lab_3_Configure a Web Application to use an Amazon S3 Bucket and DynamoDB Table.md",
+    "Modul_1_Introduction_to_AWS/Lab_1_Introfuction_to_AWS_Identity_and_Access_Management.md",
+    "Modul_3_AWS_Networking/Lab_2_Creating a VPC and Launching a Web Application in an Amazon EC2 Instance.md",
     "Modul_4_Storage/Modul_4.md",
     "Modul_5_Database/Modul_5.md",
+    "Modul_6_Monitoring_LoadBalancing_Scaling/Modul_6.md",
+    "Modul_6_Monitoring_LoadBalancing_Scaling/image/Pasted image 20231013112453.png",
+    "99_Course_Summary/image/Pasted image 20231013145118.png",
+    "99_Course_Summary/image/Pasted image 20231013145101.png",
+    "99_Course_Summary/image/Pasted image 20231013145046.png",
+    "99_Course_Summary/image/Pasted image 20231013144957.png",
+    "99_Course_Summary/image/Pasted image 20231013144931.png",
+    "99_Course_Summary/image/Pasted image 20231013144910.png",
+    "99_Course_Summary/image/Pasted image 20231013144906.png",
+    "99_Course_Summary/image/Pasted image 20231013144842.png",
+    "99_Course_Summary/image/Pasted image 20231013144756.png",
     "99_Course_Summary/image",
     "99_Course_Summary",
     "Modul_6_Monitoring_LoadBalancing_Scaling/image",

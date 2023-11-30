@@ -187,23 +187,46 @@ Cross-service integration – Recommendations can be exported to Amazon Simple S
 
 Reconfigure resources – Use the recommendations to reconfigure your resources for cost reduction and improved performance.
 
+## 3.3 Amazon EC2 key pairs 
+
 ![](image/Pasted%20image%2020231002144745.png)
 
 A key pair, which consists of a private key and a public key, is a set of security credentials. You use a key pair to prove your identity when connecting to an instance. Amazon EC2 stores the public key and you store the private key. You use the private key instead of a password to securely access your instances. Anyone who possesses your private keys can connect to your instances, so it's important that you store your private keys in a secure place.
 
 
+## 3.4 Tenancy 
+
 租期；租用
 
 ![](image/Pasted%20image%2020231002144917.png)
 
-shared tenancy: 只占用  physical host 某个instance, 别人可以使用同个 host 的其他的 instance 
-dedicated instance: physical host 全部占用 , 空出来的时候, 别人也是用得了
-dedicated host : physical host 全部占用 , 空出来 别人也是用不了
 
+On demand:  多个 costomer 同时公用 一个 physical host 的不同的 virtaul machine
+Resevered instances : 在用的的时候, 占用整个 physical host . share the physical hosts, when the hosts are not used
+dedicated hosts: 在用的的时候, 占用整个 physical host . Will not share the physical hosts, when the hosts are not used
+
+shared tenancy: 只占用  physical host 某个instance, 别人可以使用同个 host 的其他的 instance 
+dedicated instance:  physical host 全部占用 , 空出来的时候, 别人也是用得了
+dedicated host :  physical host 全部占用 , 空出来 别人也是用不了
+
+
+
+
+--- 
+
+1 Shared tenancy
 By default, EC2 instances have shared tenancy, which means that multiple AWS accounts might share the same physical hardware.
+
+
+2 Dedicated Instances
 Dedicated Instances are EC2 instances that are physically isolated at the host hardware level. They are isolated from instances that aren't dedicated and from instances that belong to other AWS accounts.
 
+Dedicated Instance does not work like this. Your instance runs on some dedicated hardware. **Its not lockdown to you**. If you stop/start instance, you can get some other hardware somewhere else. Basically, the hardware is "yours" (you are not sharing it with others) for the time your instance is running. You stop/start it, you may get different physical machine later on (maybe older, maybe newer, maybe its specs will be a bit different), and so on. **So your instance is moved around on different physical servers - whichever is not occupied by others at the time.**
+
+3 Dedicated Host
 When you launch instances on a Dedicated Host, the instances run on a physical server with EC2 instance capacity fully dedicated to your use. You are provided an isolated server with configurations that you can control. With Dedicated Hosts, you have the option to have AWS automatically select a server to place your instance. Or you can manually select a dedicated server to place your instance.
+
+With Dedicated Host the physical server is basically yours. It does not change, **it's always the same physical machine for as long as you are paying**
 
 Thus, you can deploy instances by using configurations to address corporate compliance and regulatory requirements. With Dedicated Hosts, you can use your existing per-socket, per-core, or per-VM software licenses. These software licenses are bound to VMs, sockets, or physical cores, subject to your license terms, and include, among others:
 • Microsoft Windows Server 
@@ -214,7 +237,36 @@ Thus, you can deploy instances by using configurations to address corporate comp
 For more information about Dedicated Hosts, see “Amazon EC2 Dedicated Hosts” at https://aws.amazon.com/ec2/dedicated-hosts/.
 
 
-## 3.3 Placement groups and use cases 
+---
+Reserved or dedicated capacity
+
+1 On-Demand Capacity Reservations 
+On-Demand Capacity Reservations enable you to reserve compute capacity for your EC2 instances in a specific Availability Zone for any duration. Capacity reservations mitigate against the risk of being unable to get On-Demand capacity in case of capacity constraints and ensure that you always have access to EC2 capacity when you need it, for as long as you need it.
+
+On-Demand Capacity Reservations are recommended for:
+- Business-critical events or workloads that require capacity assurance
+- Workloads that need to meet regulatory requirements for high availability
+- Disaster recovery
+
+
+2 Amazon EC2 Capacity Blocks for ML
+With Amazon EC2 Capacity Blocks for ML, you can easily reserve GPU instances for a future date to run your machine learning (ML) workloads. You pay only for the amount of compute time that you need, with no long-term commitment. EC2 Capacity Blocks can be used to reserve Amazon EC2 P5 instances.
+
+EC2 Capacity Blocks are recommended for:  
+- Training and fine-tuning ML models
+- Running experiments and building prototypes
+- Planning for future surges in demand for ML applications
+
+
+3 Dedicated Host
+A Dedicated Host is a physical EC2 server fully dedicated for your use. Dedicated Hosts can help you reduce costs by allowing you to use your existing server-bound software licenses, including Windows Server, SQL Server, and SUSE Linux Enterprise Server (subject to your license terms). Dedicated Hosts can be purchased On-Demand (hourly) or can be purchased as part of Savings Plans.  
+
+Dedicated Hosts are recommended for:
+- Users looking to save money on licensing costs
+- Workloads that need to run on dedicated physical servers
+- Users looking to offload host maintenance onto AWS, while controlling their maintenance event schedules to suit their business’s operational needs
+
+## 3.5 Placement groups and use cases 
 
 ![](image/Pasted%20image%2020231002145208.png)
 
@@ -370,6 +422,48 @@ You can also choose On-Demand initially to determine your needs based on usage.
 Savings Plans and Spot Instances give you cost savings with a different type of commitment. The next few slides describe when it is best to use which plans, based on your need.
 
 
+---
+https://aws.amazon.com/ec2/pricing/
+
+1  On-Demand Instances 
+On-Demand Instances let you pay for compute capacity by the hour or second with no long-term commitments. This frees you from the costs and complexities of planning, purchasing, and maintaining hardware and transforms what are commonly large fixed costs into much smaller variable costs.
+
+On-Demand Instances are recommended for:  
+- Users that prefer the low cost and flexibility of EC2 without any upfront payment or long-term commitment
+- Applications with short-term, spiky, or unpredictable workloads that cannot be interrupted
+- Applications being developed or tested on EC2 for the first time
+
+
+2  Saving Plans
+Savings Plans is a flexible pricing model that can help you reduce your bill by up to 72% compared to On-Demand prices, in exchange for a commitment to a consistent amount of usage (measured in $/hour) for a 1- or 3-year term.
+
+AWS offers three types of Savings Plans: 
+- Compute Savings Plans, 
+- EC2 Instance Savings Plans:   
+- Amazon SageMaker Savings Plans.
+
+Compute Savings Plans apply to usage across Amazon EC2, AWS Lambda, and AWS Fargate.
+
+Savings Plans are recommended for:  
+- Committed and steady-state usage
+- Users looking to take advantage of the latest compute offerings while continuing to save money
+
+EC2 svaing plans:  only ec2 instance
+Compute saving plans : fargat , ec2 instance, lambda, container
+
+
+3 Spot Instances
+谁出的钱多, 谁就能终结其他出钱少的人,  马上给你用 这个 instances
+Amazon EC2 Spot Instances let you take advantage of unused EC2 capacity in the AWS cloud and are available at a discount of up to 90% compared to On-Demand prices.
+
+Spot Instances are recommended for:
+- Fault tolerant or stateless workloads  
+- Applications that can run on heterogeneous hardware  
+- Applications that have flexible start and end times
+
+---
+
+
 
 ![](image/Pasted%20image%2020231002152041.png)
 
@@ -387,6 +481,7 @@ EC2 Instance Savings Plans provide savings up to 72 percent off On-Demand, with 
 With an EC2 Instance Savings Plan, you can change your instance size within the instance family or the OS. You can also move from Dedicated tenancy to Default and continue to receive the discounted rate that your EC2 Instance Savings Plan provides.
 We recommend Savings Plans over Reserved Instances. Like Reserved Instances, Savings Plans offer lower prices (up to 72 percent savings compared to On-Demand Instance pricing). In addition, Savings Plans offer you the flexibility to change your usage as your needs evolve.
 
+---
 
 
 ![](image/Pasted%20image%2020231002152158.png)

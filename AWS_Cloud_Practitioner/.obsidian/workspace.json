@@ -23,9 +23,11 @@
             "id": "ed12de165b200641",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.4.14"
+                "file": "00_资料/刷题.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -104,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Chapter_03_03_AWS_Services_EC2/Chapter_03_05_EC2_PricingModels.md",
+                "file": "00_资料/刷题.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Chapter_03_03_AWS_Services_EC2/Chapter_03_05_EC2_PricingModels.md",
+                "file": "00_资料/刷题.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -144,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Chapter_03_03_AWS_Services_EC2/Chapter_03_05_EC2_PricingModels.md"
+                "file": "00_资料/刷题.md"
               }
             }
           },
@@ -179,23 +181,23 @@
   },
   "active": "ed12de165b200641",
   "lastOpenFiles": [
+    "00_资料/学习视频和 他人笔记.md",
+    "00_资料/刷题.md",
+    "00_资料/AWS-Certified-Cloud-Practitioner_Exam-Guide.pdf",
+    "00_资料/官方Exam-Guide.md",
+    "Chapter_01_01_CloudConcepts/Chapter_01_01_Cloud_Concepts.md",
+    "Chapter_01_01_CloudConcepts/Chapter_01_02_GetStartet.md",
     "Chapter_03_03_AWS_Services_EC2/Chapter_03_05_EC2.md",
     "Chapter_03_01_AWS_Services_Compute_Storage/Chapter_03_01_Compute.md",
     "Chapter_01_02_DigitalTransformation_GlobalInfrastructur/Chapter_01_04_GlobalInfrastructure.md",
     "Chapter_01_02_DigitalTransformation_GlobalInfrastructur/Chapter_01_03_DigitalTransformation.md",
-    "Chapter_01_01_CloudConcepts/Chapter_01_02_GetStartet.md",
-    "Chapter_01_01_CloudConcepts/Chapter_01_01_Cloud_Concepts.md",
     "Chapter_06_01_BillingAndPricing/Chapter_06_01_BillingAndPricing.md",
     "Chapter_06_01_BillingAndPricing/Chapter_06_01_Other.md",
     "Chapter_05_02_MLAIBigData_ArchitectureFramework_TCOMigration/Chapter_05_05_AWS_Well-Architected_Framework.md",
     "00_资料/WhitePaper/AWS-Certified-Cloud-Practitioner_Exam-Guide.pdf",
-    "00_资料/学习视频和 他人笔记.md",
-    "00_资料/官方Exam-Guide.md",
-    "00_资料/刷题.md",
     "00_资料/WhitePaper/总览.md",
     "未命名",
     "00_资料/AWS服务名的缩写 initialism.md",
-    "00_资料/AWS-Certified-Cloud-Practitioner_Exam-Guide.pdf",
     "00_资料",
     "00_资料/image/Pasted image 20230601181916.png",
     "Chapter_02_01_CloudArchitecture_ManagementAndDevelopersTools/Chapter_02_03_Shared_Responsibility_Model.md",
@@ -209,7 +211,6 @@
     "Chapter_04_02_Goverance_Provisioning/Chapter_04_05_Provisioning.md",
     "Chapter_04_01_Identity_ApplicationIntegration_Container/Chapter_04_02_ApplicationIntegration.md",
     "Chapter_05_02_MLAIBigData_ArchitectureFramework_TCOMigration/Chapter_05_04_ML_AI_BigData.md",
-    "Chapter_03_01_AWS_Services_Compute_Storage/Chapter_03_02_Storage.md",
     "Chapter_06_02_Security/image/Pasted image 20230523001520.png",
     "Chapter_06_02_Security/image/Pasted image 20230523001449.png",
     "Chapter_06_02_Security/image/Pasted image 20230523001348.png",
