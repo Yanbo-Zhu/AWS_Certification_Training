@@ -195,38 +195,47 @@ A key pair, which consists of a private key and a public key, is a set of securi
 
 
 ## 3.4 Tenancy 
+https://stackoverflow.com/questions/64309679/aws-dedicated-host-vs-dedicated-instance-why-the-first-is-more-expensive-than
 
 租期；租用
 
 ![](image/Pasted%20image%2020231002144917.png)
 
 
-On demand:  多个 costomer 同时公用 一个 physical host 的不同的 virtaul machine
-Resevered instances : 在用的的时候, 占用整个 physical host . share the physical hosts, when the hosts are not used
-dedicated hosts: 在用的的时候, 占用整个 physical host . Will not share the physical hosts, when the hosts are not used
+Shared tenancy (by default ): 
+By default, EC2 instances have shared tenancy, which means that multiple AWS accounts might share the same physical hardware.
+- 只占用  physical host 某个instance.  你在用的时候，  别人可以使用同个 host 的其他的 instance 
 
-shared tenancy: 只占用  physical host 某个instance, 别人可以使用同个 host 的其他的 instance 
-dedicated instance:  physical host 全部占用 , 空出来的时候, 别人也是用得了
-dedicated host :  physical host 全部占用 , 空出来 别人也是用不了
+---
 
+dedicated instance:  
+Dedicated Instances are EC2 instances that are physically isolated at the host hardware level. They are isolated from instances that aren't dedicated and from instances that belong to other AWS accounts.
+- 当你 使用的时候 physical host 全部占用 . **Its not lockdown to you**, when you use it.  the hardware is "yours" (you are not sharing it with others) for the time your instance is running.
+- 空出来的时候, 别人也是用得了.
+- 当你下次再运行 会在不同的个 physical hardware 上面运行 。 you can get some other hardware somewhere else.  You stop/start it, you may get different physical machine later on (maybe older, maybe newer, maybe its specs will be a bit different)， whichever is not occupied by others at the time.**
 
+"Dedicated Instances are Amazon EC2 instances that run in a virtual private cloud (VPC) on hardware that's dedicated to a single customer... Dedicated Instances may share hardware with other instances from the same AWS account that are not Dedicated Instances."
 
+This means that **no other AWS Account will run an instance on the same Host**, but other instances (both dedicated and non-dedicated) from the same AWS Account might run on the same Host.
+
+**Billing is per-instance**, with a cost approximately 10% more than the normal instance charge (but no extra charge if it is the largest instance in the family, since it requires the whole host anyway).
 
 --- 
 
-1 Shared tenancy
-By default, EC2 instances have shared tenancy, which means that multiple AWS accounts might share the same physical hardware.
-
-
-2 Dedicated Instances
-Dedicated Instances are EC2 instances that are physically isolated at the host hardware level. They are isolated from instances that aren't dedicated and from instances that belong to other AWS accounts.
-
-Dedicated Instance does not work like this. Your instance runs on some dedicated hardware. **Its not lockdown to you**. If you stop/start instance, you can get some other hardware somewhere else. Basically, the hardware is "yours" (you are not sharing it with others) for the time your instance is running. You stop/start it, you may get different physical machine later on (maybe older, maybe newer, maybe its specs will be a bit different), and so on. **So your instance is moved around on different physical servers - whichever is not occupied by others at the time.**
-
-3 Dedicated Host
+Dedicated host :  
 When you launch instances on a Dedicated Host, the instances run on a physical server with EC2 instance capacity fully dedicated to your use. You are provided an isolated server with configurations that you can control. With Dedicated Hosts, you have the option to have AWS automatically select a server to place your instance. Or you can manually select a dedicated server to place your instance.
+- 当你 使用的时候 ， physical host 全部占用 
+- 空出来 别人也是用不了。 Will not share the physical hosts, when the hosts are not used
+- 一直会在同一个 physical hardware 上运行。With Dedicated Host the physical server is basically yours. It does not change, **it's always the same physical machine for as long as you are paying**
 
-With Dedicated Host the physical server is basically yours. It does not change, **it's always the same physical machine for as long as you are paying**
+As soon as you 'allocate' a Dedicated Host, **you start paying for that whole host**.
+
+A host computer is very big. In fact, it is the size of the largest instance of the selected family, but can be divided-up into smaller instances of the same family. ("You can run any number of instances up to the core capacity associated with the host.")
+
+Any instances that run on that Host are not charged, since you are already being billed for the Host.
+
+That is why a Dedicated Host is more expensive than a Dedicated Instance -- the charge is for the _whole host_.
+
 
 Thus, you can deploy instances by using configurations to address corporate compliance and regulatory requirements. With Dedicated Hosts, you can use your existing per-socket, per-core, or per-VM software licenses. These software licenses are bound to VMs, sockets, or physical cores, subject to your license terms, and include, among others:
 • Microsoft Windows Server 
@@ -237,8 +246,36 @@ Thus, you can deploy instances by using configurations to address corporate comp
 For more information about Dedicated Hosts, see “Amazon EC2 Dedicated Hosts” at https://aws.amazon.com/ec2/dedicated-hosts/.
 
 
+## 3.5 # Instance Purchasing Options： On-Demand， Reserved， Spot
+
+
+On-demand instances: 完全属于你， 用的时候不会丢失 ， 不用提前预定 
+A Reserved Instance： 要提前签合同预定， long-term use 1-3 年的合同 
+A spot instance： 别人不用的机器 你才会用， 并且可能 随时被掠夺走。
+
+On-Demand Instances and Reserved Instances offer different pricing models so that organizations can choose the most appropriate configuration based on their organizational consumption and needs. Configurations of EC2 instances are available with both Reserved and On-Demand pricing.
+On-demand computing instances are computing instances that are available when needed. On-demand instances are charged by either the second or hour of use, and facilitate autoscaling.
+
 ---
-Reserved or dedicated capacity
+
+A Reserved Instance requires a lock-in contract to reserve a full instance for a given time period of either one or three years. On-Demand Instances are billed in hours and seconds and require no lock-in period—they can be turned on or off at will. Compare this This is to renting a car park in the city for a year or on a daily rate. If you work full-time in the city, the yearly rate would be more cost-effective. If you work partly remote, the daily rate may make more sense.
+A reserved instance is an instance where an organization commits to purchase a specified compute capacity for a specified period of time. It is essentially a contract to purchase a computing instance and can be for one to three years. By purchasing instances based upon long-term use, the organization can receive substantial savings over on-demand pricing. 
+
+---
+
+A spot instance is an instance that is pulled from unused AWS capacity. Spot instances are sold in an auction-like manner in which an organization places a bid.
+
+---
+
+
+可以和 组合为 
+
+Dedicated Reserved Hosts
+Dedicated On-Demand Hosts
+Dedicated Reserved Instances
+Dedicated On-Demand Host
+
+## 3.6 Reserved or dedicated capacity
 
 1 On-Demand Capacity Reservations 
 On-Demand Capacity Reservations enable you to reserve compute capacity for your EC2 instances in a specific Availability Zone for any duration. Capacity reservations mitigate against the risk of being unable to get On-Demand capacity in case of capacity constraints and ensure that you always have access to EC2 capacity when you need it, for as long as you need it.
@@ -266,7 +303,7 @@ Dedicated Hosts are recommended for:
 - Workloads that need to run on dedicated physical servers
 - Users looking to offload host maintenance onto AWS, while controlling their maintenance event schedules to suit their business’s operational needs
 
-## 3.5 Placement groups and use cases 
+## 3.7 Placement groups and use cases 
 
 ![](image/Pasted%20image%2020231002145208.png)
 
