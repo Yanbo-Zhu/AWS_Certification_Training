@@ -25,14 +25,24 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00_资料/刷题.md",
+                "file": "Chapter_03_01_AWS_Services_Compute_Storage/Chapter_03_02_Storage.md",
                 "mode": "source",
                 "source": false
               }
             }
+          },
+          {
+            "id": "362f516678bf8db9",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "00_资料/AWS-Certified-Cloud-Practitioner_Exam-Guide.pdf"
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -61,7 +71,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Shared Controls",
+                "query": "AWS Builder ID",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -106,7 +116,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "00_资料/刷题.md",
+                "file": "00_资料/AWS-Certified-Cloud-Practitioner_Exam-Guide.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +133,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "00_资料/刷题.md",
+                "file": "00_资料/AWS-Certified-Cloud-Practitioner_Exam-Guide.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +156,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00_资料/刷题.md"
+                "file": "00_资料/AWS-Certified-Cloud-Practitioner_Exam-Guide.pdf"
               }
             }
           },
@@ -156,7 +166,9 @@
             "state": {
               "type": "all-properties",
               "state": {
-                "sortOrder": "frequency"
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
               }
             }
           }
@@ -179,16 +191,21 @@
       "workspaces:管理工作区布局": false
     }
   },
-  "active": "ed12de165b200641",
+  "active": "ba7b1296865c75fc",
   "lastOpenFiles": [
-    "00_资料/学习视频和 他人笔记.md",
+    "00_资料/AWS服务名的缩写 initialism.md",
     "00_资料/刷题.md",
-    "00_资料/AWS-Certified-Cloud-Practitioner_Exam-Guide.pdf",
+    "00_资料/学习视频和 他人笔记.md",
     "00_资料/官方Exam-Guide.md",
     "Chapter_01_01_CloudConcepts/Chapter_01_01_Cloud_Concepts.md",
     "Chapter_01_01_CloudConcepts/Chapter_01_02_GetStartet.md",
-    "Chapter_03_03_AWS_Services_EC2/Chapter_03_05_EC2.md",
+    "00_资料/AWS-Certified-Cloud-Practitioner_Exam-Guide.pdf",
+    "Chapter_04_02_Goverance_Provisioning/Chapter_04_04_Goverance_管理方法.md",
+    "Chapter_03_AWS_Main_Services/Chapter_03_AWS_Main_Services.md",
+    "Chapter_03_02_AWS_Services_Database_Network/Chapter_03_03_Database.md",
+    "Chapter_03_01_AWS_Services_Compute_Storage/Chapter_03_02_Storage.md",
     "Chapter_03_01_AWS_Services_Compute_Storage/Chapter_03_01_Compute.md",
+    "Chapter_03_03_AWS_Services_EC2/Chapter_03_05_EC2.md",
     "Chapter_01_02_DigitalTransformation_GlobalInfrastructur/Chapter_01_04_GlobalInfrastructure.md",
     "Chapter_01_02_DigitalTransformation_GlobalInfrastructur/Chapter_01_03_DigitalTransformation.md",
     "Chapter_06_01_BillingAndPricing/Chapter_06_01_BillingAndPricing.md",
@@ -197,20 +214,15 @@
     "00_资料/WhitePaper/AWS-Certified-Cloud-Practitioner_Exam-Guide.pdf",
     "00_资料/WhitePaper/总览.md",
     "未命名",
-    "00_资料/AWS服务名的缩写 initialism.md",
     "00_资料",
     "00_资料/image/Pasted image 20230601181916.png",
     "Chapter_02_01_CloudArchitecture_ManagementAndDevelopersTools/Chapter_02_03_Shared_Responsibility_Model.md",
-    "Chapter_04_02_Goverance_Provisioning/Chapter_04_04_Goverance_管理方法.md",
     "Chapter_03_TechnolgyOverview/Chapter_03_TechnologiesOverview.md",
     "Chapter_02_01_CloudArchitecture_ManagementAndDevelopersTools/Chapter_02_02_Management_And_Developers Tools.md",
     "Chapter_05_01_Serverless_WindowsOnAWS_Logging/Chapter_05_03_logging.md",
     "Chapter_04_01_Identity_ApplicationIntegration_Container/Chapter_04_01_Identity.md",
     "Chapter_06_02_Security/Chapter_06_02_Security.md",
     "Chapter_03_02_AWS_Services_Database_Network/Chapter_03_04_Network.md",
-    "Chapter_04_02_Goverance_Provisioning/Chapter_04_05_Provisioning.md",
-    "Chapter_04_01_Identity_ApplicationIntegration_Container/Chapter_04_02_ApplicationIntegration.md",
-    "Chapter_05_02_MLAIBigData_ArchitectureFramework_TCOMigration/Chapter_05_04_ML_AI_BigData.md",
     "Chapter_06_02_Security/image/Pasted image 20230523001520.png",
     "Chapter_06_02_Security/image/Pasted image 20230523001449.png",
     "Chapter_06_02_Security/image/Pasted image 20230523001348.png",

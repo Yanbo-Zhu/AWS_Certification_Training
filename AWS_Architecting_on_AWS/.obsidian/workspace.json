@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2023-10-02/Modul_4_Compute/Modul_4_1_Compute.md",
+                "file": "2023-10-04/Modul_13_BackupAndRecovery/Modul_12_1.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "dedicated ",
+                "query": "route",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2023-10-02/Modul_4_Compute/Modul_4_1_Compute.md",
+                "file": "2023-10-04/Modul_13_BackupAndRecovery/Modul_12_1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2023-10-02/Modul_4_Compute/Modul_4_1_Compute.md",
+                "file": "2023-10-04/Modul_13_BackupAndRecovery/Modul_12_1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2023-10-02/Modul_4_Compute/Modul_4_1_Compute.md"
+                "file": "2023-10-04/Modul_13_BackupAndRecovery/Modul_12_1.md"
               }
             }
           },
@@ -144,7 +144,9 @@
             "state": {
               "type": "all-properties",
               "state": {
-                "sortOrder": "frequency"
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
               }
             }
           }
@@ -167,16 +169,16 @@
       "workspaces:管理工作区布局": false
     }
   },
-  "active": "5b55ae76f41d082c",
+  "active": "2e77221006228c80",
   "lastOpenFiles": [
-    "2023-10-02/Modul_4_Compute/Lab_2_Build your Amazon VPC infrastructure.md",
-    "2023-10-02/Modul_4_Compute/Modul_4_1_Compute.md",
-    "2023-10-02/Modul_1_Architecting_Fundamentals/Modul_1_2 AWS_Well-architected_framework.md",
+    "2023-10-02/0_课程大纲/1_课程大纲.md",
     "2023-10-02/0_课程大纲/Lab_总览.md",
+    "2023-10-02/Modul_4_Compute/Modul_4_1_Compute.md",
+    "2023-10-02/Modul_4_Compute/Lab_2_Build your Amazon VPC infrastructure.md",
+    "2023-10-02/Modul_1_Architecting_Fundamentals/Modul_1_2 AWS_Well-architected_framework.md",
     "2023-10-02/Modul_2_Account_Security/Modul_2_1.md",
     "2023-10-03/Modul_6_database_services/Lab_3_Create_A_database_layer_in_Amazon_VPC_infrastructure.md",
     "2023-10-03/Modul_7_Monitoring_LoadBalancing_Scaling/Lab_4_Configure_high_availability_in_your_Amazon_VPC.md",
-    "2023-10-02/0_课程大纲/1_课程大纲.md",
     "2023-10-04/Modul_14_CourseSummary/Modul_14_Summary.md",
     "2023-10-04/Modul_14_CourseSummary/image/Pasted image 20231023154959.png",
     "2023-10-04/lab7_Capstone_Build_an_AWS_multi-tier_Architecture/Lab7_CapstoneLab_Build_an_AWS_multi-tier_Architecture.md",
