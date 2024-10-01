@@ -89,7 +89,7 @@ Security Groups and NACLs are all within the VPC. But the utility of these are s
 So in that diagram, you can see that all those instances are contained within a security group,   and they can span multiple subnets. Whereas the  NACLs sit in front of the subnets. 
 And NACLs gonna control access in and out from subnets.  
 
-![](image/Pasted%20image%2020230316093259.png)
+![](../Chapter_06_02_Security/image/Pasted%20image%2020230316093259.png)
 
 ![](image/Pasted%20image%2020230513155137.png)
 
