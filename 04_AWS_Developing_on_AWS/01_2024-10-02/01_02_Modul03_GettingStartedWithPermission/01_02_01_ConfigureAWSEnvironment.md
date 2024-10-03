@@ -1,18 +1,16 @@
 
 
-
-# 1 IAM的使用: 如何开始配置云环境 
+# 1 IAM
 
 
 IAM ist groble service,   iam 是无法选region,  globally valid 
 
 刚开始要干什么 
-
 1. stop use root, enable MFA
 2. release least privilege
 3. temporary access 
 
-IAM 
+## 1.1 IAM_Terms_Concepts
 - users 
     - attached with policys
 - groups 
@@ -35,7 +33,8 @@ IAM
 ![](image/Pasted%20image%2020241002111733.png)
 
 
-## 1.1 例子 
+
+### 1.1.1 Permission policy
 
 
 example-role  ec2 
@@ -43,22 +42,32 @@ example-role  ec2
 ![](image/Pasted%20image%2020241002112658.png)
 
 
-## 1.2 Entity 
+### 1.1.2 Trusted Entity  (Assume Role)
 
 principal :  user , service is principal 
 group it not a principle
 
 
+在 IAM policy 中定义 Trusted Entity 
+those Trusted Entities is able to assume this IAM role 
+This aws iam Trusted Entity  can (with effect ) use  the action (  can assume this role ) 
+
+
 ![](image/Pasted%20image%2020241002113406.png)
 
 
-This aws iam can (with effect ) use  the action ( IAM user can assume role ) 
+
+## 1.2 IAM user 
+
+![](../01_03_Accessing_AWS_Service/image/Pasted%20image%2020241002140129.png)
+
+![](../01_03_Accessing_AWS_Service/image/Pasted%20image%2020241002140154.png)
 
 
+## 1.3 IAM policy 
 
 
-## 1.3 create the IAM policy 
-
+可以自定义自己的 customized IAM policy 
 
 ![](image/Pasted%20image%2020241002114009.png)
 
@@ -70,7 +79,6 @@ This aws iam can (with effect ) use  the action ( IAM user can assume role )
 
 
  From xx source ip 可以 access to xx S3 buckets  to do xx action 
-  
 
 ![](image/Pasted%20image%2020241002114151.png)
 
@@ -85,48 +93,33 @@ this polcy give  a limeted read list read to a specify aws servcice of 421 aws s
 
 
 
+## 1.4 Setting up AWS permanent credentials 
 
-# 2 Setting up AWS permanent credentials 
+aws configuration file 
 
+![](../01_03_Accessing_AWS_Service/image/Pasted%20image%2020241002135438.png)
 
-![](image/Pasted%20image%2020241002135430.png)
-
-
-![](image/Pasted%20image%2020241002135438.png)
-
-
-
-## 2.1 aws configuration file 
-
-![](image/Pasted%20image%2020241002133307.png)
-
-
-## 2.2 create IAM user 
-
-![](image/Pasted%20image%2020241002140129.png)
-
-![](image/Pasted%20image%2020241002140154.png)
+![](../01_03_Accessing_AWS_Service/image/Pasted%20image%2020241002133307.png)
 
 
 
+## 1.5 attach IAM role to a ec2 instance profile
 
-## 2.3 attach IAM role to a ec2 instance 
-
-![](image/Pasted%20image%2020241002141023.png)
-
-
-![](image/Pasted%20image%2020241002141057.png)
+![](../01_03_Accessing_AWS_Service/image/Pasted%20image%2020241002141023.png)
 
 
-![](image/Pasted%20image%2020241002141212.png)
+![](../01_03_Accessing_AWS_Service/image/Pasted%20image%2020241002141057.png)
 
 
-## 2.4 IAM role Trust Policy and permission 
+![](../01_03_Accessing_AWS_Service/image/Pasted%20image%2020241002141212.png)
+
+
+## 1.6 IAM role: Trust Relationships and permission 
 
 1 
 permission: rolle  can do what in permision defined 
 
-![](image/Pasted%20image%2020241002141521.png)
+![](../01_03_Accessing_AWS_Service/image/Pasted%20image%2020241002141521.png)
 
 ---
 
@@ -137,26 +130,26 @@ permission: rolle  can do what in permision defined
 only trusted entities  kann assume this role 
 
 
-![](image/Pasted%20image%2020241002141546.png)
+![](../01_03_Accessing_AWS_Service/image/Pasted%20image%2020241002141546.png)
 
 
 
 ---
 
 
-![](image/Pasted%20image%2020241002141629.png)
+![](../01_03_Accessing_AWS_Service/image/Pasted%20image%2020241002141629.png)
 
 
-![](image/Pasted%20image%2020241002141637.png)
+![](../01_03_Accessing_AWS_Service/image/Pasted%20image%2020241002141637.png)
 
 
-![](image/Pasted%20image%2020241002154344.png)
+![](../01_03_Accessing_AWS_Service/image/Pasted%20image%2020241002154344.png)
 
 
 
 
 
-# 3 AWS CloudTrail 
+# 2 AWS CloudTrail 
 
 AWS CloudTrail is a web service that records AWS API calls for your AWS account and delivers log files to an Amazon S3 bucket.
 
@@ -173,17 +166,17 @@ Cloudtrail 通 trace  api record ,  to see which one has used xx
 
 
 
-# 4 secure account setup 
+# 3 secure account setup 
 
 [https://d0.awsstatic.com/aws-answers/AWS_Secure_Account_Setup.pdf](https://d0.awsstatic.com/aws-answers/AWS_Secure_Account_Setup.pdf "https://d0.awsstatic.com/aws-answers/aws_secure_account_setup.pdf")   
 ![](image/Pasted%20image%2020241002120603.png)
 
 
-# 5 cost watching 
+# 4 cost watching 
 
 https://aws.amazon.com/blogs/aws-cloud-financial-management/getting-started-with-aws-budgets/
 
-## 5.1 billing alarm through alert fucntion in aws cloudwatch 
+## 4.1 billing alarm through alert fucntion in aws cloudwatch 
 
 
 [https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/monitor_estimated_charges_with_cloudwatch.html](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/monitor_estimated_charges_with_cloudwatch.html "https://docs.aws.amazon.com/amazoncloudwatch/latest/monitoring/monitor_estimated_charges_with_cloudwatch.html")
@@ -203,7 +196,7 @@ montoring  the aws cloudwath metric.  In cloudwoatch , you can setup biiling ala
 ![](image/Pasted%20image%2020241002120519.png)
 
 
-## 5.2 aws budgets 
+## 4.2 aws budgets 
 
 
 [https://aws.amazon.com/fr/blogs/aws-cloud-financial-management/get-started-with-aws-budgets-actions/](https://aws.amazon.com/fr/blogs/aws-cloud-financial-management/get-started-with-aws-budgets-actions/ "https://aws.amazon.com/fr/blogs/aws-cloud-financial-management/get-started-with-aws-budgets-actions/")
