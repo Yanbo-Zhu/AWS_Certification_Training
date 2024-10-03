@@ -62,3 +62,43 @@ s3api :  low level api
 ![](image/Pasted%20image%2020241002171432.png)
 
 
+# 4 AWS IDE Toolkits 
+
+
+![](image/Pasted%20image%2020241003094732.png)
+
+
+# 5 create a enviroment in cloud9 
+
+
+![](image/Pasted%20image%2020241003094833.png)
+
+
+![](image/Pasted%20image%2020241003094901.png)
+
+
+
+
+---
+
+share the environment with other guy 
+
+control the same crusor
+
+
+# 6 Service operations 
+
+
+
+
+![](image/Pasted%20image%2020241003095419.png)
+
+![](image/Pasted%20image%2020241003095444.png)
+
+
+![](image/Pasted%20image%2020241003095558.png)
+
+![](image/Pasted%20image%2020241003095622.png)
+
+
+

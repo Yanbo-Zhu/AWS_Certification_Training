@@ -66,6 +66,8 @@ This aws iam Trusted Entity  can (with effect ) use  the action (  can assume th
 
 ## 1.3 IAM policy 
 
+attach Iam policy  to idenetiy (IAm group, user, a aww service, IAM role )
+in A s3 bucket level, you can also defaine which Identities can access to s3 level buckt 
 
 可以自定义自己的 customized IAM policy 
 
@@ -90,6 +92,118 @@ this polcy give  a limeted read list read to a specify aws servcice of 421 aws s
 ![](image/Pasted%20image%2020241002114043.png)
 
 ![](image/Pasted%20image%2020241002114113.png)
+
+
+### 1.3.1 identiry-based policy 
+
+
+identity 代表 iam role, iam user, iam group , oder a aws service 
+
+create a IAM griups 
+![](image/Pasted%20image%2020241003092604.png)
+
+attach the policy 
+
+![](image/Pasted%20image%2020241003092618.png)
+
+![](image/Pasted%20image%2020241003092740.png)
+
+
+![](image/Pasted%20image%2020241003092834.png)
+
+
+![](image/Pasted%20image%2020241003092851.png)
+
+#### 1.3.1.1 
+
+
+![](image/Pasted%20image%2020241003093014.png)
+
+![](image/Pasted%20image%2020241003093057.png)
+
+
+
+![](image/Pasted%20image%2020241003093105.png)
+
+
+![](image/Pasted%20image%2020241003093130.png)
+
+
+can be also policy 
+![](image/Pasted%20image%2020241003093200.png)
+
+
+----
+
+指定一个 arn 可以使用 这个 policy 
+
+![](image/Pasted%20image%2020241003093226.png)
+
+
+
+![](image/Pasted%20image%2020241003093315.png)
+
+
+
+ARN:  三个 :::  中要写 AWS region and AWSaccount , 因为在 这个操作中  aws 已经知道了 这个 s3bucket 在哪里,  所以在这里不需要特殊指明写出了 
+
+----
+
+
+![](image/Pasted%20image%2020241003093603.png)
+
+
+![](image/Pasted%20image%2020241003093630.png)
+
+
+
+### 1.3.2 resource-based/ resource-level  policy 
+
+> not all resource support the resource-level prolicy 
+
+attach Iam policy  to idenetiy (IAm group, user, a aww service, IAM role )
+in A s3 bucket level, you can also defaine which Identities can access to s3 level buckt 
+
+在 一个 iam group 定义一个 policy , 让后直接 attach this policy to his iam group 
+
+---
+
+Is it possible that we do the similar operation  on s3 console 
+
+![](image/Pasted%20image%2020241003093728.png)
+
+----
+
+
+1 
+![](image/Pasted%20image%2020241003093758.png)
+
+
+![](image/Pasted%20image%2020241003093810.png)
+
+----
+
+![](image/Pasted%20image%2020241003093849.png)
+
+![](image/Pasted%20image%2020241003093909.png)
+
+
+![](image/Pasted%20image%2020241003093921.png)
+
+
+![](image/Pasted%20image%2020241003093954.png)
+
+
+![](image/Pasted%20image%2020241003094007.png)
+
+
+![](image/Pasted%20image%2020241003094021.png)
+
+
+iam is global , so region 不必谢 , 但是 acount 已经报名了 
+
+![](image/Pasted%20image%2020241003094048.png)
+
 
 
 
@@ -168,9 +282,15 @@ Cloudtrail 通 trace  api record ,  to see which one has used xx
 
 # 3 secure account setup 
 
+
+AWS CheckLists   
+
 [https://d0.awsstatic.com/aws-answers/AWS_Secure_Account_Setup.pdf](https://d0.awsstatic.com/aws-answers/AWS_Secure_Account_Setup.pdf "https://d0.awsstatic.com/aws-answers/aws_secure_account_setup.pdf")   
 ![](image/Pasted%20image%2020241002120603.png)
 
+
+
+[https://d1.awsstatic.com/aws-answers/AWS_Multi_Account_Security_Strategy.pdf](https://d1.awsstatic.com/aws-answers/AWS_Multi_Account_Security_Strategy.pdf "https://d1.awsstatic.com/aws-answers/aws_multi_account_security_strategy.pdf")
 
 # 4 cost watching 
 
