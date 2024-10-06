@@ -17,15 +17,28 @@ shared NFS Volume
 ![](image/Pasted%20image%2020241002152753.png)
 
 
+# 3 Amazon ElasticCache
 
-# 3 S3
+use Memory Chace 
+But there's a little added complexity for the development team, right?
+ 
+![](image/Pasted%20image%2020241004111351.png)
+# 4 S3
 
 
 ![](image/Pasted%20image%2020241002153012.png)
 
+## 4.1 cost
+
+s3
+you pay for storage and egress 
+- You do not pay when the data goes in, you pay when the data goes out.
+
+![](image/Pasted%20image%2020241004092811.png)
 
 
-## 3.1 limitation: maximal size of object   5TB 
+
+## 4.2 limitation: maximal size of object   5TB 
 - single pull: maximal 2 GB 
 
 Movie movie is 2 terabytes , but  maximal size of single pull ist 2GB,  how to address this problem :  S3 called Multipart upload
@@ -50,7 +63,7 @@ Standard S3 会将上传的文件 自动 上传到 3个不同的 AZ in the same 
 
 
 
-## 3.2 Entity Tag of object in s3 : 校验文件的intergrity 
+## 4.3 Entity Tag of object in s3 : 校验文件的intergrity 
 
 ![](image/Pasted%20image%2020241002154517.png)
 
@@ -78,7 +91,7 @@ get md5, download file from s3 , check the file with md5
 
 
 
-## 3.3 prefixes and deleimiers in S3
+## 4.4 prefixes and deleimiers in S3
 
 
 ![](image/Pasted%20image%2020241002153012.png)
@@ -89,7 +102,7 @@ get md5, download file from s3 , check the file with md5
 ![](image/Pasted%20image%2020241002160631.png)
 
 
-## 3.4 version 
+## 4.5 version 
 
 ![](image/Pasted%20image%2020241002160720.png)
 
@@ -106,17 +119,17 @@ get md5, download file from s3 , check the file with md5
 ![](image/Pasted%20image%2020241002160822.png)
 
 
-## 3.5 lifecycle rules 
+## 4.6 lifecycle rules 
 
 ![](image/Pasted%20image%2020241002160913.png)
 
 
-## 3.6 replicate objects across bucket
+## 4.7 replicate objects across bucket
 
 ![](image/Pasted%20image%2020241002160943.png)
 
 
-## 3.7 immutable object: Object Lock 
+## 4.8 immutable object: Object Lock 
 
 [https://aws.amazon.com/blogs/storage/protecting-data-with-amazon-s3-object-lock/](https://aws.amazon.com/blogs/storage/protecting-data-with-amazon-s3-object-lock/ "https://aws.amazon.com/blogs/storage/protecting-data-with-amazon-s3-object-lock/")
 
@@ -130,7 +143,7 @@ enable Object Lock
 
 
 
-## 3.8 static Website hosting 
+## 4.9 static Website hosting 
 
 
 
@@ -150,11 +163,28 @@ enable Object Lock
 [http://brussels-cafe.s3-website-sa-east-1.amazonaws.com](http://brussels-cafe.s3-website-sa-east-1.amazonaws.com "http://brussels-cafe.s3-website-sa-east-1.amazonaws.com/")
 
 
-
-# 4 AWS S3 CLI
+# 5 AWS S3 CLI
 
 
 ![](image/Pasted%20image%2020241002160328.png)
 .  代表 source,   就是 current directory , 在 current directotory 下同步一个 s3 bucekt 
+
+
+# 6 S3 Transfer acceleration
+
+[http://s3-accelerate-speedtest.s3-accelerate.amazonaws.com/en/accelerate-speed-comparsion.html](http://s3-accelerate-speedtest.s3-accelerate.amazonaws.com/en/accelerate-speed-comparsion.html "http://s3-accelerate-speedtest.s3-accelerate.amazonaws.com/en/accelerate-speed-comparsion.html")
+
+![](image/Pasted%20image%2020241004092324.png)
+
+# 7 AWS pricing Calculater 
+
+![](image/Pasted%20image%2020241004092601.png)
+
+![](image/Pasted%20image%2020241004092711.png)
+
+
+
+
+
 
 

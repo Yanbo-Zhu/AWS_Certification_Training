@@ -262,7 +262,7 @@ provisioned throughput exceeds
 ![](image/Pasted%20image%2020241003112931.png)
 
 
-
+![](image/Pasted%20image%2020241004084021.png)
 
 ![](image/Pasted%20image%2020241003113138.png)
 
@@ -273,7 +273,7 @@ provisioned throughput exceeds
 
 ![](image/Pasted%20image%2020241003113304.png)
 
-## 5.2 provisioned mode  and on-Demand mode 
+### 5.1.1 provisioned mode  and on-Demand mode 
 
  provisioned mode 
 - advantage
@@ -290,7 +290,7 @@ on-Demand
     - coldstart :  And now I see that you guys connect capacity as needed, but you still taking a few minutes and my application this specific use case cannot tolerate.
 
 
-### 5.2.1 privioned mode 
+#### 5.1.1.1 privioned mode 
 
 item is vector, 每个 item 都是一个储存形式 
 
@@ -300,7 +300,7 @@ item is vector, 每个 item 都是一个储存形式
 
 ![](image/Pasted%20image%2020241003113527.png)
 
-### 5.2.2 on demand
+#### 5.1.1.2 on demand
 
 ![](image/Pasted%20image%2020241003114230.png)
 
@@ -308,14 +308,14 @@ item is vector, 每个 item 都是一个储存形式
 ![](image/Pasted%20image%2020241003113937.png)
 
 
-## 5.3 Create Item
+# 6 Create Item
 
 ![](image/Pasted%20image%2020241003114600.png)
 
 
 ![](image/Pasted%20image%2020241003114631.png)
 
-## 5.4 explore item 
+# 7 explore item 
 
 ![](image/Pasted%20image%2020241003114753.png)
 
@@ -353,7 +353,7 @@ add attribute
 
 
 ---
-## 5.5 查询过程不产生延迟的原因
+## 7.1 查询过程不产生延迟的原因
 
 
 
@@ -365,7 +365,7 @@ read all the data , 拿出来之后, 再做 filtering
 - Cause remember the fundamental idea of this system is make sure that we never hit five milliseconds or more.
 - So that's why yes, we'll do the filtering for you. But after we read all the data, it's all in the docs.
 
-## 5.6 每个item都有自己的value, 是否redundant
+## 7.2 每个item都有自己的value, 是否redundant
 But there but doesn't it affect the the rights capacity units as well?
 在例子中 的DynamoDB, 每个演员 每个 movie 都要保存 review number , 会不会 过于redundant
 答案是不会的, 为什么: 因为 Storage is cheap, so duplicating the data is no problem whatsoever.
@@ -381,7 +381,7 @@ But there but doesn't it affect the the rights capacity units as well?
 ![](image/Pasted%20image%2020241003115932.png)
 
 
-# 6 local seconadary index, global secondary index in the main table 
+# 8 local seconadary index, global secondary index in the main table 
 
 local seconadary index, global secondary index 更像是一张新表 
 
@@ -392,7 +392,7 @@ local seconadary index, global secondary index 更像是一张新表
 
 
 
-# 7 Free Tier 
+# 9 Free Tier 
 
 
 ![](image/Pasted%20image%2020241003114310.png)
@@ -414,9 +414,19 @@ local seconadary index, global secondary index 更像是一张新表
 
 
 
+# 10 clsuter 
+
+why use clsuter 
+- mirco sekuncde service 
+- R CU read, WCU write  
 
 
 
+![](image/Pasted%20image%2020241004111137.png)
 
+
+一个cluster 中 有若干个 node,. 对一个 table 提供不同的 rcu wcu 值
+
+![](image/Pasted%20image%2020241004111253.png)
 
 
