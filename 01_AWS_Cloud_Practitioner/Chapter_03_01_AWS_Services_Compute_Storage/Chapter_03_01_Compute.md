@@ -83,6 +83,7 @@
 切换到 旧的 ecs version, 然后删除 cluster 
 ![](image/Pasted%20image%2020230402112017.png)
 
+
 ## 3.2 lambda
 ![](image/Pasted%20image%2020230402100031.png)
 
