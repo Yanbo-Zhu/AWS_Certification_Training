@@ -55,6 +55,7 @@ Types of load balancers available for you to use include:
 
 
 # 3 ALB 
+
 ALB 是 AWS 的 **多租户全托管服务**，它的入口是由 AWS 管理的一组动态 IP，AWS 可能会因为扩容、维护等原因随时更换这些 IP。 详细解释一下
  ALB is a **multi-tenant, fully managed service** in AWS. Its entry point uses a set of **dynamic IP addresses** managed by AWS.  These IPs can change at any time (due to scaling, maintenance, failover, etc.).
 
