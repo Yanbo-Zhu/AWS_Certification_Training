@@ -8,6 +8,9 @@
 ![](image/Pasted%20image%2020231003132153.png)
 
 
+ELB is a highly available and scalable AWS service that automatically distributes incoming application traffic across multiple targets. Targets can be Amazon EC2 instances, containers, IP addresses, Lambda functions, and more. The targets can be in a single Availability Zone or multiple zones. With ELB, you would have two or more Amazon EC2 instances. If one instance stops responding, ELB will distribute the traffic to the other instances, without affecting your customers.
+ELB uses heath checks to determine if a resource is available. The heath checks are indicated by an API response code. For example, if the code is 200 (OK), the resource is running without any issues. If the code is 503, the resource is unavailable, so ELB will route traffic to other available resources.
+
 Elastic Load Balancing (ELB) makes up one of the most widely used AWS service categories. It has been adopted by organizations of all sizes, in all geographies, and across every industry. ELB load balancers are the only load balancers available on AWS that natively connect users to your EC2 instances, container deployments, and AWS Lambda functions. Some key feature sets include:
 • High availability – ELB automatically distributes your traffic across multiple targets in a single Availability Zone or multiple Availability Zones. Examples of targets include EC2 instances, containers, and IP addresses.
 • Layer 4 or Layer 7 HTTP and HTTPS load balancing – You can load balance your HTTP or HTTPS applications for Layer 7-specific features. Alternatively, you can use strict Layer 4 load balancing for applications that rely purely on the TCP.
@@ -17,10 +20,34 @@ Elastic Load Balancing (ELB) makes up one of the most widely used AWS service ca
 In this example, the load balancer receives requests from desktop and mobile clients (users). There are two subnets in the same VPC, with two EC2 instances each. Each subnet is in a separate Availability Zone. All four EC2 instances are registered to the same load balancer and receive traf
 
 
+ELB has a number of benefits, including:
+• High availability and elasticity: ELB is an AWS managed service that supports your application in a Region. ELB automatically adds and removes capacity based on server usage.
+• Security: ELB works with Amazon Virtual Private Cloud (VPC) to provide robust security features, including integrated certificate management, user-authentication, and SSL/TLS decryption.
+• Feature breadth: ELB includes support for features needed in container-based workloads, including HTTP/S, gRPC, TLS offload, advanced rule-based routing, and integration with container services.
+• Robust monitoring and visibility: ELB helps you to monitor the health of your applications and their performance in real time with Amazon CloudWatch metrics, logging, and request tracing. This improves visibility into your application’s performance.
+• Integration and global reach: ELB is integrated with other AWS services, such as Amazon EC2, Amazon Elastic Container Service (Amazon ECS), Amazon Elastic Kubernetes Service (Amazon EKS), and more. ELB is available wherever you run your AWS workloads.
+
+
 ## 1.1 ELB Load Balancer components 
 
 
 ![](image/Pasted%20image%2020231003132600.png) 
+
+
+![](image/Pasted%20image%2020231013115141.png)
+
+
+Load balances can wotk with different services
+Listeners:  LB ist load balancer
+Tagrget groups:
+Load balander rules:  form app2 , use tg 1 According to rule, load balancer decide to suer target froup s
+
+
+Three main components of ELB are listeners, target groups, and rules.
+• Listeners: A listener is a process that checks for connection requests. To define a listener, you configure a protocol and port, based on the ELB type. Customers connect to a listener, which is referred as client-side.
+• Target groups: A target group is a collection of resources, such as Amazon EC2 instances, AWS Lambda function, or IP addresses, where you send traffic. Each target group must have health check definitions.
+• Rules: Rules are sets of connection instructions that define the source IP addresses and resources in target groups. You configure rules to associate a target group with a listener.
+
 
 An ELB load balancer distributes your incoming application traffic across multiple targets, such as EC2 instances, in multiple Availability Zones. In this way, it increases the availability of your application. Your load balancers are configured with listeners. You can have more than one listener per load balancer. Listeners have different functions for different types of load balancers. Your load balancer can forward requests to one or more target groups based on rules and settings that you define.
 Each target group routes requests to one or more registered targets (for example, EC2 instances) by using the specified protocol and port number. You can register a target with multiple target groups.
@@ -55,6 +82,25 @@ Types of load balancers available for you to use include:
 
 
 # 3 ALB 
+
+![](image/Pasted%20image%2020231013115653.png)
+
+pplication Load Balancer is ideal for load balancing HTTP and HTTPS traffic. It operates at the request level (layer 7), routing traffic to targets (Amazon EC2 instances, containers, IP addresses, and AWS Lambda functions) based on the request content.
+
+Application Load Balancer has a number of primary features.
+• Security: You can create and manage security groups associated with ELB to provide additional networking and security options inside your Amazon VPC. Application Load Balancer supports desync protections implementation based on the http_desync_guardian library, where customer applications are protected from HTTP vulnerabilities.
+• TLS offloading: Application Load Balancer supports client TLS session termination. You can create an HTTPS listener, which enables traffic encryption between your load balancer and the clients that initiate SSL or TLS sessions. 
+    Load balander cajnd0 the decryption  and encyrtion  for ec2 instances . So do not do decryption  and encyrtion  in ec2 instances  solelt
+• Sticky sessions: Application Load Balancer supports both duration-based and application-based cookies, enabling nearly continuous request routing from the same client to the same target.
+• Redirects: Application Load Balancer can redirect an incoming request from one URL, such as HTTP, to another URL, such as HTTPS, helping you to achieve security compliance.
+• Fixed response: Application Load Balancer can control which client requests are served by your application, enabling it to respond to requests before they reach your applications.
+• Content-based routing: Application Load Balancer can route a request to a service based on the content of the request, such as Host field, Path URL, HTTP header, HTTP method, Query string, or source IP address.
+
+Resource To learn more about Application Load Balancer features, refer to the AWS service page: https://aws.amazon.com/elasticloadbalancing/application-load-balance
+
+
+## 3.1 **ALB is Multi-Tenant (several dynamical IP)
+
 
 ALB 是 AWS 的 **多租户全托管服务**，它的入口是由 AWS 管理的一组动态 IP，AWS 可能会因为扩容、维护等原因随时更换这些 IP。 详细解释一下
  ALB is a **multi-tenant, fully managed service** in AWS. Its entry point uses a set of **dynamic IP addresses** managed by AWS.  These IPs can change at any time (due to scaling, maintenance, failover, etc.).
@@ -101,7 +147,96 @@ If you hardcode ALB’s current IP in your firewall, it might break after AWS ch
     - If you absolutely need a static IP, put **AWS Global Accelerator** in front of the ALB (Global Accelerator provides fixed Anycast IPs).
 
 
-# 4 各个LB common feature and uncommon faeature
+# 4 NLB
+
+
+![](image/Pasted%20image%2020231013115756.png)
+
+
+Network Load Balancer is ideal for load balancing TCP and UDP traffic. It operates at the connection level (layer 4), routing connections to targets (Amazon EC2 instances, microservices, and containers) in Amazon VPC, based on IP protocol data.
+Some of the primary features of Network Load Balancer are:
+• Sticky sessions: Requests are routed from the same client to the same target by a sticky session defined at the target group level.
+• Low latency: Network Load Balancer offers low latencies for latency-sensitive applications. • Preserve source IP address: Network Load Balancer preserves the client-side source IP address and allows the backend to see the client’s IP address.
+• Static IP support: Network Load Balancer automatically provides a static IP address per Availability Zone (subnet) that can be used by applications as the load balancer’s front-end IP.
+• Elastic IP address support: You can assign an Elastic IP address per AZ (subnet and have your own fixed IP.
+• DNS failover: If no healthy targets are registered with the Network Load Balancer or the Network Load Balancer nodes in a zone are unhealthy, Amazon Route 53 will direct traffic to load balancer nodes in other Availability Zones.
+
+Resource 
+To learn more about Network Load Balancer, refer to the AWS service page: https://aws.amazon.com/elasticloadbalancing/network-load-balancer/
+
+
+
+
+# 5 Gateway Load Balancer 
+
+![](image/Pasted%20image%2020231013115909.png)
+
+
+Gateway Load Balancer helps you to deploy, scale, and manage your third-party virtual appliances. It provides a gateway for distributing traffic across multiple virtual appliances, while scaling them up and down based on demand.
+
+Some of the primary features of Gateway Load Balancer are:
+• Bring higher-availability to third-party virtual appliances: Gateway Load Balancer ensures high availability and reliability by routing traffic through healthy virtual appliances and rerouting flows when a virtual appliance becomes unhealthy.
+• Monitor health and performance metrics: You can monitor your Gateway Load Balancer using Amazon CloudWatch per Availability Zone metrics.
+• Streamline deployment with AWS Marketplace: Deploying a new virtual appliance can be as straightforward as selecting it in AWS Marketplace.
+• Ensure private connectivity in the AWS Cloud with Gateway Load Balancer endpoints: Gateway Load Balancer connects internet gateways, VPCs, and other network resources over a private connection. Your traffic flows in the AWS Cloud, which protects your data from being exposed on the internet.
+
+Resource
+To learn more about Gateway Load Balancer, refer to the AWS service page: https://aws.amazon.com/elasticloadbalancing/gateway-load-balancer
+
+
+# 6 Classic Load Balancer 
+
+![](image/Pasted%20image%2020231013115916.png)
+
+Classic Load Balancer is intended for applications built for Amazon EC2-Classic. It provides load balancing across multiple Amazon EC2 instances and operates at both the request and connection levels.
+
+Classic Load Balancer has two primary features.
+• SSL offloading: Classic Load Balancer supports SSL termination, including offloading SSL for backend application instances, centralized management of SSL certificates, and re-encryption to backend instances with optional public key authentication.
+• IPv6 support: Classic Load Balancer supports the use of both the Internet Protocol version 4 and 6 (IPv4 and IPv6) for Amazon EC2-Classic solutions.
+
+Resource
+To learn more about Classic Load Balancer, refer to the AWS service page: https://aws.amazon.com/elasticloadbalancing/classic-load-balancer
+
+# 7 各个LB common feature and uncommon faeature
+
+
+Elastic Load Balancer (ELB) has 4 different types of possible load balancers.
+ALB: Applikation Loadbalancer 
+NLB: Network Loadbalancer
+CLB: Classic Loadbalancer 
+GWLB: Gateway Load Balancer 
+
+application load balancer  and network load balancer  are specialized for their  individual use case. 
+All thos Loadbalancer you can attch the amazon certification manager so you can apply ssl certificate
+
+
+
+![](image/Pasted%20image%2020230317173623.png)
+
+![](image/Pasted%20image%2020230522144042.png)
+
+- CLB Classic Load Balancer 
+    -  Layer 3,4 and 7 
+    - does not use target groups. 
+    - it's  intended for applications that were built within  the **EC two classic network** in mind,
+    - Retires on Aug 15, 2022
+- ALB Application Load Balancer
+    - works in Application Layer Layer 7 - HTTP/S 
+    - So prior to  this, if you needed a load bouncer for subdomain,  you'd have to launch a load bouncer for each one.  But now you with routing rules, you can route all  subdomains to the single load balancer and make  sure that it goes to the right instances that you  want to target.
+    - Can attach WAF (web application firewall)
+    -  Routing Rules:    create rules to change routing based on information found in an HTTP/S request
+- NLB Network Load Balancer 
+    - works in Transport layer .  Layer 3 and 4 – TCP and UDP
+        - thie layer is dealing with IP protocol data. So this is where  you are dealing with TCP and TLS traffic where extreme performance ist required 
+    - Example:  video , games ,  real time. So think about handling  millions of requests per second will maintain  **ultra low latency**
+    - It's also optimized  for sudden and volatile traffic patterns. 
+    - Optimized for **sudden and volatile traffic** patterns while using a single static IP address per Availability Zone
+    - Capable of handling millions of requests per second while maintaining ultra-low latencies
+- **Gateway Load Balancer (GWLB)**
+    - When you need to deploy a fleet of third-party virtual appliances that support GENEVE
+
+
+
 
 
 ![](image/Pasted%20image%2020231003133117.png)
@@ -114,7 +249,10 @@ The table in the graphic outlines support for a set of load balancer features.
 - If you need to manage your third-party virtual appliances, consider a Gateway Load Balancer.
 
 
-## 4.1 static ip addresse
+
+
+
+## 7.1 static ip addresse
 
 fix the ip address that used in alb 
 
@@ -163,7 +301,7 @@ ALB 不支持静态 IP 的原因
 |性能|极高（低延迟）|高（有应用层处理开销）|
 |适用场景|游戏、VoIP、固定入口|Web 应用、API 网关、HTTPS|
 
-## 4.2 SSL offloading
+## 7.2 SSL offloading
 
 ==SSL Offloading 就是**把 SSL 处理工作交给负载均衡器**，让后端只处理明文 HTTP 请求，从而提升性能、简化证书管理。==
 
@@ -197,7 +335,7 @@ SSL（Secure Sockets Layer，安全套接字层）是一种用于在网络通信
 
 
 
-## 4.3 redirects: to another websites
+## 7.3 redirects: to another websites
 ==“ALB 支持 redirect” 就是说你可以直接在 ALB 里做 URL/协议/端口/路径跳转，不需要后端应用自己返回 301/302，节省了后端的处理逻辑。==
 
 你可以在 **ALB 的监听器规则（Listener Rules）** 中配置 **重定向（Redirect Action）**，把收到的请求自动跳转到另一个 URL、协议、端口或路径。
@@ -229,7 +367,7 @@ AWS 控制台 / Terraform / CloudFormation 中可以这样设置：
 }
 ```
 
-# 5 NLB vs ALB
+# 8 NLB vs ALB
 
 | 对比项         | **NLB**                                   | **ALB**                      |
 | ----------- | ----------------------------------------- | ---------------------------- |
